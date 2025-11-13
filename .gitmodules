@@ -1,0 +1,6 @@
+[submodule "book/submodules/spatial-dynamics/FSL"]
+	path = book/submodules/spatial-dynamics/FSL
+	url = https://github.com/seastate/FSL.git
+[submodule "book/submodules/spatial-dynamics/EstuaryLarva"]
+	path = book/submodules/spatial-dynamics/EstuaryLarva
+	url = https://github.com/seastate/EstuaryLarva.git
