@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b699f9f3-24c9-4af0-9d3d-0965a2e662c7
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/seastate/quant-org-bio
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
