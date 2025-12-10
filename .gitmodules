@@ -1,0 +1,3 @@
+[submodule "book/submodules/biomechanics/ReSphere"]
+	path = book/submodules/biomechanics/ReSphere
+	url = https://github.com/organismal-systems/ReSphere
