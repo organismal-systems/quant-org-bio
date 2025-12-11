@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/ReSphere
+	branch = main
+	commit = 8c99677ffd209880020ced8b48b3600b39c4f8b7
+	parent = ef7c33219a8f3bb1c5b089ab4bd40e237de0f36e
+	method = merge
+	cmdver = 0.4.3
