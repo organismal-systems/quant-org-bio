@@ -9,9 +9,9 @@ parts:
     chapters:
     #- file: content/overview/README.md      
     #- file: content/overview.md      
-      #sections:
+    #sections:
     - file: content/OSYMindex.ipynb
-      #- file: content/overview/how-to-use/README.md      
+    #- file: content/overview/how-to-use/README.md      
       #- file: subrepos/qlb-notebooks/example.ipynb
       #- file: content/overview/scale-models/README.md      
       #- file: subrepos/qlb-notebooks/scale-models.ipynb
@@ -22,6 +22,7 @@ parts:
     chapters:
       #- file: content/markdown
       #- file: content/notebooks
+      #- file: content/overview.md
     - file: content/biomechanics/README.md
       sections:
       - file: subrepos/biomechanics/ReSphere/README.md
