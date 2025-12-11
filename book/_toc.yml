@@ -1,16 +1,16 @@
 version: 1
 format: jb-book
 root: content/overview.md
-title: Overview
+#title: Overview
 
 parts:
-  - caption: Overview
+  - caption: Introduction
     numbered: true
     chapters:
-    #- file: content/overview/README.md      
+    - file: content/overview/overview.md      
     #- file: content/overview.md      
     #sections:
-    - file: content/OSYMindex.ipynb
+    #- file: content/OSYMindex.ipynb
     #- file: content/overview/how-to-use/README.md      
       #- file: subrepos/qlb-notebooks/example.ipynb
       #- file: content/overview/scale-models/README.md      
@@ -44,6 +44,13 @@ parts:
       #- file: subrepos/biomechanics/ReSphere/RS2.md
       - file: subrepos/biomechanics/ReSphere/RS3context.md
       - file: subrepos/biomechanics/ReSphere/RS3.ipynb
+  - caption: Demography
+  - caption: Spatial Dynamics
+  - caption: Experimental Methods
+  - caption: Appendix
+    numbered: true
+    chapters:
+    - file: content/OSYMindex.ipynb
 
 
 
