@@ -11,6 +11,8 @@ parts:
     - file: content/overview/how2use.md
     - file: content/overview/terms.md
     - file: content/overview/example.ipynb
+    - file: content/overview/scale-models.ipynb
+    - file: content/overview/nondim-numbers.md
     #- file: content/overview.md      
     #sections:
     #- file: content/OSYMindex.ipynb
