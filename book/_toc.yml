@@ -50,6 +50,13 @@ parts:
       - file: subrepos/biomechanics/ReSphere/RS3context.md
       - file: subrepos/biomechanics/ReSphere/RS3.ipynb
   - caption: Demography
+    numbered: true
+    chapters:
+    - file: content/demography/README.md
+      sections:
+      - file: subrepos/demography/LarvalCloning/LarvalCloning.md
+      - file: subrepos/demography/LarvalCloning/CloningModes.md
+      - file: subrepos/demography/LarvalCloning/LarvalCloningModel.ipynb
   - caption: Spatial Dynamics
   - caption: Experimental Methods
   - caption: Appendix
