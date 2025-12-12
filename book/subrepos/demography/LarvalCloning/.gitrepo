@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/LarvalCloning
+	branch = main
+	commit = 95a98ebf1dc4b001bf98b44e6a1a453b3b21268a
+	parent = d75aff4ded1334f013693b4beb1a280f93193ea5
+	method = merge
+	cmdver = 0.4.3
