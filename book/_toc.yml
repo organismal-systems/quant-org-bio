@@ -11,6 +11,7 @@ parts:
     - file: content/overview/how2use.md
     - file: content/overview/terms.md
     - file: content/overview/example.ipynb
+    - file: content/overview/allometry.md
     - file: content/overview/scale-models.ipynb
     - file: content/overview/nondim-numbers.md
     #- file: content/overview.md      
@@ -55,8 +56,16 @@ parts:
     - file: content/demography/README.md
       sections:
       - file: subrepos/demography/LarvalCloning/LarvalCloning.md
-      - file: subrepos/demography/LarvalCloning/CloningModes.md
-      - file: subrepos/demography/LarvalCloning/LarvalCloningModel.ipynb
+        sections:
+          - file: subrepos/demography/LarvalCloning/CloningModes.md
+          - file: subrepos/demography/LarvalCloning/LarvalCloningModel.ipynb
+      - file: subrepos/demography/DiatomSizeESS/MarineFreshDiatoms.md
+        sections:
+          - file: subrepos/demography/DiatomSizeESS/MixedLayers.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomAllometry.md
+          - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
+          - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
   - caption: Spatial Dynamics
   - caption: Experimental Methods
   - caption: Appendix
