@@ -1,18 +1,21 @@
 # 📖️ Allometry of growth, nutrient acquisition and storage in diatoms
 
-Litchman *et al.* (2009) asked whether the characteristics of [mixed layers ](./MixedLayers.md) could explain the diversity and success of large diatoms, and their greater presence in marine habitats relative to freshwater habitats.
+Litchman *et al.* (2009) asked whether the characteristics of [mixed layers ](./MixedLayers.md) could explain the diversity and success of large diatoms, and their greater presence in marine habitats relative to freshwater habitats such as lakes.
 They noted that the differences between typical marine and freshwater habitats are:
 1. Mixed layers in marine habitats tend to be deeper than mixed layers in lakes.
 2. Nitrogen (nitrate) is more often limiting for diatom growth in marine systems, while phosphorus is more often limiting for diatom growth in freshwater systems.
 
-The significance of the first point is that losses due to cells being lost from the mixed layer due to their own sinking velocities are lower when mixed layers are deeper.
+The significance of the first point is that losses due to cells sinking out of the mixed layer due to their own [sinking velocities](../../../subrepos/biomechanics/ReSphere/RS1.ipynb) are lower when mixed layers are deeper.
 Cell losses due to sinking may be higher for larger diatom cells than for smaller cells[^sink].
 If so, higher losses from shallow mixed layers might favor small, rarely lost cells over larger, more frequently lost cells.
+Because mixed layers tend to be shallower in lakes, this could impact freshwater diatoms more than marine diatoms.
 
 [^sink]: This is likely dependent on the condition of the diatom: healthy cells may be able to regulate their densities to prevent sinking, while starved cells may not.
 
-The significance of the second point is that diatom cells can store key nutrients, such as nitrogen and phosphorus.
+The significance of the second point hinges on nutrient storage in cells. 
+Diatom cells can store key nutrients, such as nitrogen and phosphorus.
 However, because they are stored within different parts of cells, diatoms' storage capacities have different allometries for nitrogen than for phosphorus.
+
 Larger diatoms have disproportionately higher storage capacity (relative to requirements for growth) for nitrogen than smaller cells.
 However, storage capacity (relative to requirements for growth) for phosphorus are more nearly proportional in large and small diatom cells.
 If so, potential advantages from greater storage capacity are more likely to favor larger cells in nitrogen-limited marine habitats than in phosphorus limited freshwater habitats.
@@ -21,4 +24,8 @@ With this in mind, Litchman et al. then asked,
 
 > Do characteristics of some mixed layers confer advantages to cells with higher storage capacities, and if so are those characteristics more prevalent in marine than freshwater habitats?
 
-The model they used to investigate this question is outlined in [the next section](Litchman_etal2009.md).
+The intuition behind Litchman *et al.*'s study was that episodic mixing could create conditions in which small cells had exhausted their stored nutrients, but large cells still retained enough nutrient storage to maintain growth.
+If so, growth of large diatoms in the intervals between mixing events, when small diatoms cannot grow, could explain the persistence of large cells despite the uptake and growth rateadvantages of small cells.
+
+Litchman *et al.* constructed a [model](./DiatomSizeESS.ipynb) to investigate under which conditions this might happen, and whether those conditions occur more frequently in marine than freshwater habitats.
+Their modeling approach was based on an idea from evolutionary game theory called an [Evolutionarily Stable State](wiki:Evolutionarily_stable_state), and on their analysis of [diatom allometry](Litchman_etal2009.md).
