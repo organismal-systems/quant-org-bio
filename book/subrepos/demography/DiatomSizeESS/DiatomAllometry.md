@@ -28,4 +28,4 @@ The intuition behind Litchman *et al.*'s study was that episodic mixing could cr
 If so, growth of large diatoms in the intervals between mixing events, when small diatoms cannot grow, could explain the persistence of large cells despite the uptake and growth rateadvantages of small cells.
 
 Litchman *et al.* constructed a [model](./DiatomSizeESS.ipynb) to investigate under which conditions this might happen, and whether those conditions occur more frequently in marine than freshwater habitats.
-Their modeling approach was based on an idea from evolutionary game theory called an [Evolutionarily Stable State](wiki:Evolutionarily_stable_state), and on their analysis of [diatom allometry](Litchman_etal2009.md).
+Their modeling approach was based on an idea from evolutionary game theory called an [Evolutionarily Stable State](wiki:Evolutionarily_stable_state), and on their analysis of [diatom allometry](AllometrySizeSelection.md).

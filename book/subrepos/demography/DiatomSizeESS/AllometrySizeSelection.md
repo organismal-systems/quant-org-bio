@@ -5,14 +5,20 @@ To gain a quantitative perspective on the effects of [mixed layer dynamics](Mixe
 :label: L0
 log_{10} X = log_{10}~a + (b \times s)
 ```
-where $X$ is the trait of interest, $s$ is cell size, and $a$ and $b$ are allometric constants.
-Taking the power of 10 of both sides,
+where $X$ is the trait of interest, and $a$ and $b$ are allometric constants for that trait.
+The metric of size is $$
+s = \log_{10}(\mathrm{cell~volume}),
+$$
+where cell volume is in $\mu m^3$.
+
+
+Taking the power of 10 of both sides gives the value of the trait for each $s$,
 ```{math}
 :label: L0a
 X = a \times 10^{b \times s}
 ```
 Litchman et al. analyzed data from the literature to obtain values of the allometric constants $a$ and $b$ for traits involved in growth, mortality and uptake and storage of nitrogen and phosphorus.
-The separately analyzed diatoms from marine and freshwater environments.
+They separately analyzed diatoms from marine and freshwater environments.
 Their results are summarized in their [supplemental materials](https://www.pnas.org/doi/suppl/10.1073/pnas.0810891106/suppl_file/0810891106si.pdf).
 
 ## Model formulation
@@ -68,4 +74,7 @@ All these points suggest advantages for small diatom cells.
 
 However, Point 4 means that nutrient storage capacity, which is the difference between the minimum and maximum quotas, is larger in larger cells.
 
-Litchman *et al.*'s hypothesis is that the pulsed nature of nutrients in  mixed layers &ndash; episodic injections of nutrients duriing mixing events such as storms, followed by long intervals of depleted nutrients, amplify the storage advantages of large diatoms and enable them to compete successfully with small diatoms.
+Litchman *et al.*'s hypothesis is that the pulsed nature of nutrients in  mixed layers &ndash; episodic injections of nutrients duriing mixing events such as storms, followed by long intervals of depleted nutrients &ndash; amplify the storage advantages of large diatoms and enable them to compete successfully with small diatoms.
+
+The model they devised to test their hypothesis about the effects of storage allometry and mixed layer dynamics is implemented in [this notebook](./DiatomSizeESS.ipynb).
+Explanation of the formulation of this model is in [this context page](Litchman_etal2009.md).

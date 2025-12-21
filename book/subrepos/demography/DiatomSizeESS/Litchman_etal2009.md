@@ -1,5 +1,24 @@
 # 🏞️  A quota model of diatom demography
 
+ 
+ 
+```{math}
+:label: W1
+\mathrm{change~in~quota} = \mathrm{nutrient~uptake~rate} - \mathrm{consumption~for~growth}
+```
+
+```{math}
+:label: W2
+\mathrm{change~in~cell~number} = \mathrm{growth} - \mathrm{mortality} - \mathrm{loss~from~sinking}
+```
+```{math}
+:label: W3
+\mathrm{change~in~nutrient~concentration} = -\mathrm{consumption~by~cells} + \mathrm{import~in~mixing~events}
+```
+
+The metric of size is $s = \log_{10}\mathrm{Cell~Volume} where Cell Volume is in $\mu m^3$.
+
+
 - A cell's quota, $Q_i$, increases due to nutrient uptake and decreases when nutrient is used for growth.
 - The rate at which nutrient uptake depends on nutrient concentration, $R$, is a Michaelis-Menton function, 
 ```{math}
@@ -24,7 +43,7 @@ Because $C_2=C_3$ when the cell quota is $Q_i = Q_{max,i}$, the cell's nutrient 
 - Decrease in a cell's quota due to growth is 
 ```{math}
 :label: A4
-\mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right)
+ \mathrm{consumption~for~growth} = \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right)
 ```
 
 
