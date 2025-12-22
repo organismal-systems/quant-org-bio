@@ -22,7 +22,7 @@ parts:
       #- file: content/overview/scale-models/README.md      
       #- file: subrepos/qlb-notebooks/scale-models.ipynb
       #- file: subrepos/qlb-notebooks/nondim-numbers.ipynb
-      #- file: subrepos/qlb-notebooks/ReynoldsSphere.ipynb
+      #- file: subrepos/qlb-notebooks/ReynoldsSphere.ipynb 
   - caption: Biomechanics
     numbered: true
     chapters:
