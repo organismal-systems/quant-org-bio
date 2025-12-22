@@ -5,6 +5,7 @@
 '''
 # Load modules and set graphics environment
 from math import *
+from tabulate import tabulate
 import numpy as np
 from scipy.integrate import solve_ivp
 from matplotlib import pyplot as plt
@@ -171,14 +172,69 @@ class diatoms:
         self.Qs = self.QNR_data[-1,:self.n_sizes]
         self.Ns = self.QNR_data[-1,self.n_sizes:2*self.n_sizes]
         self.R = self.QNR_data[-1,-1]
+        # Display some statistics
+        self.stats()
         # Plot
         self.plot()
+
+    def stats(self):
+        '''Report statistics of resource (nutrient), and quota and number for each size class.
+        '''
+        # Parse 1-period time series (QNR_data) into quota, number and resouce arrays
+        Qs = self.QNR_data[:,0:self.n_sizes]
+        Ns = self.QNR_data[:,self.n_sizes:2*self.n_sizes]
+        R = self.QNR_data[:,-1]
+        # Parse period average time series (QNR_avg) into quota, number and resouce arrays
+        Qavgs = self.QNR_avg[:,0:self.n_sizes]
+        Navgs = self.QNR_avg[:,self.n_sizes:2*self.n_sizes]
+        Ravg = self.QNR_avg[:,-1]
+        t_avg = [(0.5+n)*self.t_mix for n in range(self.n_pers)]
+        # Period-averaged standing stock
+        print('\n***Period-averaged statistics: standing stocks (also in standingstocks.txt)***\n')
+        tabhdr = ['i','s','10^s','N','Q/Qmin','BV','R']
+        tabdata = []
+        for i,s in enumerate(self.sizes):
+            w = [i,s,10**s,Navgs[-1][i],Qavgs[-1][i]/self.Qmin[i],Navgs[-1][i]*10**self.sizes[i],Ravg[-1]]
+            tabdata.append(w)
+        print(tabulate(tabdata,tabhdr,floatfmt=".3g"))
+        with open('standingstocks.txt','w') as sfile:
+            sfile.write('i,s,10^s,N,Q/Qmin,BV,R\n')
+            for i,s in enumerate(self.sizes):
+                sfile.write(f'{i},{s:.3g},{10**s:.3g},{Navgs[-1][i]:.3g},{Qavgs[-1][i]/self.Qmin[i]:.3g},{Navgs[-1][i]*10**self.sizes[i]:.3g},{Ravg[-1]:.3g}\n')
+        # Period-averaged losses
+        print('\n\n***Period-averaged statistics: biovolume losses per day to mortality (M), sinking (S) and mixing (L) (also in losses.txt)***\n')
+        tabhdr = ['i','s','10^s','M','S','L']
+        tabdata = []
+        for i,s in enumerate(self.sizes):
+            BVavg_i = Navgs[-1][i]*10**self.sizes[i]   # period-averaged biovolume for the ith size class
+            M = self.m * BVavg_i                       # "background" mortality for the ith size class, in BV/day units 
+            S = self.vels[i]/self.z_m * BVavg_i        # sinking mortality for the ith size class, in BV/day units 
+            BVstart_i = Ns[0][i]*10**self.sizes[i]
+            BVend_i = Ns[-1][i]*10**self.sizes[i]
+            # these two should agree, if population is periodic:
+            L = self.a * BVend_i/self.t_mix         # mixing loss mortality for the ith size class, in BV/day units
+            #L = (BVend_i-BVstart_i)/self.t_mix         # mixing loss mortality for the ith size class, in BV/day units
+            w = [i,s,10**s,M,S,L]
+            tabdata.append(w)
+        print(tabulate(tabdata,tabhdr,floatfmt=".3g"))
+        with open('losses.txt','w') as sfile:
+            sfile.write('i,s,10^s,M,S,L\n')
+            for i,s in enumerate(self.sizes):
+                BVavg_i = Navgs[-1][i]*10**self.sizes[i]   # period-averaged biovolume for the ith size class
+                M = self.m * BVavg_i                       # "background" mortality for the ith size class, in BV/day units 
+                S = self.vels[i]/self.z_m * BVavg_i        # sinking mortality for the ith size class, in BV/day units 
+                BVstart_i = Ns[0][i]*10**self.sizes[i]
+                BVend_i = Ns[-1][i]*10**self.sizes[i]
+                # these two should agree, if population is periodic:
+                #L = (BVend_i-BVstart_i)/self.t_mix         # mixing loss mortality for the ith size class, in BV/day units
+                L = self.a * BVend_i/self.t_mix         # mixing loss mortality for the ith size class, in BV/day units
+                sfile.write(f'{i},{s:.3g},{10**s:.3g},{M:.3g},{S:.3g},{L:.3g}\n')
 
     def plot(self,w=8,h=12):
         '''Plot time series data for resource (nutrient), and quota and number for
            each size class.
         '''
-        print('Plotting...')
+        print('\nPlotting...')
         # Parse 1-period time series (QNR_data) into quota, number and resouce arrays
         Qs = self.QNR_data[:,0:self.n_sizes]
         Ns = self.QNR_data[:,self.n_sizes:2*self.n_sizes]
@@ -207,7 +263,7 @@ class diatoms:
         Nax.set_ylabel('Biovolume')
         Nax.set_xlabel('Time (days)')
         Nax.legend()
-        Nax.set_ylim(bottom=1)
+        Nax.set_ylim(bottom=0.1)
         # Plot resource (nutrient)
         Rax = self.fig1.add_subplot(313)
         Rplot = Rax.plot(self.t_data,R)
@@ -235,7 +291,7 @@ class diatoms:
         N2ax.set_ylabel('Period-averaged biovolume')
         N2ax.set_xlabel('Time (days)')
         N2ax.legend()
-        N2ax.set_ylim(bottom=1)
+        N2ax.set_ylim(bottom=0.1)
         # Plot resource (nutrient)
         R2ax = self.fig2.add_subplot(313)
         R2plot = R2ax.plot(t_avg,Ravg)

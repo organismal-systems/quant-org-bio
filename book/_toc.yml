@@ -66,6 +66,9 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
           - file: subrepos/demography/DiatomSizeESS/AllometrySizeSelection.md
           - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
+          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
   - caption: Spatial Dynamics
   - caption: Experimental Methods
