@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/DiatomSizeESS.git
+	branch = main
+	commit = bbcd98068a0426cf489799117046d8aa37f8ca85
+	parent = 781777560a0483d990565ff0cce358951732b72b
+	method = merge
+	cmdver = 0.4.3
