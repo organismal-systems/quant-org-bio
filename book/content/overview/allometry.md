@@ -30,7 +30,7 @@ Taking the log of both sides of [#K1] gives
 ```
 [#K2] shows why power law allometries appear at straight lines on log-log plots.
 
-For example, in [](kleiber), the trait is [Basal Metabolic Rate](wiki:Basal_metabolic_rate) in watts, $BMR$, the size metric is mass, $M$, the constant $c = 70$, and the hypothesized exponent is $p=\frac{3}{4}$, *i.e.*,
+For example, in [](#Kleiber), the trait is [Basal Metabolic Rate](wiki:Basal_metabolic_rate) in watts, $BMR$, the size metric is mass, $M$, the constant $c = 70$, and the hypothesized exponent is $p=\frac{3}{4}$, *i.e.*,
 $$
 BMR = 70~ M^\frac{3}{4}
 $$

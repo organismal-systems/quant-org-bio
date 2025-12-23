@@ -63,7 +63,7 @@ Another way in which observations are constrained is in considering the conseque
 Organisms that do not exist cannot be observed, but models that correctly reflect the key underlying mechanisms can give quantitative assessments of how hypothetical variation of extant organisms might function.
 These models could give insight into *why* these variant don't exist, in the context of implied changes in performance or distribution, or evolutionary costs and benefits.
 
-***Models are tools for communicating biological knowledge across organisational levels.***
+***Models are tools for communicating biological knowledge across organizational levels.***
 
 Another way in which models can contribute to insights in Organismal Biology is by integrating specialized knowledge from different disciplines.
 For example, biologists investigating maternal allocation to reproduction &ndash; how many eggs of what size mom should make each year &ndash; may focus on the physiology of egg production, the energy inputs and outputs of mature females, and coordination of spawning to maximize fertilization success.

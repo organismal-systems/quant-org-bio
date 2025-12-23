@@ -31,7 +31,6 @@ Finally, the nutrient concentration within the mixed layer is reduced, between m
 ```{math}
 :label: W3
 \mathrm{change~in~nutrient~concentration} = -\mathrm{consumption~by~cells}
-%\mathrm{change~in~nutrient~concentration} = -\mathrm{consumption~by~cells} + \mathrm{import~in~mixing~events}
 ```
 In the model, mixing events are assumed to happen instantaneously.
 That is, the model assumes there is an interval of diatom population dynamics as described in Equations [](#W2), [](#W1) and [](#W3).
