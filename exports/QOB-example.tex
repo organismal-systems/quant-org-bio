@@ -1,0 +1,146 @@
+\chapter{🧮 An example Jupyter notebook}
+
+This is an example of a Jupyter notebook. It demonstrates some of the properties that make these notebooks useful for executable books.
+This notebook can be run online via \href{https://mybinder.org/v2/gh/seastate/qlb-notebooks/main?labpath=example.ipynb}{Binder}, by clicking on the button below:
+
+\href{https://mybinder.org/v2/gh/seastate/qlb-notebooks/main?labpath=ReynoldsSphere.ipynb}{\includegraphics[width=0.7\linewidth]{files/b77199e99a54e59b2e3c037c2cc90f21.pdf}
+
+}
+
+Note that when you open a notebook on Binder, the Python environment in which the notebook runs must be loaded before it can execute.
+If it hasn't been run recently, Binder has to rebuilt its environment and this can take a few minutes.
+Rerunning it afterwards is noticeably faster.
+
+Alternatively, it can be run directly on your own machine if you have JupyterLab set up, by cloning the \href{https://github.com/seastate/qob-notebooks}{qob-notebooks} repository or the source materials for this \href{https://github.com/organismal-systems/quant-org-bio}{book}.
+
+\section{Jupyter notebook structure}
+
+Jupyter notebooks are composed of \textit{cells}.
+To execute a cell, make it the active cell by clicking on it, and either type \textit{shift-enter} or select \textit{Run Selected Cells} from the \textit{Run} menu at the top of the page.
+
+The sentences you are reading are in a cell of type ``Markdown''.
+This is indicated (and, if need be, selected) in the drop-down menu at the top of the page.
+As the name suggests, the content of this cell is coded in the formatting language Markdown, and when executed is rendered as a formatted display.
+
+To see the Markdown code, click on the blue vertical bar at left, then type the letter ``m'' on your keyboard (or just double-click on the cell).
+The cell will now show the original Markdown code.
+Now you are able, for example, to edit words and links in the cell.
+
+To re-render it, execute the cell by typing \textit{shift-enter}.
+Now you see the formatted display.
+
+\section{Python code cells}
+
+The cell below is a \textit{Code} cell, containing Python commands to be run when the cell is executed. You can see what this code does in either of two ways:
+
+\begin{enumerate}
+\item by selecting its cell and typing \textit{shift-enter}
+\item by selecting the \textit{Run Selected Cell} item under the \textit{Run} menu at the top left of this page
+\end{enumerate}
+
+Many notebooks are set up for your use by running all the code cells. This is easy to do using the \textit{Run All Cells} item under the \textit{Run} menu.
+
+Try changing the numbers in the cell below, then executing it by clicking on it and typing \textit{shift-enter}:
+
+\begin{verbatim}
+# This is a simple test of whether your notebook is executing correctly: 
+# Change the value of a or b and shift -enter.
+# The output should reflect your updated addition calculation.
+a = 2
+b = 3
+print('{} plus {} equals {}'.format(a,b,a+b))
+\end{verbatim}
+
+\begin{verbatim}
+2 plus 3 equals 5
+\end{verbatim}
+
+\subsection{Code cell visibility}
+
+In Jupyter Lab, the commands in code cells can be hidden by clicking on the blue vertical bar at left, leaving only three small dots visible.
+The output remains visible below in its own cell.
+
+For example, the cell below is a \textit{hidden code cell}. Even though the code isn't initially visible, you can still execute it by selcting it and typing \textit{shift-enter}.
+
+\begin{verbatim}
+2 times 3 equals 6
+\end{verbatim}
+
+You can see hidden code any time you want. In an active notebook (e.g., on Binder) you can show or hide code by clicking on the blue bar at the left. In the static version, you can click on the ``Source'' bar to show or hide the code.
+
+This is convenient when there is a lot of code that would be distracting in ordinary usage of the notebook.
+For example, the parameters in many models are set in textboxes (called ``widgets'').
+This means users can use the models without having to interact directly with the code. However, there is distracting amount of code needed to set up the widgets.
+Hiding that code makes using the model more intuitive and visually appealing.
+To make the code visible, click on the blue vertical bar again.
+
+The output can also be hidden and exposed by clicking on the vertical bar.
+
+\begin{verbatim}
+# This cell shows an example of defining a Python class, in this case representing a 
+# spherical egg, with some calculated geometrical properties relevant to respiration, 
+# heat content and other processes.
+from math import pi # import the value of pi from the math module
+class Egg():
+    """ An example of a class definition in Python, that facilitates calculating
+        the surface area and volume of a spherical egg given its diameter.
+        If the parameter d is not supplied, it defaults to d=1
+    """
+    def __init__(self,d=1):
+        """ Create an Egg instance.
+        """
+        self.d = d            # save the diameter as an attribute of the egg
+        self.r = d/2          # calculate the radius
+        self.A = pi * d**2    # calculate the surface area
+        self.V = pi/6 * d**3  # calculate the volume
+\end{verbatim}
+
+\begin{verbatim}
+# An example of using an instance of the Egg class.
+egg = Egg(d=2)
+print(f'The surface area of an egg of diameter {egg.d} is {egg.A} and its volume is {egg.V}')
+\end{verbatim}
+
+\begin{verbatim}
+The surface area of an egg of diameter 2 is 12.566370614359172 and its volume is 4.1887902047863905
+\end{verbatim}
+
+\begin{verbatim}
+# Now let's look at some plotting examples. Here is an example of making a list of diameters,
+# using that to make lists of volumes and areas, and then making a plot of area and volume as
+# functions of diameter.
+import matplotlib.pyplot as plt # import the pyplot graphics library
+plt.ion()                       # use interactive plotting mode
+ds = [0.1*(d+1) for d in range(150)]
+As = [Egg(d).A for d in ds]
+Vs = [Egg(d).V for d in ds]
+# Create a plot object, and add the first subplot
+fig = plt.figure()
+# Plot area and volume against diameter, on a linear axis
+ax1 = fig.add_subplot(1,2,1)
+ax1.plot(ds,As,label='Area')
+ax1.plot(ds,Vs,label='Volume')
+ax1.legend()
+ax1.grid()
+# Plot area and volume against diameter, on a log axis
+ax2 = fig.add_subplot(1,2,2)
+ax2.plot(ds,As,label='Area')
+ax2.plot(ds,Vs,label='Volume')
+ax2.set_xscale('log')
+ax2.set_yscale('log')
+ax2.legend()
+ax2.grid()
+\end{verbatim}
+
+\includegraphics[width=0.7\linewidth]{files/715359d2b32d36cf23548b8dce21d56a.png}
+
+The plots above demonstrate several things.
+First, if they are visible, they show your Jupyter notebook is executing correctly.
+
+Secondly, they provide examples of using a model (in this case, a very simple model
+of egg characteristics) to make a systematic study of variation of key model results across a range of input variables.
+This sytematic use of models to understand cause and effect, analogous to systematic variation of parameters in experimental design, is one of the most important yet widely underappreciated uses of models.
+
+Thirdly, they illustrate that a very orderly pattern of variation exists in area and volume as functions of diameter -- area and volume are simple lines as functions of diameter on a log-log plot -- but the simplicity of this variation is obvious only when scaled and plotted in a specific way.
+
+All three of these are important ideas to carry forward in using this book.
