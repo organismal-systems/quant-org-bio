@@ -1,0 +1,105 @@
+# 📖️ Why are diatoms larger in marine than freshwater habitats?
+
+[Allometry](wiki:Allometry) is the study of systematic variation of organismal traits across variations in size. 
+Among aquatic[^aqu] organisms, size is associated with variations in numerous other traits and processes, including physiological traits such as respiration and nutrient uptake rates, organism-level traits such as intrinsic rate of growth and fecundity, behavioral traits such as locomotion and sensing, population-level traits such as reproduction and mortality rates, and ecological traits such as trophic interactions and carbon sequestration. 
+[Allometry](../../../content/overview/allometry.md) is a useful tool for understanding linkages among aquatic organisms across organizational scales between these and many other traits.
+
+[^aqu]: In Organismal Biology, the term *aquatic* is usually interpreted as referring to a water habitat that may be either marine (saltwater) or freshwater.
+
+[Diatoms](wiki:Diatom) are a large group of single-celled algae inhabiting aquatic environments world-wide.
+Diatoms are diverse, with about 12,000 known species[^abu].
+Across this diversity, diatoms encompass a wide range of sizes ($2-2000 \mu m$), and morphologies with numerous [beautiful and interesting features](https://diatomimaging.com/gallery1/).
+Many of these features, such as pores and spines, likely serve functional roles in nutrient acquisition, predator defence and decreasing sinking rates.
+
+[^abu]: Estimates of the number of species ranging from 20,000 to as high as 200,000.
+
+Diatoms are abundant, and are estimated to produce 20-50% of new oxygen generated worldwide each year.
+Diatoms are major contributors to primary production, are important consumers of dissolved nutrients and have strong trophic interactions with zooplankton grazers, heterotrophic protists and aquatic pathogens.
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/0/06/Diatoms.png
+:label: frustule
+:alt: Electron micrographs of diatom frustrules.
+:width: 500px
+:align: center
+
+Images from [Wikipedia](wiki:Frustule) of frustules from four species of diatoms (scale bar = 10 micrometres in a, c and d and 20 micrometres in b).
+```
+Diatoms are encased in hard silica shells called [frustules](wiki:Frustule) ([](#frustule)).
+Due in part to the weigh of these frustules, diatom cells can sink relatively rapidly.
+This makes diatoms significant contributors to sequestration into deep water of carbon fixed by photosynthesis in surface layers.
+
+In 2009, [Litchman *et al.*](https://www.pnas.org/doi/epdf/10.1073/pnas.0810891106) published a survey of diatom size distributions across a number of marine and freshwater habitats.
+They found that, though there is a large diversity of sizes in all habitats, the diatom size distribution in marine habitats is consistently larger than the size distribution in freshwater habitats.
+Litchman *et al.* asked, 
+
+>Why does a disparity in size distributions exist between marine and freshwater habitats?
+
+Litchman *et al.* noted that diatoms follow the usual allometries for nutrient uptake and growth:
+Smaller cells have, relative to metabolic demands, faster uptake of nutrients such as nitrogen and phosphorus and better ability to absorb very dilute nutrients.
+Furthermore, smaller cells have faster reproductive rates when replete with nutrients than larger cells.
+Both of these factors favor smaller cells, raising an even more fundamental question,
+
+>Why do large diatoms exist, when small ones have advantages in both nutrient uptake and maximum growth rate?
+
+
+## Mixed layers
+Most aquatic environments are vertically stratified some or all the time, meaning that there is vertical variation in water properties such as temperature and salinity.
+Typically, surface waters tend (at least seasonally) to be higher temperature (e.g., because they are warmed by the sun or warm air) and/or lower salinity than deeper waters.
+This variation, known as *stable stratification*, means that the water in surface layers is less dense than water in deeper layers.
+
+In the absence of a mechanism to energetically stir water in a stably stratified water column, near-surface water will remain near-surface, and deep water will remain deep, indefinitely.
+The primary stirring mechanism in most oceanic and lake environments is wind, which causes waves, currents and tubulence in surface waters.
+Stirring from wind typically overcomes stratification near the surface.
+However, it usually penetrates only partway into a water column.
+
+Within this near-surface zone of penetration, wind-induced turbulence mixes water so that temperature and salinity are relatively uniform. 
+This zone is called the [mixed layer](wiki:Mixed_layer).
+Within the mixed layer, stratification has been lost, so that cells or nutrients at one level within the mixed layer can easily be transported to another level within the layer.
+
+However, there remains a density difference between water in the mixed layer and deeper water.
+That means it takes substantial extra energy to mix lighter mixed layer water with denser water from below the mixed layer.
+This extra energy is supplied episodically by events such as storms and internal waves.
+
+Like phytoplankton in general, diatoms typically inhabit the mixed_layer) within aquatic environments.
+As these cells grow and reproduce, they consume nutrients.
+Once nutrients are depleted, they can be replaced only by mixing events that replace some of the nutrient-depleted surface water with nutrient-rich deep water.
+Concurrently, some near-surface water is moved deeper, below the mixed layer.
+Diatoms and other phytoplankton cells in that water are then typically lost into deep water, where they are unable to photosynthesize and eventually die or are eaten.
+
+
+Litchman *et al.* noted that among the differences between typical marine and freshwater habitats are:
+1. Mixed layers in marine habitats tend to be deeper than mixed layers in lakes.
+2. Nitrogen (nitrate) is more often limiting for diatom growth in marine systems, while phosphorus is more often limiting for diatom growth in freshwater systems.
+
+The significance of the first point is that losses due to cells being lost from the mixed layer due to their own sinking velocities are lower when mixed layers are deeper.
+Cell losses due to sinking may be higher for larger diatom cells than for smaller cells[^sink].
+If so, higher losses from shallow mixed layers might favor small, rarely lost cells over larger, more frequently lost cells.
+
+[^sink]: This is likely dependent on the condition of the diatom: healthy cells may be able to regulate their densities to prevent sinking, while starved cells may not.
+
+The significance of the second point is that diatom cells can store key nutrients, such as nitrogen and phosphorus.
+However, because they are stored within different parts of cells, diatoms' storage capacities have different allometries for nitrogen than for phosphorus.
+Larger diatoms have disproportionately higher storage capacity than smaller cells.
+
+
+
+Of course, that means some of the surface water was mi
+
+
+the well-mixed surface zone
+
+However that mixing occurs only within that near-surface zone.
+Below the penetration
+
+
+The mixed 
+
+Among the differences they noted between typical marine and freshwater habitats are 
+
+
+A placeholder for a page showing observations from Litchman et al. (2009) showing that marine diatom size distributions are larger than freshwater diatoms.
+
+Describes mixed layers and deep-water mixing events in both environments, and poses their hypothesis for environmental differences.
+
+This is the [allometry](../../../content/overview/allometry.md) page.
+
