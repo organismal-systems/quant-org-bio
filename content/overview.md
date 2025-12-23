@@ -46,10 +46,10 @@ For example, it has been argued that, in terms of foraging, [bacteria are scale 
 
 ### Nothing is big or small by itself
 Measuring birth interval as a fraction of lifespan is just one example of thinking about metrics like "large", "small", "fast" and "slow" as relative comparisons between elements affecting organisms. 
-That is, nothing is "big" or "small" by itself &ndash; a metric, state or rate characteristic of an organism are large or small only relative to other comparable metrics, states and rates.
+That is, nothing is "big" or "small" by itself &ndash; a metric, state or rate characteristic of an organism is large or small only relative to other comparable metrics, states and rates.
 
 More generally, it is typical for many factors to affect how an organism functions, but almost always only a subset of these factors have a significant effect in any given scenario. 
-Exploiting scaling and dynamic similarity to identify hidden relationships and identify dominant *vs.* negligible mechanisms effecting organism function is an effective but underutilized approach in Organismal Biology. 
+Exploiting scaling and dynamic similarity to identify hidden relationships and identify dominant *vs.* negligible mechanisms affecting organism function is an effective but underutilized approach in Organismal Biology. 
 For instance, if in our example emigration occurs in addition to births and deaths, knowing that the emigration rate is much lower than the death rate we could justify neglecting emigration in a population model, while if it is on a par with the death rate then we know that it cannot be ignored.
 
 Providing readers with opportunities to understand and practice this way of thinking about Organismal Biology, with an eye towards applying it in their own investigations, is a major theme in this book. 
