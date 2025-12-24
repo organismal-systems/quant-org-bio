@@ -1,6 +1,7 @@
 # 🛼 Implications of allometry for diatom aquaculture and carbon sequestration
 For diatoms competing for nutrients in mixed layers, 
 
+Activities frame with linkages orgs w higher lower levels 
 
 
 ## Aquaculture

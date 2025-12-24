@@ -203,14 +203,17 @@ class diatoms:
         print('\n***Period-averaged statistics: standing stocks (also in standingstocks.txt)***\n')
         tabhdr = ['i','s','10^s','N','Q/Qmin','BV','R']
         tabdata = []
+        BVtotal = 0.
         for i,s in enumerate(self.sizes):
             w = [i,s,10**s,Navgs[-1][i],Qavgs[-1][i]/self.Qmin[i],Navgs[-1][i]*10**self.sizes[i],Ravg[-1]]
             tabdata.append(w)
+            BVtotal += Navgs[-1][i]*10**self.sizes[i]
         print(tabulate(tabdata,tabhdr,floatfmt=".3g"))
         with open('standingstocks.txt','w') as sfile:
             sfile.write('i,s,10^s,N,Q/Qmin,BV,R\n')
             for i,s in enumerate(self.sizes):
                 sfile.write(f'{i},{s:.3g},{10**s:.3g},{Navgs[-1][i]:.3g},{Qavgs[-1][i]/self.Qmin[i]:.3g},{Navgs[-1][i]*10**self.sizes[i]:.3g},{Ravg[-1]:.3g}\n')
+        print(f'\nTotal biovolume = {BVtotal:.3g}\n')
         # Period-averaged losses
         print('\n\n***Period-averaged statistics: biovolume losses per day to mortality (M), sinking (S) and mixing (L) (also in losses.txt)***\n')
         tabhdr = ['i','s','10^s','M','S','L']

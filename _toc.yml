@@ -68,6 +68,8 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
           - file: subrepos/demography/DiatomSizeESS/ModelInterface.md
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity2.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity3.md
           - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
           - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
