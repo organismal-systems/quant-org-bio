@@ -108,10 +108,20 @@ class diatoms:
         Ns = self.Ns.copy()
         if reset:  # zero out populations before seeding
             Ns *= 0.
-        if sizes:  # a list is provided of size classes to seed
+        if isinstance(sizes,list):  # a list is provided of size classes to seed
+            #print(f'seeding size classes {sizes} using list mode')
+            for i in sizes:
+                Ns[i] += N
+        elif isinstance(sizes,int):  # a list is provided of size classes to seed
+            #print(f'seeding size classes {sizes} using list mode')
             Ns[sizes] += N
-        else:      # seed all size classes
+        elif sizes=='all':      # seed all size classes
+            #print('seeding all size classes using "all" mode')
             Ns += N
+        else:
+            print('Invalid size selection! Skipping...')
+            print(sizes)
+            return
         # Initialize total initial nutrient (resource), R, which
         # must be non-negative
         R = self.a*self.Rdeep - (Ns*self.Qs).sum()

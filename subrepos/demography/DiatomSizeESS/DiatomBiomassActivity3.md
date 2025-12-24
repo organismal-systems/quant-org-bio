@@ -18,3 +18,6 @@ To get started:
 2. Launch the [model](./DiatomSizeESS.ipynb) on Binder, and generate the user interface with **Run all cells**.
 3. Initialize a new diatom population using the default parameters, by clicking on the **Set up population** button.
 4. Scroll down to the **Seeding...** section; seed the population with diatoms of the smallest size class, by **setting** $i=0$ in the textbox (replacing "all"), then clicking the **Seed cell population** button.
+   
+   Note that, if there are 8 size classes, these are numbered 0 to 7.
+5. Scroll down to the **Setting mixing events...* section, and click on the **Run simulation** button ising the default settings.
