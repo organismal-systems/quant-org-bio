@@ -66,6 +66,7 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
           - file: subrepos/demography/DiatomSizeESS/AllometrySizeSelection.md
           - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
+          - file: subrepos/demography/DiatomSizeESS/ModelInterface.md
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity.md
           - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
           - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md

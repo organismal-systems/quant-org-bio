@@ -60,7 +60,7 @@ An alternative is to track cohorts of juveniles, measuring changes in abundance,
 From cohort data, *combined with a modeling framework that provides quantitative predictions based on alternative mortality regimes*, inferences can be made regarding plausible rates and mechanisms of mortality in the observed juvenile population (e.g. [](https://doi.org/10.1046/j.1461-0248.2003.00443.x)).
 
 Another way in which observations are constrained is in considering the consequences of hypothetical alternatives to observed characteristics such as morphology or life history.
-Organisms that do not exist cannot be observed, but models that correctly reflect the key underlying mechanisms can give quantitative assessments of how hypothetical variation of extant organisms might function.
+Organisms that do not exist cannot be observed, but models that correctly reflect the key underlying mechanisms can give quantitative assessments of how hypothetical variations of extant organisms might function.
 These models could give insight into *why* these variant don't exist, in the context of implied changes in performance or distribution, or evolutionary costs and benefits.
 
 ***Models are tools for communicating biological knowledge across organizational levels.***

@@ -6,13 +6,12 @@ project:
   subtitle: Selected topics and executable examples
   copyright: "2025"
   description: A collection of executable models and quantitative explorations in organismal biology
-  exports:
-    - format: tex
-      template: plain_latex_book
-      output: exports/QOB.tex
-    - format: docx
-      output: exports/QOB.docx
-    - format: md
+  #exports:
+  #  - format: tex
+  #    template: plain_latex_book
+  #    output: exports/QOB.tex
+  #  - format: docx
+  #    output: exports/QOB.docx
   keywords: [models]
   authors:
     - name: Daniel Grünbaum
