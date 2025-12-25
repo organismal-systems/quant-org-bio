@@ -218,6 +218,9 @@ class diatoms:
         print('\n\n***Period-averaged statistics: biovolume losses per day to mortality (M), sinking (S) and mixing (L) (also in losses.txt)***\n')
         tabhdr = ['i','s','10^s','M','S','L']
         tabdata = []
+        Mtotal = 0.
+        Stotal = 0.
+        Ltotal = 0.
         for i,s in enumerate(self.sizes):
             BVavg_i = Navgs[-1][i]*10**self.sizes[i]   # period-averaged biovolume for the ith size class
             M = self.m * BVavg_i                       # "background" mortality for the ith size class, in BV/day units 
@@ -229,7 +232,13 @@ class diatoms:
             #L = (BVend_i-BVstart_i)/self.t_mix         # mixing loss mortality for the ith size class, in BV/day units
             w = [i,s,10**s,M,S,L]
             tabdata.append(w)
+            Mtotal += M
+            Stotal += S
+            Ltotal += L
         print(tabulate(tabdata,tabhdr,floatfmt=".3g"))
+        print(f'\nTotal background mortality = {Mtotal:.3g}')
+        print(f'Total sinking mortality = {Stotal:.3g}')
+        print(f'Total mixing mortality = {Ltotal:.3g}')
         with open('losses.txt','w') as sfile:
             sfile.write('i,s,10^s,M,S,L\n')
             for i,s in enumerate(self.sizes):
@@ -275,7 +284,7 @@ class diatoms:
             Nplot = Nax.semilogy(self.t_data,Ns[:,i]*10**self.sizes[i],label=legend_lab)
         Nax.set_ylabel('Biovolume')
         Nax.set_xlabel('Time (days)')
-        Nax.legend()
+        #Nax.legend()
         Nax.set_ylim(bottom=0.1)
         # Plot resource (nutrient)
         Rax = self.fig1.add_subplot(313)
@@ -303,7 +312,7 @@ class diatoms:
             N2plot = N2ax.semilogy(t_avg,Navgs[:,i]*10**self.sizes[i],label=legend_lab)
         N2ax.set_ylabel('Period-averaged biovolume')
         N2ax.set_xlabel('Time (days)')
-        N2ax.legend()
+        #N2ax.legend()
         N2ax.set_ylim(bottom=0.1)
         # Plot resource (nutrient)
         R2ax = self.fig2.add_subplot(313)
