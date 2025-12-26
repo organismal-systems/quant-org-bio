@@ -8,7 +8,7 @@ Activities frame with linkages orgs w higher lower levels
 
 The point of this activity is to assess biomass extraction in an aquaculture setting, analogous to a mixing event.
 
-
+can look at variations in $a$?
 
 The metric is biovolume removed in a mixing event, plus biovolume lost by sinking
 
@@ -45,3 +45,4 @@ For comparability, we will use a standard set of diatom sizes for the basic mode
 For these parameter combinations:
 
 
+ 

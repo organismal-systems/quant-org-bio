@@ -3,9 +3,12 @@
 [Litchman *et al.* (2009)](https://www.pnas.org/doi/epdf/10.1073/pnas.0810891106)'s model used allometries of growth, nutrient uptake and nutrient storage quotas to predict the size-specific standing stocks of diatoms (expressed as biovolume) across variation in [mixed layer](./MixedLayers.md) characteristics.
 
 In this Activity, we assume that that
->The size-specific standing stock of diatoms is a **proxy** for primary production, availability to grazers and pathogens, and intensity of competition among primary producers.
+> - The size-specific standing stock of diatoms is a **proxy** for primary production and availability to grazers and pathogens.
+> - The mixed layer nutrient is a **proxy** for the intensity of competition among primary producers.
 
-In making this assumption, we should be clear that it is a simplification, but that the results may still be informative.
+By "proxy", we mean that standing stocks and nutrient concentration is in some way an indicator, for example by being proportional or indicating increasing or decreasing trends.
+
+In making this assumption, we should be clear that using proxies in this way is a simplification, but that the results may notetheless be indicative of the underlying ecological patterns.
 
 ## Grazers and pathogens
 The rationale for assuming that standing stock is a plausible proxy for trophic impacts is that:
@@ -26,9 +29,9 @@ It is also plausible to assume that competition for light is affected by standin
 ## Primary production
 The rationale for assuming that standing stock is a plausible proxy for primary production is that:
 - primary production is roughly proportional to the number of cells in the water; and,
-- a large diatom cell likely has faster primary production than a small diatom cell; since the model does not have a more detailed calculation for this size dependence, cell volume is the best available metric.
+- a large diatom cell likely has faster primary production than a small diatom cell; because the model does not have a more detailed calculation for this size dependence, cell volume is the best available metric.
 
-Therefore the product of cell number and cell volume &ndash; that is, the biovolume &ndash; is roughly proportional to the size-specific diatom primary production. 
+Keeping in mind the strengths and weaknesses of this rationale, we proceed assuming that the product of cell number and cell volume &ndash; that is, the biovolume &ndash; is roughly proportional to the size-specific diatom primary production. 
 
 ## Competition for light and nutrients
 Diatoms compete with other primary producers for light and nutrients.
@@ -37,10 +40,10 @@ The rationale for assuming that standing stock is a plausible proxy for competit
 - shading is roughly proportional to the number of cells in the water; and,
 - a large diatom cell likely has stronger shading effects than a small diatom cell; since the model does not have a more detailed calculation for this size dependence, cell volume is the best available metric.
 
-Therefore the product of cell number and cell volume &ndash; that is, the biovolume &ndash; is roughly proportional to the size-specific competitive impacts of diatom cells due to shading.
+Keeping in mind the strengths and weaknesses of this rationale, we proceed assuming that the product of cell number and cell volume &ndash; that is, the biovolume &ndash; is roughly proportional to the size-specific competitive impacts of diatom cells due to shading.
 
 The rationale for assuming that standing stock is a plausible proxy for light is that:
 - the model directly calculates the availability of nutrient (nitrate) in the mixed layer; and,
 - it is assumed that the mixed-layer nutrient concentration is the limiting resource for diatom growth, so it is plausible that is also limiting for other primary producers.
 
-Therefore the mixed-layer nutrient concentration, $R$, is a plausible metric for size-specific competitive impacts of diatom cells due to nutrient limitation.
+Keeping in mind the strengths and weaknesses of this rationale, we proceed assuming that the mixed-layer nutrient concentration, $R$, is a plausible metric for size-specific competitive impacts of diatom cells due to nutrient limitation.
