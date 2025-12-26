@@ -98,9 +98,6 @@
     <loc>http://localhost:3000/diatomallometry</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/evolutionarilystablestates</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/allometrysizeselection</loc>
   </url>
   <url>
@@ -117,6 +114,12 @@
   </url>
   <url>
     <loc>http://localhost:3000/diatombiomassactivity3</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/diatombiomassactivity4</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/evolutionarilystablestates</loc>
   </url>
   <url>
     <loc>http://localhost:3000/diatomessactivity</loc>
