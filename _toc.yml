@@ -70,8 +70,10 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity2.md
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity3.md
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity4.md
-          - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
           - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity2.md
+          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity3.md
+          - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
           - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
   - caption: Spatial Dynamics

@@ -1,22 +1,64 @@
-# 🛼 Size-dependence of diatom biovolume in mixed layers: Data collection
-Your task in this Activity is to execute a "mini-study" that addresses the [motivating questions](./DiatomBiomassActivity.md) by tabulating the standing stocks of diatoms and nutrient across several cell sizes and several mixing intervals.
-You will [interpret those data](./DiatomBiomassActivity4.md) in terms of the motivating questions, in the next phase of the mini-study.
+# 🛼 Evolutionarily Stable States for diatoms in mixed layers: Data collection
+In this mini-study, you will focus on a scenario most relevant to marine diatom communities and  mixed layers.
 
-## Part 1: Consequences of diatom cell size
-The first part of this activity is a survey of biovolume and nutrient concentrations for different size classes of diatoms growing in monoculture, across a series of mixing event intervals.
-The primary tool in your mini-study, aside from the model, is a spreadsheet in which you tabulate and plot model results.
 To get started:
 1. Open a spreadsheet, in which to tabulate and plot results.
+   - In a convenient place in the spreadsheet, enter four column heading in a row: "s", "T8", "T10", and "T16".
+   
+   These represent the cell size, and three mixing layer intervals to test.
+   - Under "s", enter three numbers in a column: 2.5, 7.17 and 12.5.
+   
+   These represent the sizes of cells you will test.
 2. Launch the [model](./DiatomSizeESS.ipynb) on Binder, and generate the user interface with **Run all cells**.
-3. Initialize a new diatom population using the default parameters, by clicking on the **Set up population** button.
+3. In the **Setting up diatom variants and mixed layer characteristics** section, use the following parameter choices:
+%   - Set the number of size classes to $n_{sizes}=16$, to better reflect potential marine diatom diversity.
+   - Set the mixed layer depth to $z_m=100$, to reflect the relatively deep mixed layers in some marine habitats.
 4. Scroll down to the **Seeding...** section.  
+   - Set the number of cells to seed to $N_i=0.1$.  
+   
+   This will be the "small" initial number of cells to test whether a diatom variant can invade.
+5. In the **Setting mixing event intervals, and running the simulation** section, 
+   - Set the number of intervals to $n_{pers}=128$.
+
+These parameters will apply to all the model runs in this Activity.
+
+## Part 1: Is a diatom variant an ESS?
+Because testing all size classes would take too long, in this part of the Activity we will only test three: the smallest, largest and middle sizes $i=0,7,15$ or $s=2.5,7.17,12.5$
+
+Starting with the smallest diatom size class:
+
+6. Initialize a new diatom population using the default parameters, by clicking on the **Set up population** button.
+7. Scroll down to the **Seeding...** section.  
    Seed the population with diatoms of the smallest size class, by **setting** $0$ **in the $i$ textbox** (replacing "all"), then clicking the **Seed cell population** button.
    
-   Note that, if there are 8 size classes, these are numbered 0 to 7.
+   Note that, if there are 16 size classes, these are numbered 0 to 15.
 
-5. Click on the **Run simulation** button using the default settings.
+8. Click on the **Run simulation** button.
+   - Check the Period-averaged biovolume plot (middle plot in the first figure) to make sure the period-averaged diatom population and nutrient concentrations have reached constant values.
+   - If they are still varying, click **Run simulation** again to restart the simulation.
+   
+   If they are constant, cells of size class $i=0$ have established the conditions under which you can test whether they are an ESS.
+   
+9. Return to the **Seeding...** section, replace the size class $0$ with "all". 
+   - Click **Seed cell population**
+   
+   You have now introduced a small population of potentially invading variants.
+   
+10. Click on the **Run simulation** button again.
+   - Check the Period-averaged biovolume plot (middle plot in the first figure) to make sure the period-averaged diatom population and nutrient concentrations have reached constant values.
+   - If they are still varying, click **Run simulation** again to restart the simulation.
 
-6. In the results labelled "Period-averaged statistics: standing stocks", look at the $BV$ column. This contains the biovolume of diatoms in each size class. Because you seeded cells only in the smallest size class ($s=2.5$), only this size class has nonzero biovolume.
+11. Determine whether any size classes have "invaded":
+	- Check the cell numbers column in the top output table ("standing stocks").
+	- If *all* of the variants, other than the original ESS candidate, have populations above the number you seeded ($10^{-1}$) then there are no "successful" invaders, and **the original size class is an ESS**.
+	
+		In the spreadsheet cell representing the original size class and the mixing interval, enter a 1.
+	- If *any* of the variants, other than the original ESS candidate, have populations above the number you seeded ($10^{-1}$) then these are "successful" invaders, and **the original size class is *not* an ESS**.
+	
+		In the spreadsheet cell representing the original size class and the mixing interval, enter a 0.
+
+12. Repeat steps 6 through 11 for each size class $i=0,7,15$ and each mixing interval $T_{mix}=8, 10, 16$.
+
 
 7. Choose a part of your spreadsheet in which to tabulate biovolume, and another part to tabulate nutrient concentration. 
    - In the biovolume part of your spreadsheet, enter "s" into a cell, and under it enter the size of diatom you just simulated (2.5). This is the column for diatom size in your biovolume table.  
