@@ -32,26 +32,29 @@ parts:
     - file: content/biomechanics/README.md
       sections:
       - file: subrepos/biomechanics/ReSphere/README.md
-      - file: subrepos/biomechanics/ReSphere/RScontext.md
-      - file: subrepos/biomechanics/ReSphere/RSorganization.md
-      - file: subrepos/biomechanics/ReSphere/RS1intro.md
-      - file: subrepos/biomechanics/ReSphere/RSforces.md
-      - file: subrepos/biomechanics/ReSphere/RSmasses.md
-      - file: subrepos/biomechanics/ReSphere/RScharact.md
-      - file: subrepos/biomechanics/ReSphere/RScharact2.md
-      - file: subrepos/biomechanics/ReSphere/RSscaling.md
-      - file: subrepos/biomechanics/ReSphere/RSlookup.md
-      - file: subrepos/biomechanics/ReSphere/CdSphere.ipynb
-      #- file: subrepos/biomechanics/ReSphere/RS1context.md
-      - file: subrepos/biomechanics/ReSphere/RS1.ipynb
-      - file: subrepos/biomechanics/ReSphere/RS2context.md
-      #- file: subrepos/biomechanics/ReSphere/RS2.ipynb
-      - file: subrepos/biomechanics/ReSphere/RS2exec.ipynb
-      #- file: subrepos/biomechanics/ReSphere/RS2.md
-      - file: subrepos/biomechanics/ReSphere/RS3context.md
-      - file: subrepos/biomechanics/ReSphere/RS3.ipynb
-      - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
-      - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
+        sections:
+          - file: subrepos/biomechanics/ReSphere/RScontext.md
+          - file: subrepos/biomechanics/ReSphere/RSorganization.md
+          - file: subrepos/biomechanics/ReSphere/RS1intro.md
+          - file: subrepos/biomechanics/ReSphere/RSforces.md
+          - file: subrepos/biomechanics/ReSphere/RSmasses.md
+          - file: subrepos/biomechanics/ReSphere/RScharact.md
+          - file: subrepos/biomechanics/ReSphere/RScharact2.md
+          - file: subrepos/biomechanics/ReSphere/RSscaling.md
+          - file: subrepos/biomechanics/ReSphere/RSlookup.md
+          - file: subrepos/biomechanics/ReSphere/CdSphere.ipynb
+          #- file: subrepos/biomechanics/ReSphere/RS1context.md
+          - file: subrepos/biomechanics/ReSphere/RS1.ipynb
+          - file: subrepos/biomechanics/ReSphere/RS2context.md
+          #- file: subrepos/biomechanics/ReSphere/RS2.ipynb
+          - file: subrepos/biomechanics/ReSphere/RS2exec.ipynb
+          #- file: subrepos/biomechanics/ReSphere/RS2.md
+          - file: subrepos/biomechanics/ReSphere/RS3context.md
+          - file: subrepos/biomechanics/ReSphere/RS3.ipynb
+      - file: subrepos/biomechanics/ChimeraSwim/README.md
+        sections:
+          - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
+          - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
   - caption: Demography
     numbered: true
     chapters:
