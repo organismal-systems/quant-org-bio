@@ -146,6 +146,18 @@
     <loc>http://localhost:3000/litchman-etal2009</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/readme-4</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/estlarvswim</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/fsl</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/fsl2d</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/osymindex</loc>
   </url>
 </urlset>
