@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/EstuaryLarva.git
+	branch = main
+	commit = 8d3b608a6c837f92a9e92b616d3937ff9e58cb60
+	parent = 699cf1af10a8f114bcc723d67b921b5bc2535376
+	method = merge
+	cmdver = 0.4.3
