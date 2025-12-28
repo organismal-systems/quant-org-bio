@@ -87,6 +87,8 @@ parts:
     - file: content/spatial-dynamics/README.md
       sections:
         - file: subrepos/spatial-dynamics/EstuaryLarva/EstLarvSwim.ipynb
+        - file: subrepos/spatial-dynamics/FSL/FSL.ipynb
+        - file: subrepos/spatial-dynamics/FSL/FSL2D.ipynb
         
   - caption: Experimental Methods
   - caption: Appendix
