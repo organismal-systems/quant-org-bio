@@ -82,6 +82,12 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
   - caption: Spatial Dynamics
+    numbered: true
+    chapters:
+    - file: content/spatial-dynamics/README.md
+      sections:
+        - file: subrepos/spatial-dynamics/EstuaryLarva/EstLarvSwim.ipynb
+        
   - caption: Experimental Methods
   - caption: Appendix
     numbered: true
