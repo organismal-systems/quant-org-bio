@@ -25,4 +25,4 @@ In this Activity, you will use Litchman *et al.*'s model to conduct a "mini-stud
 
 The outcome of the mini-study will be a set of plots, showing which diatom variants form ESS's under different mixing layer conditions, and whether or not initially mixed populations approach these ESS's as an outcome of long-term competition.
 
-These plots, and the timescales over which ESS and competitive outcomes occur, will suggest further hypotheses, with implications that could be tested with empirical studies, about when and where the model's results reflect diatom populations in nature.
+These plots, and the timescales over which ESS and competitive outcomes occur, will suggest further hypotheses, with implications that could be tested with empirical studies about when and where the model's results reflect diatom populations in nature.
