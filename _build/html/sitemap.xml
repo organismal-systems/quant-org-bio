@@ -1,166 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:3000/sitemap_style.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3002/sitemap_style.xsl" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000</loc>
+    <loc>http://localhost:3002</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/overview-1</loc>
+    <loc>http://localhost:3002/overview-1</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/how2use</loc>
+    <loc>http://localhost:3002/how2use</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/terms</loc>
+    <loc>http://localhost:3002/terms</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/example</loc>
+    <loc>http://localhost:3002/example</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/allometry</loc>
+    <loc>http://localhost:3002/allometry</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/scale-models</loc>
+    <loc>http://localhost:3002/scale-models</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/nondim-numbers</loc>
+    <loc>http://localhost:3002/nondim-numbers</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme</loc>
+    <loc>http://localhost:3002/readme</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-1</loc>
+    <loc>http://localhost:3002/readme-1</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rscontext</loc>
+    <loc>http://localhost:3002/rscontext</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rsorganization</loc>
+    <loc>http://localhost:3002/rsorganization</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs1intro</loc>
+    <loc>http://localhost:3002/rs1intro</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rsforces</loc>
+    <loc>http://localhost:3002/rsforces</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rsmasses</loc>
+    <loc>http://localhost:3002/rsmasses</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rscharact</loc>
+    <loc>http://localhost:3002/rscharact</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rscharact2</loc>
+    <loc>http://localhost:3002/rscharact2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rsscaling</loc>
+    <loc>http://localhost:3002/rsscaling</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rslookup</loc>
+    <loc>http://localhost:3002/rslookup</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/cdsphere</loc>
+    <loc>http://localhost:3002/cdsphere</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs1</loc>
+    <loc>http://localhost:3002/rs1</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs2context</loc>
+    <loc>http://localhost:3002/rs2context</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs2exec</loc>
+    <loc>http://localhost:3002/rs2exec</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs3context</loc>
+    <loc>http://localhost:3002/rs3context</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/rs3</loc>
+    <loc>http://localhost:3002/rs3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-2</loc>
+    <loc>http://localhost:3002/readme-2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/chimeraswim</loc>
+    <loc>http://localhost:3002/chimeraswim</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/chimeradesign</loc>
+    <loc>http://localhost:3002/chimeradesign</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-3</loc>
+    <loc>http://localhost:3002/readme-3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/larvalcloning</loc>
+    <loc>http://localhost:3002/larvalcloning</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/cloningmodes</loc>
+    <loc>http://localhost:3002/cloningmodes</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/larvalcloningmodel</loc>
+    <loc>http://localhost:3002/larvalcloningmodel</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/marinefreshdiatoms</loc>
+    <loc>http://localhost:3002/marinefreshdiatoms</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/mixedlayers</loc>
+    <loc>http://localhost:3002/mixedlayers</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomallometry</loc>
+    <loc>http://localhost:3002/diatomallometry</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/allometrysizeselection</loc>
+    <loc>http://localhost:3002/allometrysizeselection</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomsizeess</loc>
+    <loc>http://localhost:3002/diatomsizeess</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/modelinterface</loc>
+    <loc>http://localhost:3002/modelinterface</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatombiomassactivity</loc>
+    <loc>http://localhost:3002/diatombiomassactivity</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatombiomassactivity2</loc>
+    <loc>http://localhost:3002/diatombiomassactivity2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatombiomassactivity3</loc>
+    <loc>http://localhost:3002/diatombiomassactivity3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatombiomassactivity4</loc>
+    <loc>http://localhost:3002/diatombiomassactivity4</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomessactivity</loc>
+    <loc>http://localhost:3002/diatomessactivity</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomessactivity2</loc>
+    <loc>http://localhost:3002/diatomessactivity2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomessactivity3</loc>
+    <loc>http://localhost:3002/diatomessactivity3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomessactivity4</loc>
+    <loc>http://localhost:3002/diatomessactivity4</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/evolutionarilystablestates</loc>
+    <loc>http://localhost:3002/evolutionarilystablestates</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/diatomaquacultureactivity</loc>
+    <loc>http://localhost:3002/diatomaquacultureactivity</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/litchman-etal2009</loc>
+    <loc>http://localhost:3002/litchman-etal2009</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-4</loc>
+    <loc>http://localhost:3002/croaker</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/estlarvswim</loc>
+    <loc>http://localhost:3002/cholera4b</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/fsl</loc>
+    <loc>http://localhost:3002/spiror</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/fsl2d</loc>
+    <loc>http://localhost:3002/readme-4</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/osymindex</loc>
+    <loc>http://localhost:3002/estlarvswim</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3002/fsl</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3002/fsl2d</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3002/wolfsheeppersist</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3002/osymindex</loc>
   </url>
 </urlset>
