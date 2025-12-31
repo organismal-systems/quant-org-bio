@@ -73,16 +73,22 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
           - file: subrepos/demography/DiatomSizeESS/ModelInterface.md
           - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity2.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity3.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity4.md
+            sections:
+              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity2.md
+              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity3.md
+              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity4.md
           - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity2.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity3.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity4.md
-          - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
+            sections:
+              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity2.md
+              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity3.md
+              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity4.md
+              - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
           - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
+      - file: subrepos/demography/Croaker/Croaker.ipynb
+      - file: subrepos/demography/KoelleCholera/cholera4b.ipynb
+      - file: subrepos/demography/Spirorbis/Spiror.ipynb
+
   - caption: Spatial Dynamics
     numbered: true
     chapters:
@@ -91,6 +97,7 @@ parts:
         - file: subrepos/spatial-dynamics/EstuaryLarva/EstLarvSwim.ipynb
         - file: subrepos/spatial-dynamics/FSL/FSL.ipynb
         - file: subrepos/spatial-dynamics/FSL/FSL2D.ipynb
+        - file: subrepos/spatial-dynamics/MesaWolfSheep/WolfSheepPersist.ipynb
         
   - caption: Experimental Methods
   - caption: Appendix
