@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/CroakerASM.git
+	branch = main
+	commit = ebd5ef9c987cf7a18f96d33b40b54f0f0af5ec89
+	parent = a58bd87ca999bb910659d6b0fe2bb967743ccf5c
+	method = merge
+	cmdver = 0.4.3
