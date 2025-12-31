@@ -1,0 +1,3253 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.22)  22 DEC 2025 17:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**QOB.tex
+(./QOB.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(/home/dg/texmf/tex/latex/caption/tex/caption.sty
+Package: caption 2021/06/30 v3.6-dev Customizing captions (AR)
+
+(/home/dg/texmf/tex/latex/caption/tex/caption3.sty
+Package: caption3 2021/07/03 v2.3-dev caption3 kernel (AR)
+\caption@tempdima=\dimen151
+\captionmargin=\dimen152
+\caption@leftmargin=\dimen153
+\caption@rightmargin=\dimen154
+\caption@width=\dimen155
+\caption@indent=\dimen156
+\caption@parindent=\dimen157
+\caption@hangindent=\dimen158
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count199
+\c@continuedfloat=\count266
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count267
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count268
+\cp@tempcnt=\count269
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip52
+\fb@frw=\dimen159
+\fb@frh=\dimen160
+\FrameRule=\dimen161
+\FrameSep=\dimen162
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+\@linkdim=\dimen163
+\Hy@linkcounter=\count272
+\Hy@pagecounter=\count273
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count274
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count275
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen164
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count276
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count277
+\c@Item=\count278
+\c@Hfootnote=\count279
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks21
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen167
+\enit@toks=\toks22
+\enit@inbox=\box51
+\enit@count@id=\count282
+\enitdp@description=\count283
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen168
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen169
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen170
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count289
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks24
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks25
+\eqnshift@=\dimen171
+\alignsep@=\dimen172
+\tagshift@=\dimen173
+\tagwidth@=\dimen174
+\totwidth@=\dimen175
+\lineht@=\dimen176
+\@envbody=\toks26
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count296
+\@cmidlb=\count297
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count298
+\@lastruleclass=\count299
+\@thisrulewidth=\dimen189
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 58
+.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box54
+)
+(./QOB.aux (./QOB-overview-1.aux) (./QOB-how2use.aux) (./QOB-terms.aux)
+(./QOB-example.aux) (./QOB-allometry.aux) (./QOB-scale-models.aux)
+(./QOB-nondim-numbers.aux) (./QOB-readme.aux) (./QOB-readme-1.aux)
+(./QOB-rscontext.aux) (./QOB-rsorganization.aux) (./QOB-rs1intro.aux)
+(./QOB-rsforces.aux) (./QOB-rsmasses.aux) (./QOB-rscharact.aux)
+(./QOB-rscharact2.aux) (./QOB-rsscaling.aux) (./QOB-rslookup.aux)
+(./QOB-cdsphere.aux) (./QOB-rs1.aux) (./QOB-rs2context.aux) (./QOB-rs2exec.aux)
+(./QOB-rs3context.aux) (./QOB-rs3.aux) (./QOB-readme-2.aux)
+(./QOB-larvalcloning.aux) (./QOB-cloningmodes.aux)
+(./QOB-larvalcloningmodel.aux) (./QOB-marinefreshdiatoms.aux)
+(./QOB-mixedlayers.aux) (./QOB-diatomallometry.aux)
+(./QOB-evolutionarilystablestates.aux) (./QOB-allometrysizeselection.aux)
+(./QOB-diatomsizeess.aux) (./QOB-diatombiomassactivity.aux)
+(./QOB-diatomessactivity.aux) (./QOB-diatomaquacultureactivity.aux)
+(./QOB-litchman-etal2009.aux) (./QOB-osymindex.aux))
+\openout1 = `QOB.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=53.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen190
+\scratchbox=\box55
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen191
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen192
+\caption@adjustwidth@linewidth=\dimen193
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 58.
+
+(./QOB.out) (./QOB.out)
+\@outlinefile=\write3
+\openout3 = `QOB.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
+3.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
+3.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+63.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+63.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 63.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 63.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}] (./QOB.toc
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...odels in Organismal Biology?}{2}{chapter.1}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...odels in Organismal Biology?}{2}{chapter.1}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ... An example Jupyter notebook}{8}{chapter.4}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 6.
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...racteristics vary with size}{11}{chapter.5}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...racteristics vary with size}{11}{chapter.5}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...els and dynamic similarity}{13}{chapter.6}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...�� Non-dimensional numbers}{17}{chapter.7}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...nt of organisms in fluid}{22}{section.7.3}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...nt of organisms in fluid}{22}{section.7.3}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...nt of organisms in fluid}{22}{section.7.3}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧭 (U+1F9ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...7.4}🧭️ Organization}{23}{section.7.4}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...7.4}🧭️ Organization}{23}{section.7.4}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...d what slows them down)?}{24}{section.7.5}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...d what slows them down)?}{24}{section.7.5}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...g on immersed particles?}{26}{section.7.6}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...g on immersed particles?}{26}{section.7.6}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...'' and ``wake momentum''}{27}{section.7.7}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...'' and ``wake momentum''}{27}{section.7.7}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...ting drag forces, Part 1}{29}{section.7.8}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...ting drag forces, Part 1}{29}{section.7.8}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 ...mal characteristics}{29}{subsection.7.8.1}
+                                                  % [1
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...ting drag forces, Part 2}{33}{section.7.9}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...ting drag forces, Part 2}{33}{section.7.9}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 ...es: the Reynolds Number}{36}{section.7.10}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ces on moving particles}{39}{section.7.11}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ces on moving particles}{39}{section.7.11}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...The Coefficient of Drag}{40}{section.7.12}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 ...s moving through fluids}{42}{section.7.13}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...currents and turbulence}{45}{section.7.14}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...currents and turbulence}{45}{section.7.14}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 ...dvection and turbulence}{48}{section.7.15}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 ...out of moving organisms}{51}{section.7.16}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 ...out of moving organisms}{51}{section.7.16}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...ar transport mechanisms}{53}{section.7.17}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...ine invertebrate larvae}{56}{section.7.18}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...� Modes of cloning}{57}{subsection.7.18.1}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...nvertebrate larvae}{58}{subsection.7.18.2}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 ...an freshwater habitats?}{61}{section.7.19}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 ...an freshwater habitats?}{61}{section.7.19}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...s and mixed layers}{63}{subsection.7.19.1}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...s and mixed layers}{63}{subsection.7.19.1}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 ...storage in diatoms}{64}{subsection.7.19.2}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 ...storage in diatoms}{64}{subsection.7.19.2}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ... natural selection}{65}{subsection.7.19.3}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ... natural selection}{65}{subsection.7.19.3}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 ...lection in diatoms}{66}{subsection.7.19.4}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 ...lection in diatoms}{66}{subsection.7.19.4}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...ating environments}{68}{subsection.7.19.5}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 ...s in mixed layers}{75}{subsection.7.19.6}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...s in mixed layers}{76}{subsection.7.19.7}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...bon sequestration}{77}{subsection.7.19.8}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 ...diatom demography}{78}{subsection.7.19.9}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 ...diatom demography}{78}{subsection.7.19.9}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 ...diatom demography}{78}{subsection.7.19.9}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 🧭 (U+1F9ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 ...ties and Quick Explainers}{83}{chapter.8}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 ...ties and Quick Explainers}{83}{chapter.8}
+                                                  %
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}])
+\tf@toc=\write4
+\openout4 = `QOB.toc'.
+
+ [3] [1
+
+
+]
+\openout2 = `QOB-overview-1.aux'.
+
+
+(./QOB-overview-1.tex
+Chapter 1.
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�️ Why use models in Organismal Biology?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�️ Why use models in Organismal Biology?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+3.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [2
+
+
+]
+
+Package natbib Warning: Citation `Schneider_2003' on page 3 undefined on input 
+line 61.
+
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 
+     
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 
+     
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[3{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}])
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \include{QOB-overview-1}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \include{QOB-overview-1}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[4]
+\openout2 = `QOB-how2use.aux'.
+
+ (./QOB-how2use.tex
+Chapter 2.
+[5
+
+
+
+
+]) [6]
+\openout2 = `QOB-terms.aux'.
+
+ (./QOB-terms.tex
+Chapter 3.
+) [7
+
+
+
+
+]
+\openout2 = `QOB-example.aux'.
+
+ (./QOB-example.tex
+Chapter 4.
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{🧮 An example Jupyter notebook}
+                                              
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.7 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.8 }
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+5.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [8
+
+
+
+
+]
+Overfull \hbox (4.94548pt too wide) in paragraph at lines 96--96
+[]\T1/lmtt/m/n/10.95 # spherical egg, with some calculated geometrical properti
+es relevant to respiration,[] 
+ []
+
+
+Overfull \hbox (50.93535pt too wide) in paragraph at lines 102--102
+[]\T1/lmtt/m/n/10.95 print(f'The surface area of an egg of diameter {egg.d} is 
+{egg.A} and its volume is {egg.V}')[] 
+ []
+
+
+Overfull \hbox (85.42775pt too wide) in paragraph at lines 106--106
+[]\T1/lmtt/m/n/10.95 The surface area of an egg of diameter 2 is 12.56637061435
+9172 and its volume is 4.1887902047863905[] 
+ []
+
+
+Overfull \hbox (50.93535pt too wide) in paragraph at lines 133--133
+[]\T1/lmtt/m/n/10.95 # Now let's look at some plotting examples. Here is an exa
+mple of making a list of diameters,[] 
+ []
+
+
+Overfull \hbox (50.93535pt too wide) in paragraph at lines 133--133
+[]\T1/lmtt/m/n/10.95 # using that to make lists of volumes and areas, and then 
+making a plot of area and volume as[] 
+ []
+
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \end{verbatim}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[9]
+<files/715359d2b32d36cf23548b8dce21d56a.png, id=510, 405.4347pt x 301.3659pt>
+File: files/715359d2b32d36cf23548b8dce21d56a.png Graphic file (type png)
+<use files/715359d2b32d36cf23548b8dce21d56a.png>
+Package pdftex.def Info: files/715359d2b32d36cf23548b8dce21d56a.png  used on in
+put line 135.
+(pdftex.def)             Requested size: 338.58632pt x 251.6925pt.
+)
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \include{QOB-example}
+                          
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[10 <./files/715359d2b32d36cf23548b8dce21d56a.png>]
+\openout2 = `QOB-allometry.aux'.
+
+ (./QOB-allometry.tex
+Chapter 5.
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... organismal characteristics vary with size}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... organismal characteristics vary with size}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/f51f7dfbc9ea77c954642c24a07009ce.pdf, id=519, 532.03008pt x 359.67992pt>
+
+File: files/f51f7dfbc9ea77c954642c24a07009ce.pdf Graphic file (type pdf)
+<use files/f51f7dfbc9ea77c954642c24a07009ce.pdf>
+Package pdftex.def Info: files/f51f7dfbc9ea77c954642c24a07009ce.pdf  used on in
+put line 11.
+(pdftex.def)             Requested size: 302.31053pt x 204.38852pt.
+[11
+
+
+
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./files/f51f7dfbc9ea77c954642c
+24a07009ce.pdf>])
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \include{QOB-allometry}
+                            
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \include{QOB-allometry}
+                            
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[12]
+\openout2 = `QOB-scale-models.aux'.
+
+ (./QOB-scale-models.tex
+Chapter 6.
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...r{🧮 Scale models and dynamic similarity}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 14.
+
+<files/e5654a2e9aa9b5bac3ad41462051f621.jpeg, id=558, 481.8pt x 361.35pt>
+File: files/e5654a2e9aa9b5bac3ad41462051f621.jpeg Graphic file (type jpg)
+<use files/e5654a2e9aa9b5bac3ad41462051f621.jpeg>
+Package pdftex.def Info: files/e5654a2e9aa9b5bac3ad41462051f621.jpeg  used on i
+nput line 26.
+(pdftex.def)             Requested size: 338.58632pt x 253.94678pt.
+[13
+
+
+
+
+ <./files/e5654a2e9aa9b5bac3ad41462051f621.jpeg>]
+Overfull \hbox (33.68915pt too wide) in paragraph at lines 55--55
+[]\T1/lmtt/m/n/10.95 display_yotube_video("https://www.youtube.com/watch?v=Q9qZ
+cN5iX2k", width=800, height=600)[] 
+ []
+
+<files/825d0837c8c173ff66ee9f8ce59f9970.jpeg, id=564, 481.8pt x 361.35pt>
+File: files/825d0837c8c173ff66ee9f8ce59f9970.jpeg Graphic file (type jpg)
+<use files/825d0837c8c173ff66ee9f8ce59f9970.jpeg>
+Package pdftex.def Info: files/825d0837c8c173ff66ee9f8ce59f9970.jpeg  used on i
+nput line 57.
+(pdftex.def)             Requested size: 338.58632pt x 253.94678pt.
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 T
+      he criterion an engineer used to determine dynamic similarity is calle...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[14 <./files/825d0837c8c173ff66ee9f8ce59f9970.jpeg>]
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[15])
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \include{QOB-scale-models}
+                               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[16]
+\openout2 = `QOB-nondim-numbers.aux'.
+
+ (./QOB-nondim-numbers.tex
+Chapter 7.
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{📖 Non-dimensional numbers}
+                                          
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[17
+
+
+
+
+]
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \item T
+             he logic leading to the shape constants $c_{A_{sphere}}$ and $c...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[18])
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \include{QOB-nondim-numbers}
+                                 
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[19] [20
+
+
+
+]
+\openout2 = `QOB-readme.aux'.
+
+ (./QOB-readme.tex)
+\openout2 = `QOB-readme-1.aux'.
+
+ (./QOB-readme-1.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.6 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.7 }
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.10 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.11 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.14 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.15 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.18 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.19 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [21
+
+
+
+
+]
+\openout2 = `QOB-rscontext.aux'.
+
+ (./QOB-rscontext.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...{📖️️ Movement of organisms in fluid}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...{📖️️ Movement of organisms in fluid}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...{📖️️ Movement of organisms in fluid}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [22
+
+
+
+]
+\openout2 = `QOB-rsorganization.aux'.
+
+ (./QOB-rsorganization.tex
+
+! LaTeX Error: Unicode character 🧭 (U+1F9ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{🧭️ Organization}
+                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{🧭️ Organization}
+                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [23
+
+
+
+]
+\openout2 = `QOB-rs1intro.aux'.
+
+ (./QOB-rs1intro.tex
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...through fluids (and what slows them down)?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...through fluids (and what slows them down)?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 28.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 39.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 39.
+[24
+
+
+
+]) [25]
+\openout2 = `QOB-rsforces.aux'.
+
+ (./QOB-rsforces.tex
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...e the forces acting on immersed particles?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...e the forces acting on immersed particles?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [26
+
+
+
+]
+\openout2 = `QOB-rsmasses.aux'.
+
+ (./QOB-rsmasses.tex
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ue to ``added mass'' and ``wake momentum''}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ue to ``added mass'' and ``wake momentum''}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[27
+
+
+
+]) [28]
+\openout2 = `QOB-rscharact.aux'.
+
+ (./QOB-rscharact.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ion{📖️ Estimating drag forces, Part 1}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ion{📖️ Estimating drag forces, Part 1}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/sphere1-a20ecddba3e5fbe62d25b98806d51b43.png, id=686, 432.61626pt x 736.
+7525pt>
+File: files/sphere1-a20ecddba3e5fbe62d25b98806d51b43.png Graphic file (type png
+)
+<use files/sphere1-a20ecddba3e5fbe62d25b98806d51b43.png>
+Package pdftex.def Info: files/sphere1-a20ecddba3e5fbe62d25b98806d51b43.png  us
+ed on input line 25.
+(pdftex.def)             Requested size: 145.11053pt x 247.11995pt.
+[29
+
+
+
+ <./files/sphere1-a20ecddba3e5fbe62d25b98806d51b43.png>]
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.50 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.51 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<files/Jumars_etal1993props-323ca5d88412e58785b829c6dd082d74.png, id=694, 857.2
+025pt x 1468.48625pt>
+File: files/Jumars_etal1993props-323ca5d88412e58785b829c6dd082d74.png Graphic f
+ile (type png)
+<use files/Jumars_etal1993props-323ca5d88412e58785b829c6dd082d74.png>
+Package pdftex.def Info: files/Jumars_etal1993props-323ca5d88412e58785b829c6dd0
+82d74.png  used on input line 57.
+(pdftex.def)             Requested size: 386.95897pt x 662.89659pt.
+
+LaTeX Warning: Float too large for page by 9.66077pt on input line 60.
+
+! Undefined control sequence.
+<argument> ...ve for freshwater ends at $0\degree 
+                                                  C$; that is, at the freezi...
+l.68 ...res, because its freezing point is lower.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[30] [31 <./files/Jumars_etal1993props-323ca5d88412e58785b829c6dd082d74.png>])
+[32]
+\openout2 = `QOB-rscharact2.aux'.
+
+ (./QOB-rscharact2.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ion{📖️ Estimating drag forces, Part 2}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ion{📖️ Estimating drag forces, Part 2}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/sphere2-e9035e89685bbdcb58f6c3df5158d79a.png, id=723, 476.78125pt x 482.
+80376pt>
+File: files/sphere2-e9035e89685bbdcb58f6c3df5158d79a.png Graphic file (type png
+)
+<use files/sphere2-e9035e89685bbdcb58f6c3df5158d79a.png>
+Package pdftex.def Info: files/sphere2-e9035e89685bbdcb58f6c3df5158d79a.png  us
+ed on input line 31.
+(pdftex.def)             Requested size: 290.22107pt x 293.8984pt.
+[33
+
+
+
+ <./files/sphere2-e9035e89685bbdcb58f6c3df5158d79a.png>]
+<files/sphere3-5afe40d23896f2845041b5be12c869dd.png, id=731, 548.0475pt x 509.9
+05pt>
+File: files/sphere3-5afe40d23896f2845041b5be12c869dd.png Graphic file (type png
+)
+<use files/sphere3-5afe40d23896f2845041b5be12c869dd.png>
+Package pdftex.def Info: files/sphere3-5afe40d23896f2845041b5be12c869dd.png  us
+ed on input line 66.
+(pdftex.def)             Requested size: 290.22107pt x 270.02272pt.
+ [34 <./files/sphere3-5afe40d23896f2845041b5be12c869dd.png>]) [35]
+\openout2 = `QOB-rsscaling.aux'.
+
+ (./QOB-rsscaling.tex
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...aling of fluid forces: the Reynolds Number}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[36
+
+
+
+] [37]) [38]
+\openout2 = `QOB-rslookup.aux'.
+
+ (./QOB-rslookup.tex
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...bles'' for drag forces on moving particles}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...bles'' for drag forces on moving particles}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [39
+
+
+
+]
+\openout2 = `QOB-cdsphere.aux'.
+
+ (./QOB-cdsphere.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{🧮 The Coefficient of Drag}
+                                          
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png, id=805, 594.22pt x 447.
+6725pt>
+File: files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png Graphic file (type 
+png)
+<use files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png>
+Package pdftex.def Info: files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png 
+ used on input line 13.
+(pdftex.def)             Requested size: 338.58632pt x 255.094pt.
+[40
+
+
+
+ <./files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+) [41]
+\openout2 = `QOB-rs1.aux'.
+
+ (./QOB-rs1.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ulations for spheres moving through fluids}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png, id=830, 628.3475pt x 220.825
+pt>
+File: files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png Graphic file (type png)
+<use files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png>
+Package pdftex.def Info: files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png  used
+ on input line 19.
+(pdftex.def)             Requested size: 338.58632pt x 118.991pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 22.
+
+<files/RS1_2-0ebe0f881139fe598e479496de52c118.png, id=832, 644.4075pt x 105.393
+75pt>
+File: files/RS1_2-0ebe0f881139fe598e479496de52c118.png Graphic file (type png)
+<use files/RS1_2-0ebe0f881139fe598e479496de52c118.png>
+Package pdftex.def Info: files/RS1_2-0ebe0f881139fe598e479496de52c118.png  used
+ on input line 45.
+(pdftex.def)             Requested size: 338.58632pt x 55.37756pt.
+[42
+
+
+
+ <./files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png> <./files/RS1_2-0ebe0f8811
+39fe598e479496de52c118.png>]
+<files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png, id=845, 626.34pt x 98.3675pt
+>
+File: files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png Graphic file (type png)
+<use files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png>
+Package pdftex.def Info: files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png  used
+ on input line 58.
+(pdftex.def)             Requested size: 338.58632pt x 53.17618pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 61.
+
+<files/RS1_4-1d1d76f43861a44fd225a422d64c1834.png, id=847, 648.4225pt x 273.02p
+t>
+File: files/RS1_4-1d1d76f43861a44fd225a422d64c1834.png Graphic file (type png)
+<use files/RS1_4-1d1d76f43861a44fd225a422d64c1834.png>
+Package pdftex.def Info: files/RS1_4-1d1d76f43861a44fd225a422d64c1834.png  used
+ on input line 96.
+(pdftex.def)             Requested size: 338.58632pt x 142.56277pt.
+<files/RS1_5-09bd30f67b420b9006df5a9a4e9483da.png, id=848, 626.34pt x 161.60374
+pt>
+File: files/RS1_5-09bd30f67b420b9006df5a9a4e9483da.png Graphic file (type png)
+<use files/RS1_5-09bd30f67b420b9006df5a9a4e9483da.png>
+Package pdftex.def Info: files/RS1_5-09bd30f67b420b9006df5a9a4e9483da.png  used
+ on input line 107.
+(pdftex.def)             Requested size: 338.58632pt x 87.36089pt.
+) [43 <./files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png>] [44 <./files/RS1_4-
+1d1d76f43861a44fd225a422d64c1834.png> <./files/RS1_5-09bd30f67b420b9006df5a9a4e
+9483da.png>]
+\openout2 = `QOB-rs2context.aux'.
+
+ (./QOB-rs2context.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...rt of organisms by currents and turbulence}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...rt of organisms by currents and turbulence}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[45
+
+
+
+] [46]) [47]
+\openout2 = `QOB-rs2exec.aux'.
+
+ (./QOB-rs2exec.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...icle transport by advection and turbulence}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[48
+
+
+
+]
+<files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png, id=909, 625.33624pt x 103.38
+625pt>
+File: files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png Graphic file (type png)
+<use files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png>
+Package pdftex.def Info: files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png  used
+ on input line 89.
+(pdftex.def)             Requested size: 338.58632pt x 55.97917pt.
+<files/RS2_2-8a05dbf47c94c256583be1cf778acf32.png, id=910, 888.31876pt x 435.62
+75pt>
+File: files/RS2_2-8a05dbf47c94c256583be1cf778acf32.png Graphic file (type png)
+<use files/RS2_2-8a05dbf47c94c256583be1cf778acf32.png>
+Package pdftex.def Info: files/RS2_2-8a05dbf47c94c256583be1cf778acf32.png  used
+ on input line 94.
+(pdftex.def)             Requested size: 338.58632pt x 166.0387pt.
+<files/RS2_3-86c380b6a6026051a64d371f2e706b0c.png, id=911, 917.4275pt x 431.612
+5pt>
+File: files/RS2_3-86c380b6a6026051a64d371f2e706b0c.png Graphic file (type png)
+<use files/RS2_3-86c380b6a6026051a64d371f2e706b0c.png>
+Package pdftex.def Info: files/RS2_3-86c380b6a6026051a64d371f2e706b0c.png  used
+ on input line 99.
+(pdftex.def)             Requested size: 338.58632pt x 159.29237pt.
+<files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png, id=912, 924.45375pt x 450.68
+375pt>
+File: files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png Graphic file (type png)
+<use files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png>
+Package pdftex.def Info: files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png  used
+ on input line 104.
+(pdftex.def)             Requested size: 338.58632pt x 165.06554pt.
+) [49 <./files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png>] [50 <./files/RS2_2-
+8a05dbf47c94c256583be1cf778acf32.png> <./files/RS2_3-86c380b6a6026051a64d371f2e
+706b0c.png> <./files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png>]
+\openout2 = `QOB-rs3context.aux'.
+
+
+(./QOB-rs3context.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...� Mass flux in and out of moving organisms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...� Mass flux in and out of moving organisms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Undefined control sequence.
+l.21 ... by diffusion alone, and $\mathcal{Sh} \gt
+                                                   1$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 ... very large values (e.g. $\mathcal{Sh} \gt
+                                                   100$) for some rapidly mo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[51
+
+
+
+]) [52]
+\openout2 = `QOB-rs3.aux'.
+
+ (./QOB-rs3.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... of flow on molecular transport mechanisms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/RS3_2-efd9df72d48eed69b6a28522a69d3556.png, id=947, 611.28375pt x 428.60
+126pt>
+File: files/RS3_2-efd9df72d48eed69b6a28522a69d3556.png Graphic file (type png)
+<use files/RS3_2-efd9df72d48eed69b6a28522a69d3556.png>
+Package pdftex.def Info: files/RS3_2-efd9df72d48eed69b6a28522a69d3556.png  used
+ on input line 14.
+(pdftex.def)             Requested size: 338.58632pt x 237.3991pt.
+<files/RS3_1-ecfbbb20731816e5af7e77e554ca59f9.png, id=948, 650.43pt x 295.1025p
+t>
+File: files/RS3_1-ecfbbb20731816e5af7e77e554ca59f9.png Graphic file (type png)
+<use files/RS3_1-ecfbbb20731816e5af7e77e554ca59f9.png>
+Package pdftex.def Info: files/RS3_1-ecfbbb20731816e5af7e77e554ca59f9.png  used
+ on input line 33.
+(pdftex.def)             Requested size: 338.58632pt x 153.62077pt.
+) [53
+
+
+
+ <./files/RS3_2-efd9df72d48eed69b6a28522a69d3556.png>] [54 <./files/RS3_1-ecfbb
+b20731816e5af7e77e554ca59f9.png>] [55
+
+
+
+]
+\openout2 = `QOB-readme-2.aux'.
+
+ (./QOB-readme-2.tex)
+\openout2 = `QOB-larvalcloning.aux'.
+
+
+(./QOB-larvalcloning.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...📖 Cloning in marine invertebrate larvae}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+) [56
+
+
+
+
+]
+\openout2 = `QOB-cloningmodes.aux'.
+
+ (./QOB-cloningmodes.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{📖 Modes of cloning}
+                                      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+) [57
+
+
+
+]
+\openout2 = `QOB-larvalcloningmodel.aux'.
+
+ (./QOB-larvalcloningmodel.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...s of cloning in marine invertebrate larvae}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[58
+
+
+
+]
+<files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png, id=994, 1083.04625pt x 657.4
+5625pt>
+File: files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png Graphic file (type png)
+<use files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png>
+Package pdftex.def Info: files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png  used
+ on input line 100.
+(pdftex.def)             Requested size: 338.58632pt x 205.53482pt.
+) [59] [60 <./files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png>]
+\openout2 = `QOB-marinefreshdiatoms.aux'.
+
+
+(./QOB-marinefreshdiatoms.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...larger in marine than freshwater habitats?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...larger in marine than freshwater habitats?}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<files/007a69803b8bc933ed0c6d95198e9803.png, id=1013, 337.26pt x 275.5896pt>
+File: files/007a69803b8bc933ed0c6d95198e9803.png Graphic file (type png)
+<use files/007a69803b8bc933ed0c6d95198e9803.png>
+Package pdftex.def Info: files/007a69803b8bc933ed0c6d95198e9803.png  used on in
+put line 18.
+(pdftex.def)             Requested size: 302.31053pt x 247.03592pt.
+
+Package natbib Warning: Citation `Litchman_2009' on page 61 undefined on input 
+line 27.
+
+[61
+
+
+
+ <./files/007a69803b8bc933ed0c6d95198e9803.png (PNG copy)>]) [62]
+\openout2 = `QOB-mixedlayers.aux'.
+
+
+(./QOB-mixedlayers.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{📖️  Diatoms and mixed layers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{📖️  Diatoms and mixed layers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [63
+
+
+
+]
+\openout2 = `QOB-diatomallometry.aux'.
+
+ (./QOB-diatomallometry.tex
+
+! LaTeX Error: Unicode character 📖 (U+1F4D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...utrient acquisition and storage in diatoms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...utrient acquisition and storage in diatoms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [64
+
+
+
+]
+\openout2 = `QOB-evolutionarilystablestates.aux'.
+
+ (./QOB-evolutionarilystablestates.tex
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...edicting the outcomes of natural selection}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...edicting the outcomes of natural selection}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [65
+
+
+
+]
+\openout2 = `QOB-allometrysizeselection.aux'.
+
+ (./QOB-allometrysizeselection.tex
+
+! LaTeX Error: Unicode character 🏞 (U+1F3DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�� Allometry and size-selection in diatoms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�� Allometry and size-selection in diatoms}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `Litchman_2009' on page 66 undefined on input 
+line 22.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\T1/lmr/m/n/10.95 Half-saturation con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+\T1/lmr/m/n/10.95 stant for nu-tri-ent
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 63--64
+[]\T1/lmr/m/n/10.95 Minimum quota for
+ []
+
+[66
+
+
+
+]) [67]
+\openout2 = `QOB-diatomsizeess.aux'.
+
+ (./QOB-diatomsizeess.tex
+
+! LaTeX Error: Unicode character 🧮 (U+1F9EE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ion of diatoms in fluctuating environments}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `Litchman_2009' on page 68 undefined on input 
+line 3.
+
+[68
+
+
+
+] [69]
+<files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png, id=1123, 816.04875pt x 120.
+45pt>
+File: files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png Graphic file (type png)
+
+<use files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png>
+Package pdftex.def Info: files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png  use
+d on input line 125.
+(pdftex.def)             Requested size: 338.58632pt x 49.97662pt.
+<files/DESS_2-3839c3797fce4cfce1407969f4d7a45d.png, id=1124, 155.58125pt x 36.1
+35pt>
+File: files/DESS_2-3839c3797fce4cfce1407969f4d7a45d.png Graphic file (type png)
+
+<use files/DESS_2-3839c3797fce4cfce1407969f4d7a45d.png>
+Package pdftex.def Info: files/DESS_2-3839c3797fce4cfce1407969f4d7a45d.png  use
+d on input line 130.
+(pdftex.def)             Requested size: 338.58632pt x 78.64862pt.
+<files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e1e6.png, id=1125, 412.54124pt x 98.3
+675pt>
+File: files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e1e6.png Graphic file (type png)
+
+<use files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e1e6.png>
+Package pdftex.def Info: files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e1e6.png  use
+d on input line 160.
+(pdftex.def)             Requested size: 338.58632pt x 80.73389pt.
+<files/DESS_4-38653c36dc417e2501c944e11941d7b3.png, id=1126, 145.54375pt x 37.1
+3875pt>
+File: files/DESS_4-38653c36dc417e2501c944e11941d7b3.png Graphic file (type png)
+
+<use files/DESS_4-38653c36dc417e2501c944e11941d7b3.png>
+Package pdftex.def Info: files/DESS_4-38653c36dc417e2501c944e11941d7b3.png  use
+d on input line 165.
+(pdftex.def)             Requested size: 338.58632pt x 86.40506pt.
+ [70 <./files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png> <./files/DESS_2-3839
+c3797fce4cfce1407969f4d7a45d.png> <./files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e
+1e6.png>]
+<files/DESS_5-332074078098a2fd7c662a26669b70dc.png, id=1136, 366.36874pt x 96.3
+6pt>
+File: files/DESS_5-332074078098a2fd7c662a26669b70dc.png Graphic file (type png)
+
+<use files/DESS_5-332074078098a2fd7c662a26669b70dc.png>
+Package pdftex.def Info: files/DESS_5-332074078098a2fd7c662a26669b70dc.png  use
+d on input line 190.
+(pdftex.def)             Requested size: 338.58632pt x 89.05806pt.
+<files/DESS_6-c5d8be50f4b80e9228dfdd4364d8478c.png, id=1137, 143.53625pt x 33.1
+2375pt>
+File: files/DESS_6-c5d8be50f4b80e9228dfdd4364d8478c.png Graphic file (type png)
+
+<use files/DESS_6-c5d8be50f4b80e9228dfdd4364d8478c.png>
+Package pdftex.def Info: files/DESS_6-c5d8be50f4b80e9228dfdd4364d8478c.png  use
+d on input line 195.
+(pdftex.def)             Requested size: 338.58632pt x 78.13748pt.
+<files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png, id=1138, 729.72626pt x 504.
+88625pt>
+File: files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png Graphic file (type png)
+
+<use files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png>
+Package pdftex.def Info: files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png  use
+d on input line 200.
+(pdftex.def)             Requested size: 338.58632pt x 234.2612pt.
+<files/period-9c360f75156b8b6bdfeb19bb39c969ad.png, id=1139, 578.16pt x 867.24p
+t>
+File: files/period-9c360f75156b8b6bdfeb19bb39c969ad.png Graphic file (type png)
+
+<use files/period-9c360f75156b8b6bdfeb19bb39c969ad.png>
+Package pdftex.def Info: files/period-9c360f75156b8b6bdfeb19bb39c969ad.png  use
+d on input line 205.
+(pdftex.def)             Requested size: 338.58632pt x 507.86931pt.
+<files/averaged-f9af1048b9d6ba986f40a616373366f3.png, id=1140, 578.16pt x 867.2
+4pt>
+File: files/averaged-f9af1048b9d6ba986f40a616373366f3.png Graphic file (type pn
+g)
+<use files/averaged-f9af1048b9d6ba986f40a616373366f3.png>
+Package pdftex.def Info: files/averaged-f9af1048b9d6ba986f40a616373366f3.png  u
+sed on input line 210.
+(pdftex.def)             Requested size: 338.58632pt x 507.86931pt.
+) [71 <./files/DESS_4-38653c36dc417e2501c944e11941d7b3.png> <./files/DESS_5-332
+074078098a2fd7c662a26669b70dc.png> <./files/DESS_6-c5d8be50f4b80e9228dfdd4364d8
+478c.png>] [72 <./files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png>] [73 <./fi
+les/period-9c360f75156b8b6bdfeb19bb39c969ad.png>] [74 <./files/averaged-f9af104
+8b9d6ba986f40a616373366f3.png>]
+\openout2 = `QOB-diatombiomassactivity.aux'.
+
+
+(./QOB-diatombiomassactivity.tex
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...pendence of diatom biomass in mixed layers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package natbib Warning: Citation `Litchman_2009' on page 75 undefined on input 
+line 10.
+
+) [75
+
+
+
+]
+\openout2 = `QOB-diatomessactivity.aux'.
+
+ (./QOB-diatomessactivity.tex
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... Stable States for diatoms in mixed layers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [76
+
+
+
+]
+\openout2 = `QOB-diatomaquacultureactivity.aux'.
+
+ (./QOB-diatomaquacultureactivity.tex
+
+! LaTeX Error: Unicode character 🛼 (U+1F6FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...iatom aquaculture and carbon sequestration}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) [77
+
+
+
+]
+\openout2 = `QOB-litchman-etal2009.aux'.
+
+ (./QOB-litchman-etal2009.tex
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...��  A ``quota'' model of diatom demography}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...��  A ``quota'' model of diatom demography}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...��  A ``quota'' model of diatom demography}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[78
+
+
+
+]) [79{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [80
+
+
+
+] [81
+
+]
+[82
+
+]
+\openout2 = `QOB-osymindex.aux'.
+
+ (./QOB-osymindex.tex
+Chapter 8.
+
+! LaTeX Error: Unicode character 🧭 (U+1F9ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ..., Context, Activities and Quick Explainers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ..., Context, Activities and Quick Explainers}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Runaway argument?
+{\includegraphics [width=0.7\linewidth ]{files/b77199e99a54e59b2e3c03\ETC.
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.6 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+l.7 }
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<files/Oi_1-20b4e99d99d6bfa73f069dbfa532ca9f.png, id=1248, 506.89375pt x 65.243
+74pt>
+File: files/Oi_1-20b4e99d99d6bfa73f069dbfa532ca9f.png Graphic file (type png)
+<use files/Oi_1-20b4e99d99d6bfa73f069dbfa532ca9f.png>
+Package pdftex.def Info: files/Oi_1-20b4e99d99d6bfa73f069dbfa532ca9f.png  used 
+on input line 21.
+(pdftex.def)             Requested size: 338.58632pt x 43.58167pt.
+<files/Oi_2-a5c399db04564ead852bce9d46e9e38a.png, id=1249, 566.115pt x 226.8475
+pt>
+File: files/Oi_2-a5c399db04564ead852bce9d46e9e38a.png Graphic file (type png)
+<use files/Oi_2-a5c399db04564ead852bce9d46e9e38a.png>
+Package pdftex.def Info: files/Oi_2-a5c399db04564ead852bce9d46e9e38a.png  used 
+on input line 26.
+(pdftex.def)             Requested size: 338.58632pt x 135.67686pt.
+<files/Oi_3-f256b8f8a7171a7773bf066d88ed9f1d.png, id=1250, 444.66125pt x 254.95
+25pt>
+File: files/Oi_3-f256b8f8a7171a7773bf066d88ed9f1d.png Graphic file (type png)
+<use files/Oi_3-f256b8f8a7171a7773bf066d88ed9f1d.png>
+Package pdftex.def Info: files/Oi_3-f256b8f8a7171a7773bf066d88ed9f1d.png  used 
+on input line 31.
+(pdftex.def)             Requested size: 338.58632pt x 194.13158pt.
+<files/Oi_4-8612f4b73799480c2e028dbe320db5b4.png, id=1251, 541.02126pt x 349.30
+5pt>
+File: files/Oi_4-8612f4b73799480c2e028dbe320db5b4.png Graphic file (type png)
+<use files/Oi_4-8612f4b73799480c2e028dbe320db5b4.png>
+Package pdftex.def Info: files/Oi_4-8612f4b73799480c2e028dbe320db5b4.png  used 
+on input line 36.
+(pdftex.def)             Requested size: 338.58632pt x 218.60823pt.
+<files/Oi_5-5ae8e04ac160316a85e297ef2bd14151.png, id=1252, 496.85625pt x 289.08
+pt>
+File: files/Oi_5-5ae8e04ac160316a85e297ef2bd14151.png Graphic file (type png)
+<use files/Oi_5-5ae8e04ac160316a85e297ef2bd14151.png>
+Package pdftex.def Info: files/Oi_5-5ae8e04ac160316a85e297ef2bd14151.png  used 
+on input line 41.
+(pdftex.def)             Requested size: 338.58632pt x 196.99965pt.
+<files/Oi_7-02a1fbb23abc877129163e4243063233.png, id=1253, 483.8075pt x 66.2475
+pt>
+File: files/Oi_7-02a1fbb23abc877129163e4243063233.png Graphic file (type png)
+<use files/Oi_7-02a1fbb23abc877129163e4243063233.png>
+Package pdftex.def Info: files/Oi_7-02a1fbb23abc877129163e4243063233.png  used 
+on input line 46.
+(pdftex.def)             Requested size: 338.58632pt x 46.36383pt.
+) [83
+
+
+ <./files/Oi_1-20b4e99d99d6bfa73f069dbfa532ca9f.png> <./files/Oi_2-a5c399db0456
+4ead852bce9d46e9e38a.png>]
+
+! LaTeX Error: Unicode character 🧭 (U+1F9ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \include{QOB-osymindex}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \include{QOB-osymindex}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (134.07715pt too wide) has occurred while \output is active
+\T1/lmr/m/sl/10.95 CHAPTER 8.   SEARCHING THE OSYM LIBRARY FOR MODELS, CONTEXT,
+ ACTIVITIES AND QUICK EXPLAINERS \T1/lmr/m/n/10.95 84
+ []
+
+[84 <./files/Oi_3-f256b8f8a7171a7773bf066d88ed9f1d.png> <./files/Oi_4-8612f4b73
+799480c2e028dbe320db5b4.png> <./files/Oi_5-5ae8e04ac160316a85e297ef2bd14151.png
+> <./files/Oi_7-02a1fbb23abc877129163e4243063233.png>]
+No file QOB.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+(./QOB.aux (./QOB-overview-1.aux) (./QOB-how2use.aux) (./QOB-terms.aux)
+(./QOB-example.aux) (./QOB-allometry.aux) (./QOB-scale-models.aux)
+(./QOB-nondim-numbers.aux) (./QOB-readme.aux) (./QOB-readme-1.aux)
+(./QOB-rscontext.aux) (./QOB-rsorganization.aux) (./QOB-rs1intro.aux)
+(./QOB-rsforces.aux) (./QOB-rsmasses.aux) (./QOB-rscharact.aux)
+(./QOB-rscharact2.aux) (./QOB-rsscaling.aux) (./QOB-rslookup.aux)
+(./QOB-cdsphere.aux) (./QOB-rs1.aux) (./QOB-rs2context.aux) (./QOB-rs2exec.aux)
+(./QOB-rs3context.aux) (./QOB-rs3.aux) (./QOB-readme-2.aux)
+(./QOB-larvalcloning.aux) (./QOB-cloningmodes.aux)
+(./QOB-larvalcloningmodel.aux) (./QOB-marinefreshdiatoms.aux)
+(./QOB-mixedlayers.aux) (./QOB-diatomallometry.aux)
+(./QOB-evolutionarilystablestates.aux) (./QOB-allometrysizeselection.aux)
+(./QOB-diatomsizeess.aux) (./QOB-diatombiomassactivity.aux)
+(./QOB-diatomessactivity.aux) (./QOB-diatomaquacultureactivity.aux)
+(./QOB-litchman-etal2009.aux) (./QOB-osymindex.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+Package rerunfilecheck Info: File `QOB.out' has not changed.
+(rerunfilecheck)             Checksum: 5DBFF1E4FCF7E17849B32B7F3550F047;21031.
+ )
+(\end occurred inside a group at level 7)
+
+### semi simple group (level 7) entered at line 5 (\begingroup)
+### semi simple group (level 6) entered at line 49 (\begingroup)
+### semi simple group (level 5) entered at line 17 (\begingroup)
+### semi simple group (level 4) entered at line 13 (\begingroup)
+### semi simple group (level 3) entered at line 9 (\begingroup)
+### semi simple group (level 2) entered at line 5 (\begingroup)
+### semi simple group (level 1) entered at line 6 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 14865 strings out of 476064
+ 253221 string characters out of 5792852
+ 1943975 words of memory out of 5000000
+ 36030 multiletter control sequences out of 15000+600000
+ 673036 words of font info for 97 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 75i,12n,79p,923b,1568s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmtt10.pfb>
+Output written on QOB.pdf (88 pages, 2686528 bytes).
+PDF statistics:
+ 1473 PDF objects out of 1728 (max. 8388607)
+ 1267 compressed objects within 13 object streams
+ 367 named destinations out of 1000 (max. 500000)
+ 842 words of extra memory for PDF output out of 10000 (max. 10000000)
+

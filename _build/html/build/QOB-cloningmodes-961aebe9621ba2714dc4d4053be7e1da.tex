@@ -1,0 +1,33 @@
+\subsection{📖 Modes of cloning}
+
+Across species, cloning occurs in different forms.
+In echinoderms, which represent many of the reported observations of cloning, there are at least two distinct modes of cloning:
+
+\begin{enumerate}
+\item \textit{The echinoid mode of cloning}
+In the cloning mode most commonly observed in echinoids \href{https://en.wikipedia.org/wiki/Sea\_urchin}{sea urchins}, larvae bifurcate during development, partway into their larval duration and prior to reaching competence.
+Each of these clones can either redifferentiate into a complete, smaller larva, or resume growth to reform the lost body parts.
+Whether it redifferentiates or regrows lost parts, each clone has to grow back to a size and developmental stage at which it is competent.
+\end{enumerate}
+
+The model can simulate characteristics of two distinct modes of cloning, exemplified by cloning typically found in Echinoids and Ophiuroids:
+
+\begin{itemize}
+\item In the \textbf{Echinoid mode} of cloning, larvae grow and develop to a threshold size smaller than the size at metamorphosis.
+At this threshold size, some fraction of individuals clone to form two smaller daughters.
+These clones resume growth, and have one of three outcomes:
+
+\begin{enumerate}
+\item They can remain as larvae until fully grown, and then proceed to metamorphosis.
+\item They proceed to metamorphosis before being fully grown, becoming smaller juveniles.
+\item They can remain as larvae, and clone again when they reach a threshold size.
+\end{enumerate}
+
+
+\item In the \textbf{Ophiuroid mode} of cloning, larvae grow past the point of competence.
+These larger larvae then divide into two clones, one of which retains the size and stage needed for competence.
+This clone metamorphoses immediately.
+The other, smaller clone then resumes development, repeating growth and either metamorphosing directly or cloning again to form a metamorph and yet another small clone.
+\end{itemize}
+
+The \texttt{clone\_modelND} model is a simulation of these two cloning stratagies, implemented as a \href{/larvalcloningmodel}{Jupyter notebook}.

@@ -1,0 +1,98 @@
+# ️💡️  A "quota" model of diatom demography
+Litchman *et al.*'s model of competing diatom variants uses the idea of nutrient "quotas" to understand the allometric differences between large and small diatoms in traits such as growth and nutrient consumption[^nut].
+In this context, "growth" refers to cell division &ndash; that is, *growth of the cell population* rather than increase in a given cell's size.
+In their model, quotas represent nutrient storage within cells. 
+When cell take up nutrients, they are placed directly into storage, increasing the cell's quota.
+When the cell grows or divides, it consumes nutrients from its storage, decreasing its quota.
+
+[^nut]: Litchman *et al.* modeled both nitrogen (nitrate) limitation and phosphorus limitation, but here we focus only on nitrogen.
+
+Storage of nutrients has a consequence that is central to Litchman *et al.*'s hypothesis about the larger diatoms present in marine compared to freshwater habitats:
+> Cell growth is determined not by the current nutrient concentration in the water, but by the nutrient quota that reflects past nutrient concentrations.
+
+They hypothesized that  differences in quotas, quantified by the observed allometries in nutrient storage capacity and uptake rates, interact with the fluctuating conditions within mixed layers to favor larger diatoms in marine habitats and smaller diatoms in freshwater habitats.
+Specifically, they hypothesized that, large diatoms with disproportionately large storage can continue growing under some conditions, when small diatoms have exhausted their quotas and ceased to grow.
+
+## Model rationale
+The rationale for Litchman *et al.*'s model is based on accounting for nutrient concentration in the mixed layer, the numbers of cells of different diatom variants, and those cells' nutrient quotas.
+These variants differ in size, and because of allometry also in nutrient storage and uptake rates, growth rates, sinking velocity and many other traits.
+
+The rate at which the number of cells of a given diatom variant changes [between mixing events](MixedLayers.md) can be summarized as:
+```{math}
+:label: W2
+\mathrm{change~in~cell~number} = \mathrm{growth} - \mathrm{mortality} - \mathrm{loss~from~sinking}
+```
+Stored nutrients, accounted for in the diatom cells' quotas, are increased by uptake and decrease when nutrients are withdrawn to fuel growth:
+```{math}
+:label: W1
+\mathrm{change~in~quota} = \mathrm{nutrient~uptake~rate} - \mathrm{consumption~for~growth}
+```
+Finally, the nutrient concentration within the mixed layer is reduced, between mixing events, when nutrients are taken up by diatoms:
+```{math}
+:label: W3
+\mathrm{change~in~nutrient~concentration} = -\mathrm{consumption~by~cells}
+%\mathrm{change~in~nutrient~concentration} = -\mathrm{consumption~by~cells} + \mathrm{import~in~mixing~events}
+```
+In the model, mixing events are assumed to happen instantaneously.
+That is, the model assumes there is an interval of diatom population dynamics as described in Equations [](#W2), [](#W1) and [](#W3).
+Then a mixing event happens, during which no growth, mortality or nutrient uptake occurs.
+Then there is another interval of diatom population dynamics as described in Equations [](#W2), [](#W1) and [](#W3), and another mixing event, and so on in a repeating cycle.
+
+At [mixing events](MixedLayers.md), water is exchanged between the mixed layer and deep water.
+Mixed layer water contains diatoms, which are lost when water containing them is moved out of the mixed layer.
+Deep water contains high nutrient concentration, which is added to the mixed layer when deep water moves into the mixed layer.
+
+## Quantifying rates
+The development of Litchman *et al.*'s model is the process of devising mathematical expressions for each of the terms in  Equations [](#W2), [](#W1) and [](#W3).
+The key logical steps in obtaining these terms are:
+- The metric of size is $s = \log_{10}\mathrm{Cell~Volume}$ where Cell Volume is in $\mu m^3$.
+
+
+- A cell's quota, $Q_i$, increases due to nutrient uptake and decreases when nutrient is used for growth.
+- The rate at which nutrient uptake depends on nutrient concentration, $R$, is a Michaelis-Menton function, 
+```{math}
+:label: A1
+\mathrm{nutrient~ uptake~rate} =  C_1 \frac{R}{R+K_i}
+```
+In words: When 
+- In Equation [](#A1), the coefficient of proportionality $C_1$ for a cell of size $s_i$ is a linear function of the quota, $Q_i$, expressed relative to the cell's minimum quota, $Q_{min,i}$ and maximum quota, $Q_{max,i}$:
+```{math}
+:label: A2
+C_1 = C_2 - C_3\frac{Q_i-Q_{min,i}}{Q_{max,i}-Q_{min,i}}
+```
+- In Equation [](#A2), the coefficients $C_2$ and $C_3$ are constants,
+```{math}
+:label: A3
+C_2 = V^{hi}_{max.i} \\
+C_3 = \left(V^{hi}_{max.i} - V^{lo}_{max.i}  \right)
+```
+- In Equation {}(#A3), $C_2$ is the maximum rate of nutrient uptake, which occurs when the quota is low.
+$C_3$ is the rate at which nutrient uptake decreases at higher quotas.
+Because $C_2=C_3$ when the cell quota is $Q_i = Q_{max,i}$, the cell's nutrient uptake rate approaches zero as its quota approach its maximimum capacity, $Q_{max,i}$.
+- Decrease in a cell's quota due to growth is 
+```{math}
+:label: A4
+ \mathrm{consumption~for~growth} = \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right)
+```
+
+
+
+## Model formulation
+ [ordinary differential equations](wiki:Ordinary_differential_equation)
+ 
+ 
+```{math}
+:label: L1
+\frac{dQ_i}{dt} = \left(V^{hi}_{max.i} - \left(V^{hi}_{max.i} - V^{lo}_{max.i}  \right) \frac{Q_i-Q_{min,i}}{Q_{max,i}-Q_{min,i}} \right) \frac{R}{R+K_i} - \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right)
+```
+
+```{math}
+:label: L2
+\frac{dN_i}{dt} = \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right) N_i - m N_i - \frac{v_i}{z_m} N_i
+```
+```{math}
+:label: L3
+\frac{dR}{dt} = - \sum_i \left(V^{hi}_{max.i} - \left(V^{hi}_{max.i} - V^{lo}_{max.i}  \right) \frac{Q_i-Q_{min,i}}{Q_{max,i}-Q_{min,i}} \right) \frac{R}{R+K_i} N_i
+```
+
+

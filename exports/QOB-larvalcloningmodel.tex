@@ -1,0 +1,101 @@
+\subsection{🧮 Modeling the demographic implications of cloning in marine invertebrate larvae}
+
+This is a graphical interface for using the \texttt{clone\_modelND} (for Non-Dimensional) model of \href{/larvalcloning}{cloning in marine invertebrate larvae}. The \texttt{clone\_modelND} model calculates the size distribution of a cohort of marine invertebrate larvae over time. This cohort represents a group of larvae beginning development at the same time and at the same size. For example, the cohort could represent larvae from the eggs of a single mother, or larvae from the eggs of a local population of mothers that spawn synchronously at a given time and place.
+
+Like most larval life history models in the literature, \textbf{size is assumed in the} \texttt{clone\_modelND} \textbf{model to be a \textit{proxy} for developmental state}. This means that the model does not represent developmental state directly. Instead, it assumes that developmental state is closely coupled to size. For example, a larva is assumed to be competent to settle when it reaches a specific size. This approach means that the model does not exactly describe many details of morphology and life history associated with any given species. However, the more general results of this modeling approach may approximately describe a great many different species.
+
+The model implemented through this notebook can simulate characteristics of \href{/cloningmodes}{two distinct modes of cloning}, exemplified by cloning typically found in Echinoids and Ophiuroids
+In addition, the \texttt{clone\_modelND} model is capable of modeling many scenarios, such as fluctuating environments or multiple potential cloning or metamorphosis sizes, that are not implemented through this Jupyter NoteBook interface. These can be accessed by running the model directly from Python.
+
+\subsubsection{Model structure and parameters}
+
+The \texttt{clone\_modelND} model has two independent variables: larval size, $s$, and time, $t$. It has one dependent variable: $p(s,t)$, the population of larvae of size $s$ at time $t$.
+
+The model tracks how $p(s,t)$ evolves as a function of time, under the influence of four mechanisms:
+
+\begin{itemize}
+\item \textbf{Larval growth and development}
+
+\begin{itemize}
+\item $g_0$ determines the basal growth rate.
+\end{itemize}
+
+
+\item \textbf{Larval mortality}
+
+\begin{itemize}
+\item $m_0$ determines the basal mortality rate.
+\item $\alpha$ determines the \textit{size-dependence} of mortality, e.g. due to predators that preferentially prey on early or late stage larvae ($\alpha<0$ means mortality is higher for early stages; $\alpha>0$ means mortality is higher for late stages; $\alpha=0$ means mortality is the same for all stages).\newline
+\textit{Note:} These parameters interact so changing $\alpha=0$ also affects the impact of $m_0$.
+\end{itemize}
+
+
+\item \textbf{Sizes for developmental milestones}
+
+\begin{itemize}
+\item $s_{egg}$ determines egg size (starting size for a developing larva)
+\item $s_0$ determines the size at cloning
+\item $s_1$ determines the size of one clone (must have $s_1<s_0$). The other clone has size $s_0 -s_1$.
+\item $s_2$ is the size at metamorphosis
+\item $s_{max}$ determines the upper limit of the population size structure plot. It has no effect on the simulation itself.
+\end{itemize}
+
+
+\item \textbf{Probabilities for developmental milestones}
+
+\begin{itemize}
+\item $c_0$ is the probability a larva will clone when it reaches size $s_1$. $c_0=0$ means larvae never clone. $c_0 = 0.5$ means 50\% of larvae clone, etc.
+\item $f_2$ is the probability of metamorphosis at size $s_2$. $f_2=1$ means larvae always metamorphose when they reach size at metamorphosis. $f_2 = 0.5$ means 50\% of larvae metamorphose when they reach size at metamorphosis.
+\end{itemize}
+\end{itemize}
+
+The \textit{initial condition} -- the size distribution at the beginning of a simulation -- is that all larvae are initially of size $s_0$. Because there are only a fixed amount of maternal resources to put into eggs, making larger eggs means there are initially fewer, larger larvae. Conversely, making smaller eggs means there are initially more, smaller larvae.
+
+\subsubsection{Meaningful parameter choices}
+
+The ``ND'' in the name of the \texttt{clone\_modelND} model indicates that the model is \textbf{Non-Dimensional}.
+This means key quantities have been scaled by some parameters, to remove redundant axes of variation.
+
+\begin{itemize}
+\item The population of larvae have been normalized by the total amount of maternal resources. If $N$ is the initial number of larvae, $N \times S_0 = 1$.
+\item The sizes of larvae have been normalized by the size at metamorphosis. This means that you should keep $s_2=1$.
+\item The timescale has been scaled so that $g_0 = 1$. This means, essentially, that if larvae take approximately a week to develop, we count time in weeks. If larvae take a month to develop, we count time in months, etc.
+\end{itemize}
+
+The mortality parameters $m_0$ and $\alpha$ reflect the size and time scales described above. For example, a well developed late stage larva has scaled size approaching $s=1$, while a very early stage larva is close to $s=0$. Also, the mortality rate is relative to the time scale of growth. That is, if growth takes approximately a week to develop, the mortality rate is per week, etc.
+
+\subsubsection{Modes of cloning}
+
+\begin{itemize}
+\item To simulate the \textbf{Echinoid mode} of cloning, set:
+
+$f_2=1$
+
+$s_1<s_2$
+
+$0 \le c_0 < 1$
+
+
+\item To simulate the \textbf{Ophiuroid mode} of cloning:
+
+$f_2<1$
+
+$s_1>s_2$
+
+$c_0 = 1$
+\end{itemize}
+
+\subsubsection{Understanding model output}
+
+The output of this graphical interface for the \texttt{clone\_modelND} model comprises three plots.
+
+\begin{itemize}
+\item The plot at the left is a \textbf{heat map of size distribution of larvae, $p(s,t)$, over larval size ($s$) and time ($t$)}. A vertical line represents the size distribution at one point in simulated time. A horizontal line represents the abundance of larvae of a given size across time.
+\item The plot at the upper right shows the cumulative number of metamorphs, $F(t)$, across time. The cumulative number of metamorphs at the end of the simulation is given just above the end of this line.
+\item The plot at the lower right shows the total number of developing larvae of all sizes, $P(t)$, across time. The total number of larvae still developing at the end of the simulation is given just above the end of this line.
+\end{itemize}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/LCM_1-3334fc61d2d61c73ca7ea486657bea4b.png}
+\end{figure}

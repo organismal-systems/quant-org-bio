@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/KoelleCholera.git
+	branch = main
+	commit = b851ee9c39faf5b0cd2c648040db8e755885d45a
+	parent = 0bee01d258e9c56584a8bcd5b356ca0ef8b3ce2a
+	method = merge
+	cmdver = 0.4.3

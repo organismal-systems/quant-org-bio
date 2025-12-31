@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/MesaWolfSheep.git
+	branch = main
+	commit = 33b44c42b62d466be144398029c34e5da86e5189
+	parent = 57553b4b4ad5c82f9ce063a5796ef0fbab23c7c9
+	method = merge
+	cmdver = 0.4.3

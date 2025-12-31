@@ -1,0 +1,26 @@
+# 📖️  Diatoms and mixed layers
+Most aquatic environments are *vertically stratified* some or all of the time, meaning that there is vertical variation in water properties such as temperature and salinity.
+Typically, surface waters tend (at least seasonally) to be higher temperature (e.g., because they are warmed by the sun or warm air).
+In marine environments, surface layers also often have lower salinity than deeper waters (in coastal regions, this can result from river inflows).
+This variation, in which  water in surface layers is less dense than water in deeper layers, is known as *stable stratification*.
+
+In the absence of a mechanism to energetically stir water in a stably stratified water column, lighter near-surface water will remain near-surface indefinitely, and denser deep water will stay deep.
+The primary stirring mechanism in many oceanic and lake environments is wind, which causes waves, currents and tubulence in surface waters.
+Stirring from wind typically overcomes stratification near the surface.
+However, it usually penetrates only partway into a water column.
+
+Within this near-surface zone of penetration, wind-induced turbulence mixes water so that temperature and salinity are relatively uniform. 
+This zone is called the [mixed layer](wiki:Mixed_layer).
+Within the mixed layer, stratification has been lost, so that cells or nutrients at one level within the mixed layer can easily be transported by turbulence to another level within the mixed layer.
+
+However, there remains a density difference between water in the mixed layer and deeper water.
+That means it takes substantial extra energy to mix lighter mixed layer water with denser water from below the mixed layer.
+This extra energy is supplied only episodically, by events such as storms and internal waves.
+
+Like phytoplankton in general, diatoms typically inhabit the mixed layer within aquatic environments, where there is sunlight to fuel photosynthesis.
+As these cells grow and reproduce, they consume the nutrients in the mixed layer.
+Once nutrients are depleted, they can be replaced only by mixing events that replace some of the nutrient-depleted surface water with nutrient-rich deep water.
+
+Concurrently, some near-surface water is moved deeper, below the mixed layer.
+Diatoms and other phytoplankton cells in that water are then typically lost into deep water, where they are unable to photosynthesize and eventually die or are eaten.
+The net effect of such a mixing event, then, is a simultaneous loss of a fraction of the diatom population (namely, those cells in the mixed layer water that is lost to deep water) and partial replenishment of nutrients in the mixed mixed layer that can support new growth (contained in the formerly nutrient-rich deep water now part of the mixed layer).

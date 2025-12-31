@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/ChimeraSwim.git
+	branch = main
+	commit = 817468d40d28c6045aa497c8461ea8674e4e7ba7
+	parent = 974a58b32f495571f5ea5c97d2ef39b5b46eca05
+	method = merge
+	cmdver = 0.4.3

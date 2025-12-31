@@ -1,0 +1,27 @@
+# 🏞️ Allometry and size-selection in diatoms
+
+To gain a quantitative perspective on the effects of [mixed layer dynamics](MixedLayers.md) on diatoms, Litchman *et al.* (2009) assumed that many diatom characteristics have allometries of the form of [power laws](./allometry.md),
+```{math}
+:label: L0
+log_{10} X = log_{10} a + (b \times s)
+```
+
+
+
+
+analyzed data from the 
+
+The analysis Litchman *et al.* used for their model 
+A placeholder for a page introducing the ESS model from Litchman et al. (2009).
+
+```{math}
+:label: L1
+\frac{dQ_i}{dt} = \left(V^{hi}_{max.i} - \left(V^{hi}_{max.i} - V^{lo}_{max.i}  \right) \frac{Q_i-Q_{min,i}}{Q_{max,i}-Q_{min,i}} \right) \frac{R}{R+K_i} - \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right)
+```
+
+```{math}
+:label: L2
+\frac{dN_i}{dt} = \mu_i\left(1-\frac{Q_{min,i}}{Q_i} \right) N_i - m N_i - \frac{v_i}{z_m} N_i
+```
+
+This links the [supplemental materials](https://www.pnas.org/doi/suppl/10.1073/pnas.0810891106/suppl_file/0810891106si.pdf).

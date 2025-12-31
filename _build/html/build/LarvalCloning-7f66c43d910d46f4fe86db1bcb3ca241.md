@@ -1,0 +1,32 @@
+# 📖 Cloning in marine invertebrate larvae
+In "normal" development (without cloning), a cohort of marine invertebrate larvae always decreases in population due to mortality.
+This is because there is no mechanism for adding new larvae to the cohort. 
+Assuming there is always a non-zero amount of mortality, the larval population must decrease.
+
+The term *competence* is used by Larval Biologists to refer to a larva that has developed to a stage and size that makes them capable of metamorphosisis.
+The term [larval duration](wiki:Marine_larval_ecology) refers to the time required for larvae to reach competence.
+The ultimate [recruitment](wiki:Recruitment_(biology)) &ndash; that is, the fraction of larvae surviving to  successfully metamorphose and join the post-larval population &ndash; is then determined by the impacts of the larval mortality rate, acting over the larval duration.
+
+Recently, it has become clear that the larvae of a number of marine invertebrates can [clone](wiki:Cloning), either intrinsically or in response to environmental cues such as chemical stressors or predators.[^cln1]
+In a cloning species, one larva can divide into two or more genetically identical "daughter" larvae. 
+This means that, in cloning larvae, the number of larvae in a cohort can either increase or decrease at any given time during development.
+
+[^cln1]: Some larvae may also shed parts of their bodies, which are not subsequently capable of developing into adults. This is a form of tissue loss, as distinct from the types of cloning that we consider here. 
+
+While cloning produces two larvae out of one, it does not provide any additional tissue or nutritional resources to those larvae. 
+This means a larva that clones produces two daughter larvae which are smaller.
+In most cases it is not known what the metabolic losses of cloning are, as the daughter larvae divide resources from the original larva.
+If cloning itself is not too metabolically costly, then a reasonable baseline approximation is that the resources of two daughters produced by cloning add up approximately to the resources of the original larva.
+
+While cloning has an obvious benefit in terms of larval numbers, it also has costs.
+Those costs may include disruptions to key larval functions such as swimming or feeding, as a clone redevelops a complete larval morphology.
+For example, if either or both clones are initially formed without a functional stomach, feeding is impossible until one is developed.
+Smaller larvae may experience higher mortality rates, *e.g.*, due to predation (though lower mortality rates are also possible).
+Many  larvae also feed and grow in proportion to their body mass.
+This means two small larvae feed and grow less than a single large one with equal total body mass.
+
+Other costs may stem from delays to metamorphosis.
+Clones likely have a longer larval duration than the original larva, because they are smaller and may have disrupted development.
+During this extended larval duration, larvae face predators, pathogens, transport away from favorable habitats, and other risks.
+
+Because there are relatively few quantitative observations of cloning in marine invertebrate larvae, especially under natural conditions, there is currently little empirical evidence whether or not cloning has important demographic effects on marine invertebrate populations, and if so whether the benefits of cloning outweigh the costs.

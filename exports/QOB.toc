@@ -1,0 +1,116 @@
+\contentsline {part}{I\hspace {1em}Introduction}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}🏞️ Why use models in Organismal Biology?}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}How to use this book}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Terms of Use}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}🧮 An example Jupyter notebook}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jupyter notebook structure}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Python code cells}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Code cell visibility}{9}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}🏞️ Allometry: How organismal characteristics vary with size}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Isometric scaling}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Allometric scaling}{12}{section.5.2}%
+\contentsline {chapter}{\numberline {6}🧮 Scale models and dynamic similarity}{13}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Dynamic similarity}{13}{subsection.6.0.1}%
+\contentsline {subsubsection}{Ship model basins}{14}{section*.3}%
+\contentsline {section}{\numberline {6.1}Establishing dynamic similarity}{15}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Why does the Froud number determine dynamic similarity for ships and ship models?}{15}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Nondimensional numbers}{15}{subsection.6.1.2}%
+\contentsline {chapter}{\numberline {7}📖 Non-dimensional numbers}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Characteristic values}{17}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Characteristic dimensions of an egg}{17}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}What did we just do?}{18}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Nondimensionalization as a general approach}{18}{subsection.7.1.3}%
+\contentsline {part}{II\hspace {1em}Biomechanics}{20}{part.2}%
+\contentsline {section}{\numberline {7.2}ReSphere}{21}{section.7.2}%
+\contentsline {section}{\numberline {7.3}📖️️ Movement of organisms in fluid}{22}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Motivation}{22}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}🧭️ Organization}{23}{section.7.4}%
+\contentsline {section}{\numberline {7.5}🏞️ What makes organisms move through fluids (and what slows them down)?}{24}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}The lefthand side: The sum of forces}{24}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}The righthand side: Mass $\times $ acceleration}{24}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Understanding movement through fluids}{25}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}🏞️ What are the forces acting on immersed particles?}{26}{section.7.6}%
+\contentsline {section}{\numberline {7.7}🏞️ Momentum changes due to ``added mass'' and ``wake momentum''}{27}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Added mass}{27}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Wake momentum}{27}{subsection.7.7.2}%
+\contentsline {subsection}{\numberline {7.7.3}Summary}{28}{subsection.7.7.3}%
+\contentsline {section}{\numberline {7.8}📖️ Estimating drag forces, Part 1}{29}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Organismal characteristics}{29}{subsection.7.8.1}%
+\contentsline {subsection}{\numberline {7.8.2}Fluid characteristics}{30}{subsection.7.8.2}%
+\contentsline {subsubsection}{Density}{30}{section*.6}%
+\contentsline {subsubsection}{Viscosity}{30}{section*.7}%
+\contentsline {paragraph}{Dynamic viscosity}{30}{section*.8}%
+\contentsline {paragraph}{Kinematic viscosity}{32}{section*.9}%
+\contentsline {section}{\numberline {7.9}📖️ Estimating drag forces, Part 2}{33}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Forces due to wake momentum}{33}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Forces due to viscosity}{34}{subsection.7.9.2}%
+\contentsline {section}{\numberline {7.10}💡 Scaling of fluid forces: the Reynolds Number}{36}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Scale models and dynamic similarity}{36}{subsection.7.10.1}%
+\contentsline {subsubsection}{An application of dynamic similarity}{36}{section*.12}%
+\contentsline {subsection}{\numberline {7.10.2}Reynolds number as an analytical tool}{37}{subsection.7.10.2}%
+\contentsline {subsubsection}{The low Reynolds number flow regime: $\mathcal {Re} \ll 1$}{37}{section*.13}%
+\contentsline {subsubsection}{The high Reynolds number flow regime: $\mathcal {Re} \gg 1$}{37}{section*.14}%
+\contentsline {subsection}{\numberline {7.10.3}Reversible and irreversible flows}{37}{subsection.7.10.3}%
+\contentsline {subsection}{\numberline {7.10.4}Final points}{38}{subsection.7.10.4}%
+\contentsline {section}{\numberline {7.11}💡️ ``Look-up tables'' for drag forces on moving particles}{39}{section.7.11}%
+\contentsline {section}{\numberline {7.12}🧮 The Coefficient of Drag}{40}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}How to calculate drag forces on organisms}{40}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}Trends in the $C_d$ curve}{41}{subsection.7.12.2}%
+\contentsline {section}{\numberline {7.13}🧮 Calculations for spheres moving through fluids}{42}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Matching Reynolds numbers for dynamic similarity}{42}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {7.13.2}Calculating force on a spherical particle moving at known velocity, $U$}{42}{subsection.7.13.2}%
+\contentsline {subsubsection}{Force calculator}{42}{section*.17}%
+\contentsline {subsubsection}{Density calculator}{43}{section*.19}%
+\contentsline {subsection}{\numberline {7.13.3}Calculating velocity of a spherical particle propelled by known force, $F$}{43}{subsection.7.13.3}%
+\contentsline {subsubsection}{Velocity calculator \#1}{43}{section*.21}%
+\contentsline {subsubsection}{Velocity calculator \#2}{43}{section*.23}%
+\contentsline {section}{\numberline {7.14}📖️ Transport of organisms by currents and turbulence}{45}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Examples of transport in environmental flows}{45}{subsection.7.14.1}%
+\contentsline {subsubsection}{Reproductive biology}{45}{section*.25}%
+\contentsline {subsubsection}{Agriculture}{45}{section*.26}%
+\contentsline {subsection}{\numberline {7.14.2}Transport by advection}{46}{subsection.7.14.2}%
+\contentsline {subsection}{\numberline {7.14.3}Mixing by turbulence}{46}{subsection.7.14.3}%
+\contentsline {subsection}{\numberline {7.14.4}Distributions of organisms in environmental flows}{46}{subsection.7.14.4}%
+\contentsline {section}{\numberline {7.15}🧮 Models of particle transport by advection and turbulence}{48}{section.7.15}%
+\contentsline {subsection}{\numberline {7.15.1}Model rationale}{48}{subsection.7.15.1}%
+\contentsline {subsubsection}{Model Inputs:}{49}{section*.27}%
+\contentsline {subsubsection}{Model outputs:}{49}{section*.28}%
+\contentsline {section}{\numberline {7.16}📖️ Mass flux in and out of moving organisms}{51}{section.7.16}%
+\contentsline {section}{\numberline {7.17}🧮 Effects of flow on molecular transport mechanisms}{53}{section.7.17}%
+\contentsline {subsection}{\numberline {7.17.1}Sherwood number calculator}{53}{subsection.7.17.1}%
+\contentsline {part}{III\hspace {1em}Demography}{55}{part.3}%
+\contentsline {section}{\numberline {7.18}📖 Cloning in marine invertebrate larvae}{56}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}📖 Modes of cloning}{57}{subsection.7.18.1}%
+\contentsline {subsection}{\numberline {7.18.2}🧮 Modeling the demographic implications of cloning in marine invertebrate larvae}{58}{subsection.7.18.2}%
+\contentsline {subsubsection}{Model structure and parameters}{58}{section*.35}%
+\contentsline {subsubsection}{Meaningful parameter choices}{59}{section*.36}%
+\contentsline {subsubsection}{Modes of cloning}{59}{section*.37}%
+\contentsline {subsubsection}{Understanding model output}{59}{section*.38}%
+\contentsline {section}{\numberline {7.19}📖️ Why are diatoms larger in marine than freshwater habitats?}{61}{section.7.19}%
+\contentsline {subsection}{\numberline {7.19.1}📖️ Diatoms and mixed layers}{63}{subsection.7.19.1}%
+\contentsline {subsection}{\numberline {7.19.2}📖️ Allometry of growth, nutrient acquisition and storage in diatoms}{64}{subsection.7.19.2}%
+\contentsline {subsection}{\numberline {7.19.3}💡️ Evolutionarily Stable States: Predicting the outcomes of natural selection}{65}{subsection.7.19.3}%
+\contentsline {subsection}{\numberline {7.19.4}🏞️ Allometry and size-selection in diatoms}{66}{subsection.7.19.4}%
+\contentsline {subsubsection}{Model formulation}{66}{section*.41}%
+\contentsline {subsubsection}{Allometric power laws in diatoms}{66}{section*.42}%
+\contentsline {subsection}{\numberline {7.19.5}🧮 Size-selection of diatoms in fluctuating environments}{68}{subsection.7.19.5}%
+\contentsline {subsubsection}{How to use this notebook}{68}{section*.44}%
+\contentsline {paragraph}{Graphical output}{69}{section*.45}%
+\contentsline {subsubsection}{Tabular output}{69}{section*.46}%
+\contentsline {subsubsection}{Setting up diatom variants and mixed layer characteristics}{69}{section*.47}%
+\contentsline {subsubsection}{Seeding the mixed layer with diatom variants}{70}{section*.50}%
+\contentsline {subsubsection}{Setting mixing event intervals, and running the simulation}{70}{section*.53}%
+\contentsline {subsection}{\numberline {7.19.6}🛼 Size-dependence of diatom biomass in mixed layers}{75}{subsection.7.19.6}%
+\contentsline {subsubsection}{Biomass of single variants}{75}{section*.59}%
+\contentsline {subsection}{\numberline {7.19.7}🛼 Evolutionarily Stable States for diatoms in mixed layers}{76}{subsection.7.19.7}%
+\contentsline {subsection}{\numberline {7.19.8}🛼 Implications of allometry for diatom aquaculture and carbon sequestration}{77}{subsection.7.19.8}%
+\contentsline {subsubsection}{Aquaculture}{77}{section*.60}%
+\contentsline {subsubsection}{Carbon export from the mixed layer}{77}{section*.61}%
+\contentsline {subsection}{\numberline {7.19.9}️💡️ A ``quota'' model of diatom demography}{78}{subsection.7.19.9}%
+\contentsline {subsubsection}{Model rationale}{78}{section*.62}%
+\contentsline {subsubsection}{Quantifying rates}{79}{section*.63}%
+\contentsline {subsubsection}{Model formulation}{79}{section*.64}%
+\contentsline {part}{IV\hspace {1em}Spatial Dynamics}{80}{part.4}%
+\contentsline {part}{V\hspace {1em}Experimental Methods}{81}{part.5}%
+\contentsline {part}{VI\hspace {1em}Appendix}{82}{part.6}%
+\contentsline {chapter}{\numberline {8}🧭️ Searching the OSYM library for Models, Context, Activities and Quick Explainers}{83}{chapter.8}%

@@ -1,0 +1,69 @@
+# 📖️ Mass flux in and out of moving organisms
+
+We are all familiar with the phenomenon of "wind chill" &ndash; we get colder on a chilly, windy day than on a day that is equally cold but has no wind. 
+Similarly, if you pour sugar crystals into your tea and let them sit on the bottom of your cup, they will take some time to dissolve. 
+If you stir your tea so that there is flow over the crystals they dissolve almost immediately. 
+In general, except at microscopic scales, molecular transport mechanisms are usually greatly enhanced by flow.
+
+Just as we used a [scale model](./RSscaling.md) approach to estimate how fast particles move in fluids, we can use this approach to estimate how molecular transport mechanisms like diffusion are enhanced by particle movement. 
+The most convenient way to perform this calculation is with another *dimensionless ratio*.
+Recall that the Reynolds number is dimensionless, because it is the quotient of a force divided by another force -- the units of force in the numerator and denominator cancel). 
+The new dimensionless ratio is called the Sherwood number, $\mathcal{Sh}$, and is defined as
+
+$$
+\mathcal{Sh} = \frac{\mathit{mass~flux~with~diffusion~and~flow}}{\mathit{mass~flux~with~diffusion~alone}}
+$$
+
+For example, suppose we consider a phytoplankton cell that is absorbing nutrients as it slowly sinks in the water column.
+$\mathcal{Sh}$ is the actual mass transport of nutrients into the cell, divided by the mass of nutrients that would be transported if the cell were not sinking but were stationary in the water. 
+If the cell were stationary, mass transport would occur by diffusion alone. 
+If the cell is moving, the wind chill and stirred tea examples suggest that nutrient transport might be much higher. 
+If so, then actual transport is higher than transport by diffusion alone, and $\mathcal{Sh} \gt 1$.
+
+Three points are important here:
+
+**1. $\mathcal{Sh}$ is a function of velocity (in this case, the sinking speed).**
+
+Possible values range from $\mathcal{Sh} = 1$, for a particle that is moving very slowly or not at all (that is, no enhancement of transport due to movement) to very large values (e.g. $\mathcal{Sh} \gt 100$) for some rapidly moving particles. 
+That means mass transport has been increased by a factor of more than 100. 
+As you can imagine, this could make quite a difference to nutrient uptake by cells, and in many other analogous situations
+
+Because Sh depends on velocity, it is effectively summarized as a function of $\mathcal{Re}$ (just as was the [coefficient of drag, $C_d$)](RSlookup.md). 
+Here, $\mathcal{Re}$ summarizes how fluid flows around the particle. 
+
+**2. $\mathcal{Sh}$ is a function of the diffusion rate.**
+Because diffusion is involved, we need a way to express the diffusion rate of the nutrient (or other solute, as the case may be).
+
+The convenient way to express this is as yet another dimensionless ratio, the [Schmidt number](wiki:Schmidt_number), $\mathcal{Sc}$.
+$\mathcal{Sc}$ has a simple definition:
+
+$$
+\mathcal{Sc} = \frac{\mu}{D \times \rho}
+$$
+
+Here, $\mu$ is the fluid dynamic viscosity, $\rho$ is the fluid density, and $D$ is the diffusion coefficient of the solute in the fluid.
+Note that $\mathcal{Sc}$ can also be written in terms of the kinematic viscosity, $\nu$:
+$$
+\mathcal{Sc} = \frac{\nu}{D}
+$$
+This simple expression shows that $\mathcal{Sc}$ is actually the ratio of the momentum diffusivity, $\nu$, to the mass diffusivity, $D$.
+
+**3. For many simple shapes, we have a formula for the mass tranport due to diffusion alone.**
+
+For example, for a spherical particle, the mass transport of solute into the particle due to diffusion alone is
+
+$$
+Q_{\mathit{diff}} = 2 \pi D \times d \times (C_w - C_s).
+$$
+
+In this formula, 
+- $d$ is the particle diameter;
+- $C_w$ is the solute concentration in the fluid far from the particle; and,
+- $C_s$ is the concentration at the surface of the particle. 
+
+For example, if the particle is extremely effective at absorbing the solute (as might be approximately true for a phytoplankton cell absorbing nutrients) the $C_s \approx 0$.
+If we have a formula for $Q_{\mathit{diff}}$, then all we need to know is $\mathcal{Sh}$.
+Then, we can calculate the actual mass flux (including diffusion *and* advection) into a moving particle, $Q_{\mathit{adv}}$.
+
+A worksheet that makes it easy to use Sherwood numbers to calculate the fluxes in and out of spherical organisms or other particles is [here](RS3.ipynb).
+

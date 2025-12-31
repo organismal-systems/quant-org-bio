@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/Spirorbis.git
+	branch = main
+	commit = 9628cb614ea9e2ac830f8ab6f5d360a847b55966
+	parent = fe77dd986a22b0fde8da20fd40e37d3b90faaaeb
+	method = merge
+	cmdver = 0.4.3
