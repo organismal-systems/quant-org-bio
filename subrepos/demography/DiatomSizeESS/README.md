@@ -21,4 +21,5 @@ D.fig2.savefig('example2.svg')
 ```
 Or, run the Jupyter notebook on Binder by clicking on this button:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/seastate/DiatomSizeESS/HEAD?urlpath=%2Fdoc%2Ftree%2FDiatomSizeESS.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/organismal-systems/quant-org-bio/HEAD?urlpath=%2Fdoc%2Ftree%2Fsubrepos%2Fdemography%2FDiatomSizeESS%2FDiatomSizeESS.ipynb)
+
