@@ -11,9 +11,9 @@ parts:
     - file: content/overview/overview.md      
     - file: content/overview/how2use.md
     - file: content/overview/terms.md
-    - file: content/overview/example.ipynb
+    - file: subrepos/overview/qob-notebooks/example.ipynb
     - file: content/overview/allometry.md
-    - file: content/overview/scale-models.ipynb
+    - file: subrepos/overview/qob-notebooks/scale-models.ipynb
     - file: content/overview/nondim-numbers.md
     #- file: content/overview.md      
     #sections:
@@ -103,7 +103,7 @@ parts:
   - caption: Appendix
     numbered: true
     chapters:
-    - file: content/OSYMindex.ipynb
+    - file: subrepos/overview/qob-notebooks/OSYMindex.ipynb
 
 
 
