@@ -1,0 +1,95 @@
+# 🧭️  Using book content on your own computer, Part 2
+
+There are few situations in which is makes sense to download the entire book onto a local machine, unless you are contributing a new unit or making substantial editorial suggestions about an existing one[^cont].
+There are situations, for example in running a workshop or course based on book content, in which it may make sense to do this.
+
+[^cont]: New contributed Units are placed (after review and acceptance) into their own repositories within the main [**organismal-systems GitHub repository**](https://github.com/orgs/organismal-systems/repositories), so even for contributors is often is best to use the online [GitHub pages version](https://organismal-systems.github.io/quant-org-bio/) as the reference for textual content.
+
+## Installing the book on a local computer
+
+The potential advantages of installing the entire book locally include:
+- *Customizing a course-specific version of the book*  
+  Because the book structure is determined entirely by the **_toc.yml** file, it is straightforward to remake the book structure by editing this file.
+  For example, a course on Biomechanics might include only the Biomechanics part, a course on Larval Biology might include only a set of models relevant to that topic, **etc**.
+- *Obtaining all the content (notebooks, content, etc.) at once.*  
+  If you intend to use many different models, cloning the entire book is a quick way to have them all on your local computer.
+  Be aware, though, that you will still need to follow the [instructions](./localcopy.md) for setting up a local Python environment before you can run the notebooks.
+- *Independence from Internet connections*  
+  There are situations, for example during travel or at a field station, where Internet may be unavailable or costly.
+  In these cases, having a copy on a laptop or desktop computer may facilitate reading the book.
+
+The best way to set up to run a Jupyter notebook locally is to [clone the source repository from GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+In doing this, it is important to remember that
+> The "official" version of the notebook &ndash; that is, the version Binder runs &ndash; is in a repository under the [organismal-systems account](https://github.com/orgs/organismal-systems/repositories).
+
+Cloning this repository onto your local machine not only gives you a complete functional copy of the notebooks, but also an easy way to update your version with any revisions or additions that appear in the book, to report code bugs or other issues, and to contribute enhancememnts.
+
+Each of the models in the book requires its own specific set of Python packages.
+The simplest way to make sure a local copy of a model has the required packages is to use the [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), [Anaconda](https://www.anaconda.com) or [Mamba](https://mamba.readthedocs.io/en/latest/index.html) package managers.
+
+The required modules for each repository are listed in a file called *environment.yml*, included with the repository.
+miniconda, Anaconda and Mamba use this file to automatically recreate the set of packages needed to make the models function correctly.
+For example, to [install required packages using miniconda or Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), execute
+```bash
+conda env create --name MyEnv --file environment.yml
+```
+This command creates a new conda environment called "MyEnv" (change this to something informative about the notebook it'll be used for) that automatically contains the specified Python packages.
+
+To run Jupyter notebooks using this environment, execute
+```bash
+conda activate MyEnv
+```
+followed by
+```bash
+jupyter lab
+```
+This will open a web browser page with a "launcher" you can use to open one or more notebooks.
+
+Notebooks in this book are typically initialized by selecting **Run all cells** under the **Run** menu.
+
+## blah
+Models, instructions on how to use them, and activities applying the models to currently relevant questions in Larval Biology are presented in **Jupyter notebooks**. 
+Jupyter notebooks are among the latest and (so far) best platforms for embedding working computer code with formatted text and graphical content. 
+Jupyter notebooks can be combined and integrated with Markdown and other content in the form of an Executable Book.
+Jupyter books can be run on a reader's own computer, can be run online on platforms such as Binder, and can be freely exported using a drop-down menu as a static (non-executable) PDF document.
+With additional setup, Jupyter books can also be exported as a LaTeX document, and then reconverted to a variety of other formats.
+This flexibility in format and usage makes Jupyter books the best platform, at the time of this writing, for a book aimed at helping Larval Biologists gain experience working with models.
+
+- The **source** documents for the book can be downloaded ("cloned") from GitHub at the book's main repository, **[quant-larval-bio](https://github.com/organismal-systems/quant-larval-bio/tree/main)**. 
+This repository belongs to the **[organismal-systems](https://github.com/organismal-systems)** organization on GitHub, which is associated with the **[Organismal Systems Modeling Network](https://organismal-systems.org/)**. 
+The source documents can be used to fully build the book using [JupyterBook](https://jupyterbook.org).
+
+- A **static** (read-only) version of the book constructed with *GitHub Pages* can be viewed online (or downloaded) at the **[organismal-systems GitHub Pages site](https://organismal-systems.github.io/quant-larval-bio/content/overview.html).
+This version is quick and easy to read, and can be a useful reference alongside executable pages.
+
+- **Online executable models** implemented in [Jupyter notebooks](jupyter.org) are available with a button click through [Binder](https://mybinder.org/). 
+The great advantage of these models is that they require nothing more than a browser to be running on users' machines.
+This makes them accessible to nearly everyone everywhere.
+
+	As with most free online resources, though, there are limitations.
+	One is that the execution speed can be slower, especially at peak times, compared to running the same model on a local workstation (it can also be faster, depending on the workstation...).
+	Another is that sessions "expire" after a period of inactivity, freeing computing resources for other users. 
+	The session can easily be restarted, however, with the click of a button.
+	In some contexts, [Binder](https://mybinder.org/) implementations also have constraints on reading and writing data files.
+
+- **Executable models running locally on your computer** can be launched from downloaded copies of the source repositories, or from copies of those repositories already in the source materials for this book. 
+Executable Jupyter notebooks containing models (and supporting Python libraries, if needed) are also incorporated into the book as **subrepos** or **submodules**, which it *git* jargon for repositories that are incorporated as components of other repositories.
+The source repositories for these models are stored elsewhere on GitHub, at links provided in the text.
+**These repositories are typically forked so that independent copies are retained on the OSYM GitHub site, from which they are linked in the book. 
+These repositories often have their own license requirements, which supercede (for that content) the licensing requirements for the original content of this book.**
+This structure is necessary for two reasons:
+	1. The Jupyter notebooks (and, often, a Python code library in which models are implemented) may be created and updated by different authors. 
+	Having a separate repository for these models enables the authors to develop their own codes, avoiding requiring them to separately update a book implementation. It also avoids giving all authors editing access to the entire book content, which is not sustainable in the long run.
+	2. Different models require different sets of Python libraries. 
+	Some of these libraries are quite voluminous, so requiring a user of one model to install all libraries relevant to any of the other models is problematic.
+	Moreover, Python libraries are updated and modified frequently; it is quite possible for different models in the book to require conflicting, incompatible versions of the same library.
+
+The easiest way to manage the libraries required to build the book on your own computer and to run the executable models in [Jupyter Lab](https://jupyter.org/) is using the [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), [Anaconda](https://www.anaconda.com) or [Mamba](https://mamba.readthedocs.io/en/latest/index.html) package managers.
+A brief explanation of what these managers do, the differences between them, and how to install and use them is given in the [Appendix](../../appendix/conda-install.md#conda-install).
+The required modules for each repository are listed in a file called *environment.yml*, included with the repository.
+miniconda, Anaconda and Mamba use this file to automatically recreate the set of packages needed to make the models function correctly.
+
+
+
+
+
