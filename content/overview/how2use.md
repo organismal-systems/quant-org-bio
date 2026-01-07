@@ -1,4 +1,4 @@
-# How to use this book
+# 🧭️ How to use this book
 
 This book is organized into **Parts**, each devoted to a different general topic or biological research area:
 - ***Biomechanics*** in physiology, behavior and sensing

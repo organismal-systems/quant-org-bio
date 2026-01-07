@@ -104,6 +104,8 @@ parts:
     numbered: true
     chapters:
     - file: subrepos/overview/qob-notebooks/OSYMindex.ipynb
+    - file: content/overview/localcopy.md
+    - file: content/overview/localcopy2.md
 
 
 
