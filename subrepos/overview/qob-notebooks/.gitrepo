@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/organismal-systems/qob-notebooks.git
+	branch = main
+	commit = e9de644b553ee32beb305a2d70463fcfd4c4dca1
+	parent = 1cd2656a56d71a4678227c4512cdfcc39506bc40
+	method = merge
+	cmdver = 0.4.3

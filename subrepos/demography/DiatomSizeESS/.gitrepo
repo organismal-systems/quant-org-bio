@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/DiatomSizeESS.git
 	branch = main
-	commit = bbcd98068a0426cf489799117046d8aa37f8ca85
-	parent = 781777560a0483d990565ff0cce358951732b72b
+	commit = 36a7f08f01316f3ecac760dce7c5c47a21fd8476
+	parent = 0273dee513e56aabebba4c217425e48f7544ce6a
 	method = merge
 	cmdver = 0.4.3
