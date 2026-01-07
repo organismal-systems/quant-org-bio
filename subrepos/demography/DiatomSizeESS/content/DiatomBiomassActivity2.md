@@ -24,7 +24,7 @@ It is also plausible to assume that competition for light is affected by standin
 
 [^mod]: In fact, their motivation was in part to present an alternative to size-selective grazing in explaining diatom size distributions. The literature contains models that have a more resolved accounting of different classes of grazers, such as small and large zooplankton, with size-specific impacts on diatoms. However, those models do not resolve the specific effects of diatom allometry that Litchman *et al.* hypothesize to determine diatom size distributions in mixed layers.
 
-[^mort]: That term is $\m N_i$, where $N_i$ is the number of cells of size class $i$ and $m$ is the mortality rate. See [this explanation of the model](./Litchman_etal2009.md) and the original paper for details.
+[^mort]: That term is $m N_i$, where $N_i$ is the number of cells of size class $i$ and $m$ is the mortality rate. See [this explanation of the model](./Litchman_etal2009.md) and the original paper for details.
 
 ## Primary production
 The rationale for assuming that standing stock is a plausible proxy for primary production is that:

@@ -1,10 +1,19 @@
 # How to use this book
 
-This book is organized into Parts, each devoted to a different general topic or biological research area (e.g., Biomechanics, Demography, etc.).
-Each Part contains Chapters that present, in context, one or more models within the general topic. 
-"In context" means that these examples provide brief background (with additional outside references); a working "executable" model; instructions how to use that model and suggested activities for exploring potential implications of the model for interesting questions in Larval Biology.
+This book is organized into **Parts**, each devoted to a different general topic or biological research area:
+- ***Biomechanics*** in physiology, behavior and sensing
+- ***Demography***, epidemiology and other dynamics of population
+- ***Spatial dynamics***
+- ***Experimental methods***
 
-In most cases, background is presented in short form, often supplemented by separate "Quick Explainer" pages. 
+Each Part contains **Units** that present, in context, one or more models within the general topic. 
+"In context" means that these Units provide:
+- brief background (with links to additional outside references)  
+- one or more Jupyter notebooks with working "executable" models
+- instructions how to use the models, and how to interpret model output
+- activities that explore potential implications of the model for interesting questions in Organismal Biology.  
+
+In most cases, background is presented in short form, often supplemented by separate "Topic Key Ideas" pages. 
 These pages are intended to be short enough for a reader to internalize the most relevant, essential facts about a topic refered to in a model, without losing continuity of thought while working with that model.
 Quick Explainers are not intended to be comprehensive, though ideally they may refer to additional sources that provide in-depth perspectives.
 In many cases the most useful reference is simply a link to Wikipedia, which has proven to usually be comprehensive and accurate in many areas of biology, mathematics, physics, statistics and other disciplines.

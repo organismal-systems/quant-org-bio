@@ -65,26 +65,26 @@ parts:
         sections:
           - file: subrepos/demography/LarvalCloning/CloningModes.md
           - file: subrepos/demography/LarvalCloning/LarvalCloningModel.ipynb
-      - file: subrepos/demography/DiatomSizeESS/MarineFreshDiatoms.md
+      - file: subrepos/demography/DiatomSizeESS/content/MarineFreshDiatoms.md
         sections:
-          - file: subrepos/demography/DiatomSizeESS/MixedLayers.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomAllometry.md
-          - file: subrepos/demography/DiatomSizeESS/AllometrySizeSelection.md
+          - file: subrepos/demography/DiatomSizeESS/content/MixedLayers.md
+          - file: subrepos/demography/DiatomSizeESS/content/DiatomAllometry.md
+          - file: subrepos/demography/DiatomSizeESS/content/AllometrySizeSelection.md
           - file: subrepos/demography/DiatomSizeESS/DiatomSizeESS.ipynb
-          - file: subrepos/demography/DiatomSizeESS/ModelInterface.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity.md
+          - file: subrepos/demography/DiatomSizeESS/content/ModelInterface.md
+          - file: subrepos/demography/DiatomSizeESS/content/DiatomBiomassActivity.md
             sections:
-              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity2.md
-              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity3.md
-              - file: subrepos/demography/DiatomSizeESS/DiatomBiomassActivity4.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomBiomassActivity2.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomBiomassActivity3.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomBiomassActivity4.md
+          - file: subrepos/demography/DiatomSizeESS/content/DiatomESSActivity.md
             sections:
-              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity2.md
-              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity3.md
-              - file: subrepos/demography/DiatomSizeESS/DiatomESSActivity4.md
-              - file: subrepos/demography/DiatomSizeESS/EvolutionarilyStableStates.md
-          - file: subrepos/demography/DiatomSizeESS/DiatomAquacultureActivity.md
-          - file: subrepos/demography/DiatomSizeESS/Litchman_etal2009.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomESSActivity2.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomESSActivity3.md
+              - file: subrepos/demography/DiatomSizeESS/content/DiatomESSActivity4.md
+              - file: subrepos/demography/DiatomSizeESS/content/EvolutionarilyStableStates.md
+          - file: subrepos/demography/DiatomSizeESS/content/DiatomAquacultureActivity.md
+          - file: subrepos/demography/DiatomSizeESS/content/Litchman_etal2009.md
       - file: subrepos/demography/Croaker/Croaker.ipynb
       - file: subrepos/demography/KoelleCholera/cholera4b.ipynb
       - file: subrepos/demography/Spirorbis/Spiror.ipynb

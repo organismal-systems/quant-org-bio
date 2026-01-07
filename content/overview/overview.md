@@ -36,11 +36,11 @@ Writing down a quantitative model, even if results are never calculated, exposes
 
 - Different scientists, especially scientists from different disciplines, use the *same word with very different meanings*. 
 This means that interdisciplinary collaborations, which are necessary and productive in Organismal Biology, are frequently derailed by misunderstandings between two experts who have firm, well-founded (but different) interpretations of the subject at hand.
-An example is "memory". 
-To a mathematician or statistician, a "memoryless system" is one in which the current state determines the probabilities of future events, without regard to how the current state was brought about. 
-Thus, a mathematician could happily formulate a "memoryless" model of the human brain.
+The example mentioned previously is "memory". 
+To a mathematician or statistician, a ["memoryless system"](wiki:Markov_chain) is one in which the current state determines the probabilities of future events, without regard to how the current state was brought about. 
+Thus, a mathematician could happily formulate a ["memoryless" model of the human brain](https://doi.org/10.1038/s42003-022-03967-9)
 Clearly, this would not be a biologist's interpretation.
-Confounding vocabulary and other vagueness in terminology are usually clarified when the relevant biological mechanisms are expressed in mathematical form.
+Confounding vocabulary and other vagueness in terminology are usually clarified when the relevant biological mechanisms are expressed in mathematical form. 
 
 
 ***Models are tools for inferring what we want to know from what we can measure.***
@@ -53,9 +53,8 @@ How are environmental signals transduced by sensory and regulatory processes int
 
 All of these questions, and many more, involve unknowns that are difficult or impossible to measure.
 Modeling provides approaches to infer quantities that cannot be measured. 
-For example, it is in most cases impractical to measure the mortality rates of organisms in most terrestrial and marine environments. 
-Direct measurements would involve unobtrusive observations following a large sample size of individuals, recording whether and how they died.
-In most cases, this is not possible to carry out.
+For example, it is  impractical to measure the mortality rates of organisms in most terrestrial and marine environments. 
+Direct measurements would involve unobtrusive observations following a large sample size of individuals, recording whether and how they died &ndash; typically, prohibitively costly or simply not possible to carry out.
 An alternative is to track cohorts of juveniles, measuring changes in abundance, age- and stage- structure, and geographic distribution.
 From cohort data, *combined with a modeling framework that provides quantitative predictions based on alternative mortality regimes*, inferences can be made regarding plausible rates and mechanisms of mortality in the observed juvenile population (e.g. [](https://doi.org/10.1046/j.1461-0248.2003.00443.x)).
 
@@ -76,7 +75,7 @@ Each of these questions draws in the expertise of other scientists, whose unders
 Biomechanical models may provide them with specific estimates of how locomotion and sensory performance is likely to differ in smaller or larger offspring.
 Demographic models may offer quantitative insight into the consequences of variations in maturation time and dispersal.
 Geophysical circulation models may predict the transport of propagules in winds, tides and currents, and environmental characteristics such as temperature, oxygen, chlorophyll and pH that may affect recruitment.
-Climate models may specify the environmental conditions in relevant to past and future environments.
+Climate models may specify the environmental conditions relevant to past and future environments.
 In all these cases, quantitative models formulated at one biological or environmental level can be leveraged by investigators at another level.
 Leveraging models in this way provides a mechanisms for community level collaborations, in which investigators make their discoveries available in the form of publicly available and easily used toolkits. 
 This approach would mark a change for Organismal Biology, but would be following the productive pathways of other disciplines such as statistics, geophysical modeling and molecular biology.
@@ -85,6 +84,6 @@ This approach would mark a change for Organismal Biology, but would be following
 
 Beyond all of these reasons, one additional point which has given me satisfaction is worth mentioning: 
 Many interesting and important organisms are available only at narrowly constrained times and places, commonly a certain interval in spring or early summer, at a field station, marine lab  or offshore location. 
-Experimental work in Organismal Biology grinds to a halt outside this very limited window in space and time. 
+Many types of experimental work in Organismal Biology grind to a halt outside this very limited window in space and time. 
 Modeling is portable and extends the productive working season of a Organismal Biologist to year-round.
 A novel insight in Organismal Biology, even if obtained on a computer rather than a microscope, is equally thrilling in the dark winter months!
