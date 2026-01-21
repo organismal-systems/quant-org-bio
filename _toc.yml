@@ -114,6 +114,7 @@ parts:
         - file: content/appendix/MathSum/calculus.md
         - file: content/appendix/MathSum/diffeqns.md
         - file: content/appendix/MathSum/pdes.md
+        - file: content/appendix/MathSum/matrix.md
         - file: content/appendix/MathSum/poisson.md
 
 
