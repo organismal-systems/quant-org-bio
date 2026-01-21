@@ -1,13 +1,14 @@
 version: 1
 format: jb-book
-root: content/overview.md
+root: content/frontpage.md
+#root: content/overview.md
 #title: Overview
 
-#- file: content/frontpage.md      
 parts:
   - caption: Introduction
     numbered: true
     chapters:
+    - file: content/overview.md
     - file: content/overview/overview.md      
     - file: content/overview/how2use.md
     - file: content/overview/terms.md
@@ -86,7 +87,7 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/content/DiatomAquacultureActivity.md
           - file: subrepos/demography/DiatomSizeESS/content/Litchman_etal2009.md
       - file: subrepos/demography/Croaker/Croaker.ipynb
-      - file: subrepos/demography/KoelleCholera/cholera4b.ipynb
+      - file: subrepos/demography/KoelleCholera/koelle_cholera.ipynb
       - file: subrepos/demography/Spirorbis/Spiror.ipynb
 
   - caption: Spatial Dynamics
@@ -106,6 +107,8 @@ parts:
     - file: subrepos/overview/qob-notebooks/OSYMindex.ipynb
     - file: content/overview/localcopy.md
     - file: content/overview/localcopy2.md
+    - file: content/appendix/MathSum/calculus.md
+    - file: content/appendix/MathSum/diffeqns.md
 
 
 

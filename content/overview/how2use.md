@@ -35,7 +35,7 @@ For example, a user who investigates movement of [particles](../../subrepos/biom
 
 The intended method for most readers to use the book is to:
 - read the "Introductory" pages in the [GitHub Pages e-book](https://organismal-systems.github.io/quant-org-bio/)
-- use the "button" links to open and execute the models in the worksheet notebook on [Binder]()
+- use the "button" links to open and execute the models in the worksheet notebook on [Binder](https://mybinder.org/)
 - after getting familiar with the model, select an Activity and conduct the suggested systematic data collection. analysis and interpretation
 - refer to "Background" and "Key Topic Ideas" for additional information
 
