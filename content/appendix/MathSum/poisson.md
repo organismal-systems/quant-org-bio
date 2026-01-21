@@ -123,7 +123,7 @@ In many cases these violations don't matter too much, but in others the errors c
 
 For example, consider a predator-prey interaction.
 The likelihood that a prey organism is at a location immediately adjacent to a predator is lowered by the presence of the predator &ndash; either the prey will move to avoid the predator, or the predator will eat it.
-That is, the occurrences are not independent, violating the assumption that predators and prey can be described as Poisson points. 
+That is, their occurrences are *not independent*, violating the assumption that predators and prey can be described as Poisson points. 
 
 An ODE model's estimate of encounter rates based on the Poisson point assumption might therefore overestimate the actual encounter rate. 
 A consequence can be, for example, that the populations in the ODE model will go extinct while in the stochastic model they coexist.
