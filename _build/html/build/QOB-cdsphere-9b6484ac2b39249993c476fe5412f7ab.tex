@@ -1,0 +1,64 @@
+\section{🧮 The Coefficient of Drag}
+
+As described in the \href{rslookup.md}{previous page}, the resistance force $F$ on an immersed organism moving in a fluid is commonly expressed in a ratio known as the Coefficient of Drag:
+\begin{equation}
+C_d  = \frac{F}{\frac{1}{2} \rho L^2 U^2}
+\end{equation}
+The Coefficient of Drag is the formula used to calculate the drag forces on an organism from an observation made on a dynamically similar scale model (that is, a model that is geometrically similar and has the same Reynolds number, $\mathcal{Re}$).
+
+The power of this approach is illustrated by the plot below, which shows the drag force on \textit{any} size spherical organism moving at \textit{any} velocity in fluid of \textit{any} viscosity and density.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/CdSphere_1-b96e4b26c491f96137843a3436d9456a.png}
+\end{figure}
+
+In this plot, note that the scales are logarithmic base 10 for both axes.
+Note also that there are several types of data used to define the curve:
+
+\begin{itemize}
+\item cyan line (and purple dots) for experimental observations
+\item blue and red lines for analytical model calculations.
+\end{itemize}
+
+The dash-dot cyan line interpolates between these data in a sensible way, providing a consistent function across many orders of magnitude of Reynolds number.
+The interpolation shown by the cyan line is the form in which $C_d$ would typically be calculated in a biomechanical investigation.
+
+\subsection{How to calculate drag forces on organisms}
+
+To obtain the drag force on a spherical organism, use the following steps:
+
+\begin{enumerate}
+\item Use the organism's size ($L$) and velocity ($U$), and the fluid's viscosity ($\mu$) and density ($\rho$) to calculate its Reynolds number,
+
+\begin{equation}
+\mathcal{Re} = \frac{\rho U L}{\mu}
+\end{equation}
+
+
+\item Take the logarithm, base 10, of the Reynolds number
+\item Find the position on the horizontal axis corresponding to that $\log_{10}\mathcal{Re}$
+\item Move vertically to the cyan curve; this is the $\log_{10}C_d$.
+\item Calculate the coefficient of drag, $C_d = 10^{\log_{10}C_d}$
+\item Calculate the drag force,
+
+\begin{equation}
+F_{drag} = \frac{1}{2} \rho L^2 U^2
+\end{equation}
+\end{enumerate}
+
+Some tools to make these calculations easier and more precise are provided in \href{/rs1}{this worksheet}.
+
+\subsection{Trends in the $C_d$ curve}
+
+Several features of the $C_d$ curve are worth pointing out.
+
+\begin{itemize}
+\item The denominator in this expression is very similar in form and rationale to our estimate of the \href{./rscharact2.md}{wake momentum}.
+The rationale is that, in cases where the drag forces are dominated by increases in wake momentum, the numerator will change in a roughly similar way as the denominator.
+By the logic in the \href{./rscscaling.md}{scaling of fluid forces}, wake momentum is dominant when $\mathcal{Re} \gg 1$.
+Therefore, we predict that $C_d$ will change relatively slowly at high Reynolds number.
+\item In contrast,  at low Reynolds number, we expect the drag from vicous forces to be much higher than from wake momentum.
+Therefore, we predict that $C_d$ will be large and (increase with decreasing Reynolds number) when $\mathcal{Re} \ll 1$.
+\item In the range $10^4 < \mathcal{Re} < 10^6$, the coefficient of drag has some surprising ``wiggles''. This is due to the onset of \href{https://en.wikipedia.org/wiki/Turbulence}{turbulence}.
+\end{itemize}

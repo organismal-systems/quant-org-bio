@@ -5,6 +5,9 @@
     <loc>http://localhost:3001</loc>
   </url>
   <url>
+    <loc>http://localhost:3001/overview</loc>
+  </url>
+  <url>
     <loc>http://localhost:3001/overview-1</loc>
   </url>
   <url>
@@ -152,7 +155,7 @@
     <loc>http://localhost:3001/croaker</loc>
   </url>
   <url>
-    <loc>http://localhost:3001/cholera4b</loc>
+    <loc>http://localhost:3001/koelle-cholera</loc>
   </url>
   <url>
     <loc>http://localhost:3001/spiror</loc>
@@ -176,9 +179,30 @@
     <loc>http://localhost:3001/osymindex</loc>
   </url>
   <url>
+    <loc>http://localhost:3001/localintro</loc>
+  </url>
+  <url>
     <loc>http://localhost:3001/localcopy</loc>
   </url>
   <url>
     <loc>http://localhost:3001/localcopy2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/readme-5</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/calculus</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/diffeqns</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/pdes</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/matrix</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/poisson</loc>
   </url>
 </urlset>

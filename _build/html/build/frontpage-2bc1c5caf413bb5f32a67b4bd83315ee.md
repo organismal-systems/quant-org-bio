@@ -1,0 +1,13 @@
+---
+title: Quantitative Approaches to Organismal Biology
+subtitle: Selected topics and executable examples
+%author: Horse P. Cow
+---
+
+%# 
+%## 
+
+This is the front page.
+
+This is another sentence. 
+

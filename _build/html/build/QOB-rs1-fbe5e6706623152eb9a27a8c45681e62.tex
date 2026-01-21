@@ -1,0 +1,108 @@
+\section{🧮 Calculations for spheres moving through fluids}
+
+This worksheet provides some computational tools to help you understand and use the ideas of scale models and dynamic similarity, as implemented using the Reynolds number, $\mathcal{Re}$, and the Coefficient of Drag, $C_d$. The rationale for why these nondimensional indices are useful and concise tools for quantifying
+
+\subsection{Matching Reynolds numbers for dynamic similarity}
+
+This part of the worksheet enables you to calculate the parameters to make a dynamically similar scale model of an organism moving in a fluid.
+The input panel below has two columns.
+In the left column, you can enter the characteristics of the object of interest, and the fluid in which it is immersed. In the right column, you can enter the characteristics of the model organism and the fluid in which it is immersed.
+The worksheet uses the formula,
+\begin{equation}
+\mathcal{Re} = \frac{\rho U L}{\mu},
+\end{equation}
+to calculate the Reynolds numbers of both objects for you.
+If they match, the model is dynamically similar to the object.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS1_1-8c1de99079e2da469fe905f3025d78c9.png}
+\end{figure}
+
+\subsection{Calculating force on a spherical particle moving at known velocity, $U$}
+
+\subsubsection{Force calculator}
+
+This part of the worksheet enables you to calculate the force required to propel an organism of given size through a fluid with known viscosity and density.
+The rationale is as follows:
+
+\begin{enumerate}
+\item Use the organism's diameter, $D$ and velocity, $U$, and the fluid density ($\rho$) and viscosity ($\mu$), to calculate $\mathcal{Re}$.
+\item Use $\mathcal{Re}$ to calculate the Coefficient of Drag, $C_d$,
+
+\begin{equation}
+C_d  = \frac{F}{\frac{1}{2} \rho L^2 U^2}
+\end{equation}
+
+
+\item Use $C_d$, the organism's size and velocity, and the fluid density, to calculate the drag force $F$. To do this, we need to \href{/cdsphere}{algebraically rearrange the formula for $C_d$ to solve for $F$}.
+\end{enumerate}
+
+The input panel below has text boxes for the particle size and velocity and the fluid density and viscosity as inputs, and the force required to maintain the particle's velocity as output:
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS1_2-0ebe0f881139fe598e479496de52c118.png}
+\end{figure}
+
+\subsubsection{Density calculator}
+
+This calculator addresses the situation when we have observed a particle's sinking rate, and we would like to infer its density.
+This is closely related to the situation above:
+
+Having calculated the force $F$, we then need to do an additional calculation to find the density of the sphere required to produce that force on the immersed particle.
+In this calculator, the inputs are the same as above, and the output is the density required to move the particle at the specified velocity.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS1_3-54b23e1e35bbf027da49933eb44d1b60.png}
+\end{figure}
+
+\subsection{Calculating velocity of a spherical particle propelled by known force, $F$}
+
+\subsubsection{Velocity calculator \#1}
+
+As noted, the $\mathcal{Re} -C_d$ curve describes the movement of all spheres at all speeds in all \href{https://en.wikipedia.org/wiki/Newtonian\_fluid}{Newtonian fluids} like air and water.
+This is sufficient to determine the velocity of a sphere if we know its size, the force exerted on it, and the fluid characteristics.
+
+There is however a slight complication:
+Both $Re$ and $C_d$ are functions of particle velocity, $U$, (see the equations above).
+However, because we don't in general have a convenient formula for $C_d$, we can't write down an analytical formula to obtain the $U$ that satisfies both these equations simulataneously.
+
+To get past this hurdle, we'll use a time-honored mathematical technique: We'll guess.
+
+Guessing, or more precisely developing an intelligent sequence of trial-and-error iterations, is a great way to solve many computational problems.
+In fact, this type of iteration is essentially what a lot of computer algorithms for solving many hard problems are doing.
+Below, I've made a calculator that does this iteration for you.
+
+Before trusting in the software, however, it's important that you gain some first-hand experience with this iterative process.
+This part of the worksheet enables you to efficiently perform a sequence of iterations to determine the velocity of a particle with known force.
+The rationale is as follows:
+
+\begin{enumerate}
+\item Guess a velocity, $U_{est}$.
+\item Use the rationale in Section 3 to calculate the force, $F_{est}$, required to propel the particle at $U_{est}$.
+\item Compare $F_{est}$ to the required force, and use the error to adjust the next guess of velocity up or down as needed.
+\end{enumerate}
+
+Repeat until the necessary accuracy has been achieved.
+With a little practice, you will be able to calculate velocity to within a percent or less error in a few iterations.
+
+The input panel below has text boxes for the particle size, the actual force on the particle, and the fluid density and viscosity -- and your guess at the velocity -- as inputs.
+Its output is the force required to move the particle at the velocity you guessed.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS1_4-1d1d76f43861a44fd225a422d64c1834.png}
+\end{figure}
+
+\subsubsection{Velocity calculator \#2}
+
+This calculator is an extension of Velocity Calculator \#1. This calculator automatically does the iteration to find the $U$ which simultaneously satisfies the equations for $\mathcal{Re}$ and $C_d$.
+It also incorporates the calculation in the density calculator above, so that the input is not force directly but particle density.
+The input panel below has text boxes for the particle size and density, and the fluid density and viscosity. Its output is the velocity of the corresponding particle.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS1_5-09bd30f67b420b9006df5a9a4e9483da.png}
+\end{figure}

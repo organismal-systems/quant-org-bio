@@ -1,0 +1,105 @@
+\section{🧮 Models of particle transport by advection and turbulence}
+
+A simple but useful approach for estimating the transport of particles in environmental flows is called a \textbf{Gaussian plume model}.
+
+To explain the key assumptions of this model, we'll use a terrestrial example of wind-borne seed dispersal.
+Useful references are a journal article, Okubo and Levin (1989), and a book by the same authors, Okubo and Levin (2001).
+
+The question we will address is: If a plant or tree releases seeds with sinking velocity $U$ above the ground at a height $h$, how widely do its seeds disperse?
+You can think of many examples of pollutant particles, carbon-containing particles in the ocean, aeolian dust particles, etc, whose distribution patterns are exactly analogous.
+In the Gaussian Plume Model of seed dispersal, we'll assume that there is constant wind velocity, $W$.
+In reality, the wind would likely vary over time and at different heights in intensity and direction; we will neglect this variation.
+
+We'll also assume that turbulent intensity, as summarized by the turbulent diffusion coefficient $K$, is also equal at all times and places.
+In reality, turbulence would also vary in time and space, but we will again neglect this complication.
+
+We'll assume that, once they hit the gound, seeds stick to it and are not dispersed into the air again.
+
+Finally, we'll assume that at large scales the advective transport is much faster than the turbulent mixing. That is, we assume that turbulent mixing is significant in the vertical direction but can be ignored in the horizontal directions, because advective transport by the wind is much greater.
+This is mostly a technical detail, because it is almost always true for most parts of environmental flows, but this assumption can have consequences in specific parts of the environment (very near the source, very near the ground, etc.).
+
+If we accept these assumptions, we can calculate formulas for the concentration of seeds in different parts of the atmosphere surrounding the seed source, and for the rate at which seeds are deposited on the ground at various downstream distances.
+These formulas are calculated for you in the Gaussian Plume calculator below.
+
+\subsection{Model rationale}
+
+The rationale of the Gaussian plume model is that it breaks the three components of movement:
+
+\begin{enumerate}
+\item the \textit{advection} due to wind velocity, $W$
+\item the spreading in the vertical direction by \textit{turbulence}, $K$
+\item the sinking velocity, $U$
+\end{enumerate}
+
+into sequential, additive steps.
+
+Separating the movement mechanisms makes it easy to approximate the resutling distributions and deposition patterns, in the following ways:
+
+\begin{enumerate}
+\item Seeds (or other particles of interest) are transported horizontally downwind at a steady velocity, $W$.
+\item As they move downwind, the vertical distribution of seeds is spreading due to the turbulent diffusion, to take the shape of a Gaussian distribution with a variance that increases over time at a rate proportional to $K$.
+\item The vertical position of the mean of the Gaussian distribution of seeds is descending over time, due to the sinking velocity $U$.
+\end{enumerate}
+
+Following these steps, a formula can be written for the spatial distribution of seeds and their deposition rate.
+
+\subsubsection{Model Inputs:}
+
+In the default settings (to reproduce these, just restart the kernel in the menu at the top left):
+
+\begin{itemize}
+\item the seed source is set to $h = 10 m$;
+\item the seed's sinking speed is $U = 0.5 \frac{m}{s}$;
+\item the rate at which seeds are released is one per second: $n = 1 s^{ -1}$;
+\item the default wind speed is $W = 1 \frac{m}{s}$; and,
+\item the default turbulent mixing intensity is $K = 0.5 \frac{m^2}{s}$.
+\end{itemize}
+
+You can modify these as needed to apply to a specific problem, by entering a new value in a textbox and hitting \textit{enter}.
+
+For example, in calculating the distribution pattern of marine invertebrate eggs, or pesticide droplets from aerial spraying, you might calculate the sinking speed of these particle using \href{/cdsphere}{this worksheet}, and use the calculator below to explore the consequences of various release heights, wind or current speeds, turbulence intensities, etc.
+
+\subsubsection{Model outputs:}
+
+The model output is in the form of three plots.
+
+\begin{itemize}
+\item The top graph is the total rate of deposition as a function of downstream distance from the source. This is called the \textit{Cross-Wind Integrated Deposition}, or \textit{CWID}.
+
+This term means simply that we are not primarily concerned with the relatively small spread of seeds, pesticide or other particles in the cross-stream direction.
+We are instead mainly interested in the much larger dispersal of those particles in the downstream direction.
+
+The CWID integrates across all cross-stream positions, so it is straightforward to see the downstream transport.
+In this plot, the horizontal axis is distance downstream from the source, $x$.
+You can specify the extent of ground plotted by adjusting the plotting parameter $x_{\mathit{max}}$.
+
+
+\item The bottom two plots show the distribution of seeds in the air (or other particles in other fluids, as the case may be).
+
+In these plots, the horizontal axis is $x$, and the vertical axis is height above the ground, $z$.
+The color contours represent particle concentration.
+The first of these two plots shows this concentration on a $\log_{10}$ scale, as indicated by the scale bar at right.
+The bottom plot shows the same concentration, but on a linear scale.
+
+The two plots show the same distribution; it is often easier to get an overall sense for the plume pattern on the linear scale plot, but easier to see dilute parts of the particle distribution using the log scale plot.
+\end{itemize}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS2_1-6b13c19e58ce51f8ba0767168632c430.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS2_2-8a05dbf47c94c256583be1cf778acf32.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS2_3-86c380b6a6026051a64d371f2e706b0c.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/RS2_4-c1623ee6a5f1b2773a76a5e03455ce90.png}
+\end{figure}

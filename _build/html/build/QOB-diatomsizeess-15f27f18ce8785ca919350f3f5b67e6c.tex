@@ -1,0 +1,211 @@
+\subsection{🧮 Size-selection of diatoms in fluctuating environments}
+
+This notebook implements (with some modifications) the \textbf{diatom population dynamics model} presented in \cite{Litchman_2009}.
+
+This model uses \href{https://en.wikipedia.org/wiki/Allometry}{allometric} trends in growth rates and storage capacities to calculate the population dynamics of different-sized diatom variants.
+The variants compete for a nutrient (nitrogen in the form of \href{https://en.wikipedia.org/wiki/Nitrate}{nitrate}) within a \href{/mixedlayers}{mixed layer}.
+Nutrient is depleted in the mixed layer due to uptake by diatoms.
+
+Mixing events (\textit{e.g.} storms) occur periodically, that replace a fraction of the water in the mixed layer with deep water.
+This has two effects: It transports some of the diatom cells into deep water, where they ultimately die; and, it injects nutrient (contained in deep water) into the mixed layer.
+Therefore, a mixing event both lowers the diatom population and provides nutrients to enhance its growth.
+
+Litchman \textit{et al.}`s model is a so-called \textbf{quota model}.
+``Quota'' refers to cells' storage of nutrients, increasing as cells take up nutrient from the water and decreasing as that nutrient is consumed during growth.
+The mode tracks the changes over time in:
+
+\begin{enumerate}
+\item The number of cells of each diatom variant
+\item The quota (amount of stored nutrients) in cells of each diatom variant
+\item The amount of nutrient in the water
+\end{enumerate}
+
+The key question asked by Litchman \textit{et al.} was,
+
+\begin{quote}
+\textbf{Do variations in the frequency and intensity of mixing events, combined with allometries of nutrient storage and use, explain the size distributions of diatoms in different habitats?}
+\end{quote}
+
+The rationale and key parameters are explained in \href{/diatomallometry}{this discussion of diatom allometry} and \href{/allometrysizeselection}{this discussion of Litchman \textit{et al.}'s data analysis}.
+Explanation of the formulation of this model is in \href{/litchman-etal2009}{this context page} (and in the original paper).
+
+\subsubsection{How to use this notebook}
+
+To use the model, start by selecting \textit{\textbf{Run All Cells}} under the \textit{\textbf{Run}} menu at the top left of this page.
+
+The parameters used in simulating diatom population dynamics are presented in three sets of textboxes and execution buttons, which you will use in sequence to:
+
+\begin{enumerate}
+\item Set up the number and size range of diatom variants, and the characteristics of the mixed layer they inhabit.
+\item Seed the mixed layer with one or more of the diatom variants.
+\item Set the interval between mixing events and how many days to simulate the population.
+\item Run the simulation and look at the output.
+\item Optionally, reseed the population with new cells, and restart the simulation to see how the new set of variants interact.
+\end{enumerate}
+
+From the initial conditions you specify, the model runs through many mixing intervals and the diatom populations approach a repeated pattern.
+
+\paragraph{Graphical output}
+
+The model produces two sets of graphical output:
+
+\begin{enumerate}
+\item Plots of the population (expressed as biovolume) and quota of each variant, and the nutrient concentration, through the last simulated mixing interval.
+
+These ``period'' plots are good indicators of how effectively each variant stores nutrients when it is available, and uses that storage to fuel growth.
+
+
+\item Plots of the averages over each mixing interval of the population and quota of each variant, and the nutrient concentration, over the entire simulation.
+
+The averaged plots are good indicators of the outcomes of competition between variants, because they show positive or negative population trends over long timespans.
+\end{enumerate}
+
+\textbf{Biovolume} is the number of cells times the volume of each cell, for each of the size variants. If cell densities are approximately constant, then the biovolume of each variant is approximately proportional to the total biomass of that variant.
+
+These plots are automatically saved at the end of each simulation as images, so you can copy and paste them into a document or presentation to record your results.
+The png format images are \textit{period.png} and \textit{averagred.png}; the svg format images are \textit{period.svg} and \textit{averaged.svg}.
+
+\subsubsection{Tabular output}
+
+The model also produces two tables of period-averaged results for the final mixing period:
+
+\begin{enumerate}
+\item A table of \textbf{standing stock}, averaged through the last mixing period.
+
+This table shows, for each size class:
+
+\begin{itemize}
+\item class number ($i$)
+\item size metric ($s_i$)
+\item size ($10^{s_i}$)
+\item number cells per liter ($N_i$)
+\item relative quota ($\frac{Q_i}{Q_{i,min}}$)
+\item biovolume ($BV_i = N_i \times 10^{s_i}$
+\item nutrient concentration, $R$
+\end{itemize}
+
+Note that $R$ reflects the entire mixed layer, and does not vary by diatom size -- it is included in each row only to make a complete table for import into a spreadsheet.
+
+
+\item A table of \textbf{diatom population losses} (in units of biovolume per day), averaged through the last mixing period.
+
+This table shows, for each size class:
+
+\begin{itemize}
+\item class number ($i$)
+\item size metric ($s_i$)
+\item size ($10^{s_i}$)
+\item losses due ``background'' mortality, $M$
+\item losses due to sinking out of the mixed layer, $S$
+\item losses transport to deep water by mixing events ($L$)
+\end{itemize}
+\end{enumerate}
+
+\subsubsection{Setting up diatom variants and mixed layer characteristics}
+
+This part of the notebook lets you set up the ``scenario'' of diatom variants and mixed layer characteristics.
+
+The parameters are:
+
+\begin{itemize}
+\item $N_{sizes}$, the number of diatom variants
+\item $S_{min}$ and $S_{max}$, the minumum and maximum sizes of the variants (variants will be distributed across this range)
+\item $m$, the mortality rate due to predation, pathogens, \textit{etc.}, affecting all variants equally
+\item $z_m$, the depth of the mixed layer; a shallower layer means more loss due to sinking, which disproportionately affects larger cells.
+\item $a$, the fraction (between 0 and 1) of the mixed layer that is replaced in each mixing events. Larger $a$ means more cells are lost, but more nutrients are gained.
+\item $R_{deep}$, the nutrient concentration in deep water.
+\end{itemize}
+
+It is a good strategy to start with these default values, to see their results, then modify one of more to see the effects of those changes.
+
+When you have the parameters you want, click the \textbf{Set up population} button below to set up the mixed layer.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_1-511cd3f2f6a1271bcf9b733732eee599.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_2-3839c3797fce4cfce1407969f4d7a45d.png}
+\end{figure}
+
+\subsubsection{Seeding the mixed layer with diatom variants}
+
+This part of the notebook lets you ``seed'' diatoms by adding cells into the scenario, as a starting point for simulating population dynamics.
+When you set up the mixed layer, the populations of all variants were set to zero.
+Using these textboxes, you can introduce a starting population of diatoms, either all variants simultaneously or only variants you specify.
+
+The parameters are:
+
+\begin{itemize}
+\item $q_{init}$, the initial quota in new diatom cells at the start of the simulation
+\item $S_{i}$, the size classes of the variants with which to seed the mixed layer.
+
+\begin{itemize}
+\item If this entry is ``all'', then all variants will be seeded
+\item If this entry is one or more numbers, \textit{e.g.} ``1'' or ``2,6'' then only those size classes will be seeded
+\end{itemize}
+
+
+\item $N_i$, the number of cells to seed into each selected size class.
+\end{itemize}
+
+It is a good strategy to start with these default values, to see their results, then modify one of more to see the effects of those changes.
+
+When you have the parameters you want, click the \textbf{Seed cell population} button below to set up the scenario.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_3-9e17c1b0df885ed2c22ba7a92d16e1e6.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_4-38653c36dc417e2501c944e11941d7b3.png}
+\end{figure}
+
+\subsubsection{Setting mixing event intervals, and running the simulation}
+
+This part of the notebook lets you specify the interval between mixing events, to see what the effects different intervals have on competition between diatom variants.
+
+\begin{quote}
+\textbf{Important:} These parameters run the simulation using the existing diatom populations. If you want to start with a ``blank slate'', go back and click the \textbf{Set up population} and \textbf{Seed cell population} buttons.
+\end{quote}
+
+The parameters are:
+
+\begin{itemize}
+\item $t_{mix}$, the number of days between mixing events
+\item $n_{pers}$, the number of mixing periods to simulate
+\item $n_{record}$, the number of data points to record during each period. If the period plots look unsmooth, try increasing this parameter.
+\end{itemize}
+
+It is a good strategy to start with these default values, to see their results, then modify one of more to see the effects of those changes.
+
+When you have the parameters you want, click the \textbf{Run simulation} button below to simulate the population and plot the results.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_5-332074078098a2fd7c662a26669b70dc.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_6-c5d8be50f4b80e9228dfdd4364d8478c.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/DESS_7-7ca74b42d2d1789ab7ce43137c6bf4ff.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/period-9c360f75156b8b6bdfeb19bb39c969ad.png}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{files/averaged-f9af1048b9d6ba986f40a616373366f3.png}
+\end{figure}

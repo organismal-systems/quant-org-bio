@@ -1,0 +1,132 @@
+\chapter{🧮 Scale models and dynamic similarity}
+
+Much of the discussion in this book involves \href{https://en.wikipedia.org/wiki/Scale\_model}{scale models}.
+Most of us are familiar with scale models, even if we don't ordimarily think of them using that name.
+For example, a model boat that a child plays with in a bathtub is a scale model of a full sized boat that floats on the ocean.
+A doll is a scale model of a human being.
+An architect often uses a scale model of a building to develop and explain a design.
+These examples are of large objects made small enough to be practical and inexpensive, but scale models that are enlargements of the original can also be useful.
+For example, a model of a microorganism or cell can be a useful tool for understanding its morphology and relationship with its surroundings.
+
+These examples reflect \textbf{geometric similarity}.
+That is, the derived objects are scale models because their components have \textit{\textit{geometries that are similar in proportion} to the originals}*.
+
+\subsection{Dynamic similarity}
+
+The concept of similarity can be extended to include forces acting on objects and their surroundings.
+This concept is called \href{https://en.wikipedia.org/wiki/Similitude}{``\textit{dynamic similarity}''} or ``similitude''.
+Scale models are dynamically similar if, in addition to being geometrically similar in proportion, \textit{the different forces acting on them are also similar in proportion.}
+
+The additional requirement of equal proportional forces means that not all geometrically similar scale models are dynamically similar.
+We all have an intuitive grasp of this fact.
+To illustrate this, let's look at video of a scale model of the Titanic sailing on a body of water:
+
+As you watch this video, consider your intuition about how big the model is.
+
+\includegraphics[width=0.7\linewidth]{files/e5654a2e9aa9b5bac3ad41462051f621.jpeg}
+
+What is your intuitive estimate of the size of this model?
+
+The model in this video is a very detailed scale model of the Titanic.
+It is geometrically similar in nearly every visible detail, and in a great many that are not visible.
+There is little direct information about the size of the model (such as a ruler, human hand or other object of known scale)
+Nonetheless, it is immediately apparent from watching the video that this model is not 267 meters long, like the full sized Titanic was.
+What is it about the video that makes the model seem smaller?
+
+It is the context of the water motion.
+The water is behaving as water always does, and the model is geometrically similar.
+However, the relative motion of the water waves and model are out of proportion with each other, compared to a full sized ship moving in the ocean.
+
+That is, the forces moving the ship and the forces moving the water are not in the proper proportions.
+Therefore, this geometrically similar model is not dynamically similar.
+
+Our intuition based on many experiences watching lakes, oceans, pools and other water bodies gives us a sense of scale for waves.
+The model gives little indication of its size, but the size scale suggested by our intuition for the water waves tells us that the model is only about a meter long (it's actually a 1:212 scale model, with a length of roughly 1.25m).
+
+\subsubsection{Ship model basins}
+
+For comparison, let's take a look at a \href{https://en.wikipedia.org/wiki/Ship\_model\_basin}{ship model basin}, also known as a ``tow tank''.
+A ship model basin is a facility for inferring characteristics of full sized ship, from measurements of motions and forces on much smaller scale models.
+The video below shows some sequences of scale models being towed in Southhampton University's Boldrewood Towing Tank as part of engineering studies:
+
+\begin{verbatim}
+# This displays a video posted of the [QinetiQ Ship Tank](https://www.qinetiq.com)
+display_yotube_video("https://www.youtube.com/watch?v=Q9qZcN5iX2k", width=800, height=600)
+\end{verbatim}
+
+\includegraphics[width=0.7\linewidth]{files/825d0837c8c173ff66ee9f8ce59f9970.jpeg}
+
+The video shows a modern ship model basin being used to observe water interactions with the moving ship and boat models in great detail.
+The bow and stern waves from these models are dramatically more reminiscent of those from a full sized ship than the Titanic video.
+In fact, if it were not for the people on the moving gantry, it would be difficult to estimate the size of these scale models just by observing their interactions with the water.
+\textbf{The difference betwen the two videos is that the models in the second video are set up by engineers to be dynamically similar, while the first model is not.}
+
+\section{Establishing dynamic similarity}
+
+How did the engineers in the video know how to design the model and set its movement so that it would be dynamically similar?
+
+The criterion an engineer used to determine dynamic similarity is called the \href{https://en.wikipedia.org/wiki/Froude\_number}{Froud number}, abbreviated as $\mathcal{Fr}$.
+The Froud number associated with a full sized ship  of length $L$ sailing on the ocean at speed $U$ is defined as
+
+\begin{itemize}
+\item ${\mathcal{Fr}} = \frac{U}{\sqrt{g L}}$
+\end{itemize}
+
+were $g$ is gravitational acceleration.
+
+If a scale model of the ship which has length $L_{model}$ travels at speed $U_{model}$, its Froud number is
+
+\begin{itemize}
+\item ${\mathcal{Fr_{model}}} = \frac{U_{model}}{\sqrt{g L_{model}}}$
+\end{itemize}
+
+When
+
+\begin{itemize}
+\item ${\mathcal{Fr}} = {\mathcal{Fr_{model}}}$
+\end{itemize}
+
+the full sized ship and the model are dynamically similar.
+This is the condition created by the engineers in the second video.
+As you can see, the resulting water motion resembles that around a real vessel much more than the dynamically dis-similar model in the first video.
+
+\subsection{Why does the Froud number determine dynamic similarity for ships and ship models?}
+
+The Froud number is based on the speed at which water waves travel.
+This speed is a function of their wavelength, $L_w$ (the distance between neighboring crests): water waves' speed is (in the ideal case) proportional to $\sqrt{L_w}$ (and to $g$, the gravitational acceleration).
+The Froud number is the ratio of the full sized ship's speed, divided by the estimated speed of a wave equal in length to the ship.
+
+Why do the relative lengths of the ship and wave matter?
+It is because a moving ship generates waves traveling around the same speed it's traveling.
+That means a slow ship is generating slow, short waves.
+As the ship increases speed, it generates faster, longer waves.
+
+A ship can effectively ``straddle'' and plow through waves that are much shorter than its hull.
+However, when a wave starts to get to as long or longer than the hull, the ship's stern gets caught in the trough while the bow is raised in the crest.
+That means that, in effect, the ship is continuously going uphill!
+When this happens, an increase in propulsive power just adds to the size of the wave being generated -- it has almost no effect on ship speed.
+
+In effect, the length of the hull imposes a ``speed limit'': the speed of waves as long as the ship.
+This is known as the \textit{hull speed}.
+The faster hull speeds of longer vessels is one of the reasons racing shells, hunting kayaks, container ships and many other watercraft for which speed is important tend to be long.
+
+The Froud number, $\cal{Fr}$, is a ship's speed expressed as a fraction of its hull speed.
+A model with matching Froud number -- that is, traveling at the same fraction of its hull speed -- will both in appearance and in the quantitative measures of force and motion match the full sized ship.
+That is, the ship and model will be dynamically similar.
+
+\subsection{Nondimensional numbers}
+
+The Froud number is a ratio of two quantities -- the wave speed and the hull speed of a moving ship or model \&ndash that have the same units, $\frac{m}{s}$.
+Because the units of the numerator and denomenator cancel, the Froud number is dimensioness.
+
+The Froud number is one of many indices in engineering, physics and biology that has this characteristic. These indices are usually referred to with the slightly unintuitive name \href{https://en.wikipedia.org/wiki/Dimensionless\_quantity}{non-dimensional numbers} (also known as ``dimensionless quantities'').
+Nondimensional indices that express the ratio of two lengths, speeds, masses, rates or other characteristics relevant to an organism's biology are often informative about that organism's function.
+
+For example, you may already be familiar with a nondimensional number from epidemiology: the pathogen reproductive number, $\mathcal{R}$.
+$\mathcal{R}$ is the number of new infections caused by a primary infection before it is cleared.
+If $\mathcal{R}<1$, then each successing round of infection is smaller; the infected population is then decreasing, and an epidemic is not possible.
+If $\mathcal{R}>1$, then each successing round of infection is larger; the infected population is increasing and an epidemic can occur.
+
+By summarizing the conditions under which an epidemic is or is not possible, the nondimensional index $\mathcal{R}$ highlights factors that make epidemics more likely (those that incease $\mathcal{R}$, such as high contact rates among susceptibles and poor hygiene) and those that make epidemics less likely (those that decrease $\mathcal{R}$, such as reduction in susceptibility through vaccination and good hygiene).
+
+Because nondimensional numbers play similarly useful roles in many aspects of Organismal Biology, it is worth thinking about them in some detail.
