@@ -261,8 +261,7 @@ $$
 \end{matrix} 
 $$
 
-One final remarkable property that the stable age distributions have is that they are **complete**, which means that any population can be
-written as a sum of stable age classes, 
+One final remarkable property that the stable age distributions have is that they are **complete**, which means that any population can be written as a sum of stable age classes, 
 $$
 \mathbf{P}^{\tau} & = &  \sum_{n = 1}^N c_n \mathbf{V}_n 
   & = & c_1 \mathbf{V}_1 + c_2 \mathbf{V}_2 + c_3 \mathbf{V}_3 + \dots + c_N \mathbf{V}_N
