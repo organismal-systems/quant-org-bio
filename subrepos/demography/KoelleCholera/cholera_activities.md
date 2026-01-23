@@ -8,5 +8,5 @@ However, before they contribute, many donors want a concrete indication that the
 Furthermore, most donors receive many more funding requests than they can accommodate.
 So, they need an objective way to assess the relative benefits of alternative intervention strategies.
 
-The epidemiological model of cholera by Koelle *et al*. (2005) provides a tool with which to quantitatively assess how much alternative hypothetial intervention strategies might benefit an affected population.
+The following activities use the model of cholera by [Koelle *et al*. (2005)](https://doi.org/10.1038/nature03820) as a tool with which to get some quantitative insights into how much alternative hypothetial intervention strategies might benefit an affected population.
 

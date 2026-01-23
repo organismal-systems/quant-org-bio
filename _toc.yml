@@ -92,7 +92,10 @@ parts:
           - file: subrepos/demography/KoelleCholera/cholera_rationale.md
           - file: subrepos/demography/KoelleCholera/koelle_cholera.ipynb
           - file: subrepos/demography/KoelleCholera/cholera_activities.md
-          - file: subrepos/demography/KoelleCholera/cholera_model.md
+            sections:
+            - file: subrepos/demography/KoelleCholera/cholera_activities1.md
+            - file: subrepos/demography/KoelleCholera/cholera_activities2.md
+            - file: subrepos/demography/KoelleCholera/cholera_model.md
       - file: subrepos/demography/Spirorbis/Spiror.ipynb
 
   - caption: Spatial Dynamics
