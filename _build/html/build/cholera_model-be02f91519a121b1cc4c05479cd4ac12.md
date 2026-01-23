@@ -1,0 +1,55 @@
+# ️💡️  A discrete-time model of cholera immune period
+[Koelle *et al*. (2005)](https://doi.org/10.1038/nature03820) developed a model in which they tried to simultaneously quantify several epidemiological and environmental factors affecting cholera incidence.
+They used monthly data from clinics in a focal site, Matlab, Bangladesh, from 1966 to 2002.
+They focused on the predominant biotype, El Tor, but also included data on the Classical and Bengal biotypes as well as several indicators of local weather and regional climate variations.
+
+Koelle *et al*.'s paper was an extensive parameter-fitting exercise, which is quite complicated.
+This parameter fitting included physiological factors such as the immune period in a recovered victim of cholera, population factors such as the number of infected and susceptible residents, and environmental factors such as rainfall that affect both the aquatic habitat available to *V. cholera* bacteria and the sanitation breakdown and crowding caused by flooding.
+
+Despite the complex process to estimate parameters, the model used by Koelle *et al*. to simulate cholera outbreaks is relatively simple.
+This model is an example of a of so-called [*SIR* model](wiki:Compartmental_models(epidemiology)).
+In *SIR* models, the population is classified into three "compartments":
+1. $S$, the **susceptible** class
+2. $I$, the **infected** class
+3. $R$, the **recovered** class
+
+The general structure of an *SIR* model is that:
+- Contact between an infected individual and a susceptible individual has some probability of resulting in an infection, in which the susceptible individual becomes an infected individual (moving from $S$ to $I$).
+
+- An infected individual has some probability per unit time of recovering from infection (moving from $I$ to $R$).
+
+  A recovered individual may have different characteristics from a susceptible individual. 
+  For example, a recovered individual may have an acquired immunity to the disease, or a distinct mortality or reproduction rate.
+
+- A recovered individual may revert to a susceptible individual, after the distinct immunological or demographic characteristics of a recovered individual have subsided.
+  
+Transitions between $S \rightarrow I \rightarrow R \rightarrow S$ form a cycle, so (in general) an individual can undergo repeated infection and recovery cycles.
+
+Characteristics of this general model must be adapted to application to any given disease.
+For example, some diseases are invariably fatal, or do not result in acquired immunity, so there may be no recovered class.
+Some diseases have distinctive effects on demographic rates, while others do not.
+Where the mortality rate associated with infection is negligible and the population *N* is constant (or otherwise known) *SIR* models simplify to two independent population classes, $S$ and $I$, where $R = N - S - I$ implicitly specifies the recovered class.
+
+## Koelle *et al*.'s SIR model
+Koelle *et al*.'s model quantifies several characteristics of cholera infections that are poorly understood. 
+
+### Immune period
+Koelle *et al*. estimated the period over which an individual who has recovered from a cholera infection is resistant to being re-infected.
+In cholera, as in most diseases, this acquired immunity decays over time, and the duration of immunity has strong effects on disease dynamics.
+```{figure} images/immunity.png
+:label: imm
+:alt: Immune period
+:width: 400px
+:align: center
+
+Immune period plot from Koelle *et al*.'s cholera model.
+```
+
+
+
+### Infected population
+Despite the availability
+
+
+
+%In these Study Questions, we will use a recreation of their model in the worksheet cholera4.sws to gain insights into the effectiveness of possible cholera mitigation strategies.
