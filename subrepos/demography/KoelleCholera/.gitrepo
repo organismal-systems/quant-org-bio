@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/KoelleCholera.git
 	branch = main
-	commit = b851ee9c39faf5b0cd2c648040db8e755885d45a
-	parent = 0bee01d258e9c56584a8bcd5b356ca0ef8b3ce2a
+	commit = 345094cf0af2713b347bcd55f02f923cc2d4387f
+	parent = 95cb6e72cf3002ad2a2773a885d6d59e920b7a7b
 	method = merge
 	cmdver = 0.4.3
