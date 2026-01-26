@@ -30,7 +30,7 @@ Assume vaccination levels of 1%, 10%, 25% and 75%.
  That is, must a large fraction of the population be vaccinated before a significant reduction is seen in cholera cases, or is a lower vaccination rate also effective?
 
 ## Cholera mitigation strategy C: Improve nutrition and basic health
-The duration of immunity after recovery from cholera, $t_{immunity$, is one of many physiological impacts of nutritional state.
+The duration of immunity after recovery from cholera, $t_{immunity}$, is one of many physiological impacts of nutritional state.
 
 A more general but potentially effective approach would be to invest in improving nutrition for the whole population through improvements in agriculture, transportation and food handling.
 
