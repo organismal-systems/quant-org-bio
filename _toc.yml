@@ -53,8 +53,10 @@ parts:
           #- file: subrepos/biomechanics/ReSphere/RS2.md
           - file: subrepos/biomechanics/ReSphere/RS3context.md
           - file: subrepos/biomechanics/ReSphere/RS3.ipynb
-      - file: subrepos/biomechanics/ChimeraSwim/README.md
+      - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.md
         sections:
+          - file: subrepos/biomechanics/ChimeraSwim/SizeSwim.md
+          - file: subrepos/biomechanics/ChimeraSwim/ChimeraGeom.ipynb
           - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
           - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
   - caption: Demography
