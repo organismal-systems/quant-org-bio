@@ -5,7 +5,7 @@ We experience these as winds, river flows, tidal fluctuations and large scale oc
 Here, we begin to consider the effects of these environmental flows on the movement and distribution of organisms.
 
 ## Examples of transport in environmental flows
-To get a concrete sense of the relevant phenomena, let's begin with a couple examples:
+To get a concrete sense of the relevant phenomena, let's begin with a couple of examples:
 
 ### Reproductive biology
 Most benthic marine invertebrates are [free spawning](wiki:Spawning), meaning that they release their gametes into the water.
@@ -18,7 +18,7 @@ This has important consequences for the life histories of many species.
 Marine invertebrates typically accumulate metabolic resources to produce gametes for months or even years before spawning. 
 Once spawning begins, however, it's essential that multiple individuals precisely synchronize the timing of spawning. 
 If an individual is early or late, its eggs will not encounter sperm to fertilize it, or its sperm will not encounter eggs to fertilize.
-This risk of reproductive failure leads to behavioral strategies such as formation of large colonies or reproductive aggregations; use of environmental cues such as moon phases; and chemical communication among reproductive adults.
+This risk of reproductive failure leads to behavioral strategies such as formation of large colonies or reproductive aggregations; use of environmental cues such as moon phases; chemical communication among reproductive adults, and complex pre-mating "courting" behaviors.
 
 Given synchronized spawning, successful reproduction then depends on maximizing encounters of eggs with approriate concentrations of sperm, sufficient to make fertilization successful but not so dense as to make [polyspermy](wiki:Polyspermy) likely.
 The encounter rate of eggs with sperm &ndash; and hence, reproductive success &ndash; is determined in large part by how fast these gametes sink, rise or swim, along with the rates at which they are transported, mixed and diluted by environmental flows.
@@ -42,7 +42,7 @@ The ways in which sprayed pesticides, pollen, dust and a great many other anthro
 ## Transport by advection
 Transport of organisms and other immersed objects or substances by moving fluid is called [advection](wiki:Advection)[^adv].
 Environmental flows often *advect* organisms, particles and solutes much faster and in different directions than they would otherwise move.
-For example, many organisms move vertically &ndash; they sink or rise under the influence of gravity and buoyancy.
+For example, many aquatic organisms move vertically &ndash; they sink or rise under the influence of gravity and buoyancy.
 In contrast, the principal direction of wind, currents and many other environmental flows is often horizontal.
 In such cases, advection causes movement in directions those organisms would not otherwise move.
 
@@ -68,15 +68,15 @@ Turbulent diffusion has similar effects in environmental flows, greatly enhancin
 [^mix]: Even this is an overestimate of mixing without turbulence, because temperature differences as the coffee cools cause some mixing currents!
 
 ## Distributions of organisms in environmental flows
-We now have three components of velocity to consider when thinking quantitatively about the movement of particles such as microorganisms, pollen or dust immersed in environmental flows:
+We now have three components of velocity to consider when thinking quantitatively about the movement of particles such as microorganisms, eggs, pollen or dust immersed in environmental flows:
 1. The particles' own velocity relative to the fluid in which they are immersed, such as sinking or rising under the influence of gravity, buoyancy and drag forces.
-2. Advection by the directional velocity of the fluid, such as wind or current, often primarily in horizonatal directions.
+2. Advection by the directional velocity of the fluid, such as wind or current, often primarily in horizontal directions.
 3. Turbulent eddies, that cause small-scale random movements of individual particles while mixing and spreading a population of particles.
 
 To understand the combined effects of vertical movements with advection and turbulence, it's important to keep in mind the different effects on *population distributions* of advection by currents *vs.* mixing by turbulence. 
 - Starting with a group of organisms or a blob of solute, *advection* (with no turbulence) moves the overall average position (in engineering jargon, the center of mass) of that group or blob, such that it  moves with the current over time. 
 - Starting with a group of organisms or a blob of solute, *turbulent diffusion* (with no advection) spreads out the group or blob in a similar way to molecular diffusion or random swimming, but much faster except at very small length scales (much smaller than a millimeter).
 
-Keeping in mind that advection and turbulence are distinct forms of transport by fluids, we can anticipate environmental situations in which we have high adection and low turbulence; low advection and high turbulence, high advection and high turbulence, etc.
+Keeping in mind that advection and turbulence are distinct forms of transport by fluids, we can anticipate environmental situations in which we have high advection and low turbulence; low advection and high turbulence, high advection and high turbulence, *etc*.
 The [next worksheet](RS2exec.ipynb) gives us tools for quantitatively assessing the consequences of these different scenarios for different types of particles. 
 

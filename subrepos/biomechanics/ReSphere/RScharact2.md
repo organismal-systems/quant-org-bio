@@ -1,11 +1,11 @@
 # 📖️ Estimating drag forces, Part 2
 With the set of organismal and fluid characteristics developed in [Part 1](./RScharact.md), we can now begin to assess the generic effects of size and speed on drag forces acting on organisms.
-As a reminder, we are deliberately avoiding references to specific morphologies, behaviors or fluids.
+As a reminder, at this point we are deliberately avoiding references to specific morphologies, behaviors or fluids.
 Instead, we are looking for inherent effects of size, velocity and fluid characteristics that generalize across these specifics.
-Because we omit specifics, we are aiming here for **order of magnitude estimates**.
-The intent is, knowing the order of magnitude of the inherent generic effects, we will then be able to focus in detail about possible "tweaks" due to adaptations in morphology, behavior *etc*.
+Because we omit specifics, we are aiming here for predictions about **general scaling rules for drag** associated with these characteristics.
+The intent is, having established expectations about general scaling, we will then be able to focus in detail on deviations from those expectations, possible "tweaks" due to adaptations in morphology, behavior *etc*., and other types of variations.
 
-As our case study, we will think about the organism from [Part 1](./RScharact.md) that is sinking at a steady speed in stationary fluid.
+As our case study, we will think about the organism or "particle" from [Part 1](./RScharact.md) that is sinking at a steady speed in stationary fluid.
 We will consider two types of forces, drawn from the previous pages:
 - *Forces due to momentum*
 
@@ -13,7 +13,7 @@ We will consider two types of forces, drawn from the previous pages:
 
 - *Forces due to viscosity*
 
-    Viscous forces on an organism moving in a fluid stem from the fluid's viscosity, $\mu$, acting on the organism's surface in proportion to the velocity gradient in flow from the organism's surface (where fluid moves with the organism) to the "free stream" far from the organism, where fluid is undisturbed.
+    Viscous forces on an organism moving in a fluid stem from the fluid's viscosity, $\mu$, acting on the organism's surface in proportion to the gradient in flow velocity from the organism's surface ([where fluid moves with the organism](wiki:No-slip_condition) to the "free stream" far from the organism, where fluid is undisturbed.
 
 The key question we will address is, "*How do we expect forces due to viscosity and wake momentum to increase with organism size and speed?*"
 	
@@ -25,7 +25,7 @@ The key question we will address is, "*How do we expect forces due to viscosity 
 :align: center
 :alt: An idealized wake behind a sinking sphere.
 
-Idealized wake behind a sinking particle. The orange lines indicate the wake. For our estimate, we assume the cross section of the wake is equal to $A$, the projected area of the particle. We also assume water within the wake has velocity $U$, and that water outside the wake has negligible velocity.
+Idealized wake behind a sinking particle. The orange lines indicate the wake. For our estimate, we assume the cross section of the wake is equal to $A$, the projected area of the particle. We also assume water within the wake has velocity $U$, and that water outside the wake has negligible velocity. These assumptions are simplifications, but represent the likely generic effects of the respective parameters.
 
 ```
 Our estimate of forces on an organism due to wake momentum is based on:
@@ -43,7 +43,7 @@ Putting these observations together, we can estimate the apparent drag force on 
 $$
 	F_{mom} = \rho L^2 U^2
 $$	
-In sum, $F_{mom}$ is an order of magnitude estimate of the wake momentum force on an organism, which expresses the inherent effects of size $L$, velocity $U$ and fluid density $\rho$, subject to "tweaks" from future consideration of effects from specific details such as the organism's shape.
+In sum, $F_{mom}$ is an [order of magnitude](wiki:Order_of_magnitude) estimate of the wake momentum force on an organism, which expresses the inherent effects of size $L$, velocity $U$ and fluid density $\rho$, subject to "tweaks" from future consideration of effects from specific details such as the organism's shape.
 
 	
 ## Forces due to viscosity
@@ -59,7 +59,9 @@ Idealized shear layer on a sinking particle. We assume that the velocity grades 
 
 ```
 The orange curve represents a **velocity profile**, which is simply a plot of velocity as a function of distance from the organism's surface.
-This velocity profile reflects the fact that, regardless of details about the organism or the fluid, the fluid's velocity at the surface equals the organim's velocity, and the velocity of undisturbed fluid far from the organism is zero.
+This velocity profile reflects the fact that, regardless of details about the organism or the fluid, the fluid's velocity at the surface equals the organism's velocity.
+In fluid dynamics jargon, this is known as the [no-slip condition](wiki:No-slip_condition).
+The velocity of undisturbed fluid far from the organism is zero.
 
 The velocity profile also illustrates the *velocity gradient* (that is, the rate of change of velocity with distance from the surface).
 In the cartoon, the velocity gradient is relatively steep near the organism and becomes more gradual further away, which is typical of profiles observed near objects moving in fluids.

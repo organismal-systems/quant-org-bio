@@ -27,14 +27,14 @@ An object a micron long is "small", because it's only 1/1000th of a meter.
 
 Suppose, instead, we adopt a complementary perspective, in which the basis for comparison comes from the object itself.
 This depends on finding what are called **characteristic values**.
-Characteristic values could include a length, speed or duration that emerges from the object or its interations with its surroundings.
+Characteristic values could include a length, speed or duration that emerges from the object or its interactions with its surroundings.
 These characteristic values specify a subset chosen from a set of scale models.
 
 ### Characteristic dimensions of an egg
 Let's begin with an intentionally simplified example, that we completely understand: 
 In a [previous page](example.ipynb), we considered the surface area, $A$, and volume, $V$, of a spherical egg.
 We could expect that $A$ and $V$ have signicance for an egg's biology. 
-For example, we might expect its mass to be roughly proportional to its volume; that mass may have functional consequences for respiratory demands, development time, sinking or rising rates, etc.
+For example, we might expect its mass to be roughly proportional to its volume; that mass may have functional consequences for respiratory demands, development time, sinking or rising rates, *etc*.
 Likewise, we might expect its surface area to be related to gas exchange rates, encounter probability with sperm or pathogens, and other factors.
 In this simplified example, these serve as a biological motivation for understanding how surface area and volume vary with size.
 
@@ -90,7 +90,7 @@ Before moving on, it's worth broadening our perspective with a few take-home poi
 
 2. The nondimensionalization exploited the fact that all spheres are scale models of each other, so that only one needed to be measured rather than an infinite spectrum of diameters.
    In mathematical jargon, it reduced the *dimensionality* of the problem.
-   Dimensionality is the number of variable along which we have to measure to characterize a phenomenon.
+   Dimensionality is the number of variables along which we have to measure to characterize a phenomenon.
    In this simplified case, nondimensionalization reduced the dimensionality from 1 axis (diameter) to none (all spheres have the same constants).
    Even in this simple case, reducing a hypothetical series of measurements from a series to a single observation represents a significant savings. 
    %In a more relevant problem in Organismal Biology, there may be many axes of variation.

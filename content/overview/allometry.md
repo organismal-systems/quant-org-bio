@@ -12,7 +12,7 @@ A well-known example of an allometric relationshop is [Kleiber's law](wiki:Kleib
 :width: 500px
 :align: center
 
-A plot of Kleiber's law, relating the metabolic rates of organisms to their sizes across a large range of sizes. See the Wikipedia article on [Kleiber's law](wiki:Kleiber's_law) for details.
+A plot of Kleiber's law, relating the metabolic rates of organisms to their sizes across a large range of sizes. See the Wikipedia article on [Kleiber's law](wiki:Kleiber's_law) for details. The vertical axis is Basal Metabolic Rate (in $watts$); the horizontal axis is body mass (in $kg$).
 ```
 
 Allometric relationships within taxonomic groups are usually determined by statistical analysis of observations across a range of organism sizes within the group.
@@ -23,26 +23,28 @@ A line on a log-log plot represents a power law relationship, which can be expre
 trait = c~size^p,
 ```
 where $c$ is a constant, and $p$ is an exponent indicating the type of allometry.
-Taking the log of both sides of [#K1] gives
+Taking the log of both sides of Equation [](#K1) gives
 ```{math}
 :label: K2
 \log{trait} = \log{c} + p \times \log{ size}.
 ```
-[#K2] shows why power law allometries appear at straight lines on log-log plots.
+Equation [](#K2) shows why power law allometries appear at straight lines on log-log plots.
 
-For example, in [](#Kleiber), the trait is [Basal Metabolic Rate](wiki:Basal_metabolic_rate) in watts, $BMR$, the size metric is mass, $M$, the constant $c = 70$, and the hypothesized exponent is $p=\frac{3}{4}$, *i.e.*,
+For example, in [](#Kleiber), the trait is [Basal Metabolic Rate](wiki:Basal_metabolic_rate) in $watts$, $BMR$; the size metric is mass, $M$ in $kg$; the constant is $c = 70$; and, the hypothesized exponent is $p=\frac{3}{4}$, *i.e.*,
 $$
 BMR = 70~ M^\frac{3}{4}
 $$
+
+## Types of scaling
 It is useful to distinguish two types of allometry, *isometric scaling* and *allometric scaling*.
 
-## Isometric scaling
+### Isometric scaling
 Isometric scaling is also known as *geometrical similarity*.
 In isometric scaling, all linear proportions are held constant as overall size increases or decreases.
 The spherical egg model in [the previous notebook](example.ipynb) is an example of isometric scaling.
 In general, a series of isometrically scaled objects follow the so-called [square-cube law](wiki:Square-cube_law), stating that surface area is proportional to the length squared, and volume is proportional to length cubed.
 
-## Allometric scaling
+### Allometric scaling
 In allometric scaling, different organismal traits scale differently with metrics of size. 
 For example, larger animals often have more robust bones than would be predicted by isometric scaling from smaller animals.
 In a given organism, different traits may reflect either direct or indirect effects of isometric and allometric scaling.

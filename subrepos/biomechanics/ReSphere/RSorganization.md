@@ -1,5 +1,5 @@
 # 🧭️ Organization
-This unit provides quantitative tools for understanding the consequences for organsism of movement through fluids. 
+This unit provides quantitative tools for understanding the consequences for organisms of movement through fluids. 
 To keep the discussion general, we often refer to "particles" &ndash; this refers in specific instances to whole organisms such as microorganisms, propagules such as seeds, or components of organisms such as blood cells or pollen.
 The tools in this unit facilitate understanding the linkages by organismal characteristics such as size and density to organismal function from subcellular to physiological to ecological scales.
 

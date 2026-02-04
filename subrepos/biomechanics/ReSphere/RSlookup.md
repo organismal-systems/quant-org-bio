@@ -6,7 +6,7 @@ If we observe or compute one example of drag forces on an organism moving in flu
 
 As an example, let's consider the general problem of drag forces on spherical organisms moving through a variety of fluids (air, water of different salinities, blood, mucus, etc.).
 As with many biomechanics models, assuming an organism is spherical applies to a few organisms exactly, but to a great many organsims approximately. 
-Our goal is to create a [lookup table](wiki:Lookup_table) that tabulates the drag forces on these organisms, to understandhow fast they rise or sink, as biomechanical consequences of size, habitat etc. 
+Our goal is to create a [lookup table](wiki:Lookup_table) that tabulates the drag forces on these organisms, to understandhow fast they rise or sink, as biomechanical consequences of size, habitat *etc*. 
 
 To cover relevant biological applications, we have at least four parameters to vary:
 - organism *size*, $L$
@@ -19,7 +19,7 @@ Furthermore, some of these observations are difficult or impossible, such as mea
 
 The Reynolds number rescues us from this difficult situation. 
 We know that all geometrically similar organisms with the same $\mathcal{Re}$ are scale models of each other (that is, they are *dynamically similar*).
-This means we need only make one observation for each value of $\mathcal{Re}$; from this observation, we can calculate all the specific instances of organisms, fluids etc. with the same Reynolds number.
+This means we need only make one observation for each value of $\mathcal{Re}$; from this observation, we can calculate all the specific instances of organisms, fluids *etc*. with the same Reynolds number.
 
 For example, we can choose one convenient organism size ($L$), and a convenient fluid (with a given visosity, $\mu$, and density, $\rho$).
 We can then measure drag forces across a range of velocity, $U$, giving us the complete range of $\mathcal{Re}$ we need to span the biologically interesting applications.

@@ -54,11 +54,11 @@ To understand the basic mechanism, let's think about a simplified geometry:
 Let's assume that your have a profile area (perpendicular to the wind) of $1m^2$.
 The wind speed upwind of you is $10 \frac{m}{s}$ (about $11 mph$).
 That means roughly $10 m^3$ of air, corresponding to a little over $12 kg$, is encountering your body every second.
-The momentum in that air is $10 m^3 \times 12 kg$ &ndash; a considerable amount.
+The momentum in that air is $10 \frac{m}{s} \times 12 kg$ &ndash; a considerable amount.
 
 However your body is blocking that air, so that downstream of you there is a zone in which wind speed is greatly reduced.
-If the air in this zone has zero velocity (an oversimplification, but still a useful rough estimate) then, by blocking the wind, you are subtracting $120 m^3kg$ of momentum each second from the air as it passes you.
-This requires force, that is the force that you feel as wind pressure and provide by opposing it with your feet.
+If the air in this zone has zero velocity (an oversimplification, but still a useful rough estimate) then, by blocking the wind, you are subtracting $120 \frac{m~kg}{s}$ of momentum each second from the air as it passes you.
+This requires force, and that is the force that you feel as wind pressure and provide by opposing it with your feet.
 
 This idea &ndash; that a moving organism creates a wake that requires force to maintain even if its own momentum is constant &ndash; is key to understanding both how organisms are shaped by evolution to minimize costs of locomotion and how forces on moving organisms scale with basic characteristics such as size and velocity.
 

@@ -21,7 +21,7 @@ Units are constructed from several types of pages, indicated with icons on the T
 - 🛼 "Activity" pages, outlining "mini-studies" in which users can use the model to develop and test hypotheses about organism functions and interactions
 - 💡 "Key Topic Ideas" pages, with more detailed focus on ideas on which models, analysis and activities are based  
 
-These different document types overlap in their content, but generally "Introductory" pages are very useful or necessary for a basic operation of the models, which "Background" pages contribute to a deeper understanding of models' foundations, implications and limitations.
+These different document types overlap in their content, but generally "Introductory" pages are very useful or necessary for a basic operation of the models, while "Background" pages contribute to a deeper understanding of models' foundations, implications and limitations.
 
 "Key Topic Ideas" are important background that is a somewhat more detailed presentation of a biological concept, or a specific idea on which a modelling approach is founded or interpreted.
 These pages are intended to be short enough for a reader to internalize the most relevant, essential facts about a topic refered to in a model, without losing continuity of thought while working with that model.
@@ -40,14 +40,15 @@ The intended method for most readers to use the book is to:
 - refer to "Background" and "Key Topic Ideas" for additional information
 
 In courses and some other settings, an opportunity may be present to
-- make a slide or two that presents an argument, conclusion or analysis using graphical or textual output from a model
+- write a brief narrative, or make a slide or two, that presents an argument, conclusion or analysis using graphical or textual output from a model
 
 ## Static *vs.* executable book content
 It's important for users to understand the differences between **static** and **executable** book content:
-- Executable book content is that which is accessed through Binder, consisting of Worksheets implemented in Jupyter notebooks, sometimes with supporting Python code.  
+- Executable book content is that which is accessed through [Binder](https://mybinder.org/), consisting of Worksheets implemented in Jupyter notebooks, sometimes with supporting Python code.  
   These notebooks provide interactive interfaces for setting parameters, running models and viewing output, for experiential learning by users.
-- Static book contents are those accessed through GitHub Pages.  
+- Static book contents are those accessed through [GitHub Pages](https://organismal-systems.github.io/quant-org-bio/).  
   These contents include all the types of pages: Orientation, Introductory, Background, Activity and Key Topic Area pages.
-  They also include Worksheets, but only as static non-operable copies &ndash; these copies cannot be executed like the ones on Binder can.
+  They also include Worksheets, but only as static non-operable copies.
+  These copies cannot be executed like the ones on Binder can, but they provide clickable links to the corresponding executable Worksheets on Binder.
   
 

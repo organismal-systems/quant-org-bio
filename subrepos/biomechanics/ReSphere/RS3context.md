@@ -28,15 +28,13 @@ Possible values range from $\mathcal{Sh} = 1$, for a particle that is moving ver
 That means mass transport has been increased by a factor of more than 100. 
 As you can imagine, this could make quite a difference to nutrient uptake by cells, and in many other analogous situations
 
-Because Sh depends on velocity, it is effectively summarized as a function of $\mathcal{Re}$ (just as was the [coefficient of drag, $C_d$)](RSlookup.md). 
+Because $\mathcal{Sh}$ depends on velocity, it is effectively summarized as a function of $\mathcal{Re}$ (just as was the [coefficient of drag, $C_d$)](RSlookup.md). 
 Here, $\mathcal{Re}$ summarizes how fluid flows around the particle. 
 
 **2. $\mathcal{Sh}$ is a function of the diffusion rate.**
 Because diffusion is involved, we need a way to express the diffusion rate of the nutrient (or other solute, as the case may be).
 
-The convenient way to express this is as yet another dimensionless ratio, the [Schmidt number](wiki:Schmidt_number), $\mathcal{Sc}$.
-$\mathcal{Sc}$ has a simple definition:
-
+The convenient way to express this is as yet another dimensionless ratio, the [Schmidt number](wiki:Schmidt_number), $\mathcal{Sc}$, defines as:
 $$
 \mathcal{Sc} = \frac{\mu}{D \times \rho}
 $$
@@ -57,12 +55,13 @@ Q_{\mathit{diff}} = 2 \pi D \times d \times (C_w - C_s).
 $$
 
 In this formula, 
+- $D$ is the diffusion coefficient;
 - $d$ is the particle diameter;
 - $C_w$ is the solute concentration in the fluid far from the particle; and,
 - $C_s$ is the concentration at the surface of the particle. 
 
-For example, if the particle is extremely effective at absorbing the solute (as might be approximately true for a phytoplankton cell absorbing nutrients) the $C_s \approx 0$.
-If we have a formula for $Q_{\mathit{diff}}$, then all we need to know is $\mathcal{Sh}$.
+For example, if the particle is extremely effective at absorbing the solute (as might be approximately true for a phytoplankton cell absorbing nutrients) then $C_s \approx 0$.
+If we have a formula or measurement for $Q_{\mathit{diff}}$, then all we need to know is $\mathcal{Sh}$.
 Then, we can calculate the actual mass flux (including diffusion *and* advection) into a moving particle, $Q_{\mathit{adv}}$.
 
 A worksheet that makes it easy to use Sherwood numbers to calculate the fluxes in and out of spherical organisms or other particles is [here](RS3.ipynb).

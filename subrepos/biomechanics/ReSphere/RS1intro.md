@@ -22,7 +22,7 @@ Then, the gravity force exceeds drag until we accelerate to a new, higher steady
 If the hill levels out somewhat, the gravity force is reduced.
 Then, the drag exceeds the gravity force until we slow down to a new, slower steady speed.
 
-This dynamic balance between gravity and drag (and  it's application in Newton's 2nd Law) is helpful to keep in mind when we consider the forces acting on particles in fluids.
+This dynamic balance between gravity and drag (and  its application in Newton's 2nd Law) is helpful to keep in mind when we consider the forces acting on particles in fluids.
 
 ## The righthand side: Mass $\times$ acceleration
 As we continue on our bicycle ride, we eventually encounter a rise or uphill.

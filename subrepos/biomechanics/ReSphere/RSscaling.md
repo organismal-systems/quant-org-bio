@@ -59,8 +59,9 @@ We can interpret Equation [](#eqnRe5) to say that momentum effects are much smal
 If we look for an intuitive comparison for $\mathcal{Re} \ll 1$, we can imagine a human (with much larger $L$ and $U$) swimming in a fluid with very large $\mu$, such as honey or tar.
 
 Equation [](#eqnRe5) suggests that we can approximate the Navier-Stokes equations by neglecting momentum effects, and for very small slow organisms we won't lose much accuracy.
-It turns out that this simplification results in fluid flow equations  that are much more tractable than the Navier-Stokes equations.
-These are called the Stokes equations, and the flow they describe with $\mathcal{Re} \ll 1$ is called [Stokes flow](wiki:Stokes_flow).
+It turns out that this simplification results in fluid flow equations that are much more tractable than the Navier-Stokes equations.
+
+These simplified equations are called the Stokes equations, and the flow they describe with $\mathcal{Re} \ll 1$ is called [Stokes flow](wiki:Stokes_flow).
 Almost all fluid dynamical analysis of microorganisms is done using the Stokes equations.
 The model of swimming larvae later in this unit is an example.
 
@@ -73,10 +74,10 @@ At the other end of the spectrum, high Reynolds number flows are ones in which m
 :label: eqnRe6
 \mathcal{Re} \gg 1
 ```
-There are some complications, because adjacent to a surface viscous forces can have large effects even in high Reynolds number flows.
+There are some complications, because adjacent to a surface viscous forces can have large effects even in high Reynolds number flows (the ["stall"](wiki:Stall_(fluid_dynamics)) of an airplane wing is an example).
 High Reynolds number flows are also subject to [turbulence](wiki:Turbulence).
 Nonetheless, neglecting viscous terms in the Navier-Stokes equations results in simplified equations that are much more tractable.
-These equations are very useful approximations that have been widely used not only in biomechanical analysis of large, fast organisms but also in engineering. 
+These equations are very useful approximations that have been widely used not only in biomechanical analyses of large, fast organisms but also in engineering, climate science, oceanography and many other applications. 
 
 
 ## Reversible and irreversible flows
@@ -93,10 +94,12 @@ In this video, dye is placed in a viscous fluid between rotating cylinders.
 The cyclinders are rotated until the dye is greatly stretched; then reversed back into their original positions to restore the originam dye blob. 
 
 Reversibility has important consequences for microorganism swimming.
-In particular, waving a fin back and forth is a  propulsive motion that works well for many fish and other high Reynolds number swimmers.
+In particular, waving a fin symmetrically back and forth is a propulsive motion that could work well for many fish and other high Reynolds number swimmers.[^fin]
 However, at low Reynolds number, this reciprocating motion would have no net propulsive effect.
 Instead, microorganisms must propel themselves with motions that are non-reversible.
 For example, the [bacterial flagellum](wiki:Flagellum#Bacterial_flagella) is a helical filament that rotates in a propeller-like way in only one direction.
+
+[^fin]: In reality, most fish fins are flexible and have other sophisticated adaptations, so their motion is not exactly symmetrical. Nonetheless, underlying these modifications is the fundamental principle that this type of "reversible" motion produces positive propulsion at high Reynolds numbers, but zero propulsion at very low Reynolds numbers.
 
 ## Final points
 A couple additional points to note:

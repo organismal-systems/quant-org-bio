@@ -1,5 +1,6 @@
 # Biomechanics in physiology, behavior and sensing
-This section focuses on perspectives on Organismal Biology relating to biomechanic.
+This section focuses on perspectives on Organismal Biology relating to biomechanics.
+
 The units in this section address questions that can be broadly framed as:
 > - How are  biomechanical consequences of organisms' morphology, movement, habitat selection and other traits reflected in their performance of key functions?
 > - How are do functional requirements impose biomechanical constraints on organisms?

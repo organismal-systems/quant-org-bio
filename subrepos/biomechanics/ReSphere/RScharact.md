@@ -27,10 +27,10 @@ The organism leaves a wake behind itself, of fluid that is moving nearly as fast
 A cartoon of a sinking organism. The organism has a linear dimension (diameter) $L$, frontal area $A$, and sinking velocity $U$. The blue lines indicate water flow around the organism, and the wake it leaves behind.
 
 ```
-In generic terms, we can describe this organism using **characteristic values** (also see the discussion on Scale models and nondimensional numbers in the Overview). 
+In generic terms, we can describe this organism using **characteristic values** (also see the discussion on [scale models](../../overview/qob-notebooks/scale-models.ipynb) and [nondimensional numbers](../../../content/overview/nondim-numbers.md) in the Overview). 
 For example, we can consider a **characteristic length**, ***L***, as a linear metric that expresses an object size.
 If the organism is spherical, then an obvious choice for *L* is the diameter.
-If the organism is oblong, then there is some ambiguity, but if we choose for *L* some consistent standard such as maximum dimension or average of the dimensions, then the analysis will still reflect the differences between larger and smaller (but similarly shaped) particles.
+If the organism is oblong, then there is some ambiguity, but if we choose for *L* some consistent standard such as maximum dimension, the average of the dimensions or the cube root of the volume, then the analysis will still reflect the differences between larger and smaller (but similarly shaped) particles.
 
 *L* is the characteristic length.
 Analogously, we specify a **characteristic area**, ***A***.
@@ -43,18 +43,16 @@ We also specify a **characteristic speed**, ***U***, which in this case is clear
 ## Fluid characteristics
 The drag on a moving organism depends, of course, on the characteristics of the fluid in which it is immersed.
 The key fluid properties that affect drag are density and viscosity.
-You can open worksheet to calculate these properties for freshwater, saltwater and air on Binder by clicking on
+You can find these properties (or utilities to calculate them) for freshwater, saltwater and air online.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/organismal-systems/python-fluidprop/HEAD?urlpath=%2Fdoc%2Ftree%2FFluidProp)
-
-The variation of density and viscosity over a range of relevant temperatures for freshwater and saltwater with 35 ppt salinity are shown in [](#props)
+For example, the variation of density and viscosity over a range of relevant temperatures for freshwater and saltwater with 35 ppt salinity are shown in [](#props)
 ```{figure} Images/Jumars_etal1993props.png
 :label: props
 :width: 80%
 :align: center
 :alt: Fluid properties of freshwater and saltwater
 
-These plots show the variation of density, dynamic viscosity and kinematic viscosity across a range of temperatures relevant to aquatic organisms. It is a personal communication from Dr. Pete Jumars, and was calculated using formulas in  Jumars, P.A., J.W. Deming, P.S. Hill, L. Karp-Boss, P.L. Yager and W.B. Dade. 1993. Physical constraints on marine osmotrophy in an optimal foraging context. Mar. Microbial Food Webs 7:121-159.
+These plots show the variation of density, dynamic viscosity and kinematic viscosity across a range of temperatures relevant to aquatic organisms. They are a personal communication from Dr. Pete Jumars, and were calculated using formulas in  Jumars, P.A., J.W. Deming, P.S. Hill, L. Karp-Boss, P.L. Yager and W.B. Dade. 1993. Physical constraints on marine osmotrophy in an optimal foraging context. Mar. Microbial Food Webs 7:121-159.
 ```
 
 ### Density
@@ -62,17 +60,17 @@ The density of a fluid is simply the mass of the fluid for a given volume.
 In SI units, density is expressed in $\frac{kg}{m^3}$ (that is, kilograms per meter cubed).
 Density is a function of temperature, the concentration of solutes such as salt, and pressure.
 As an example, the bottom plot of [](#props) shows the variation in density of freshwater (lower line) and 35 ppt saltwater (upper line).
-This plot show that density is a slowly decreasing function of temperature. [^1]
+This plot show that water density is a slowly decreasing function of temperature, over the range shown. [^1]
 [^1]: The curve for freshwater ends at $0\degree C$; that is, at the freezing point of fresh water. The curve for salt water extends to lower temperatures, because its freezing point is lower.
 
 ### Viscosity
 We intuitively understand the difference between a more viscous fluid like honey or molasses and a less viscous fluid like water.
-If we imagine sliding two plates next to each other in a fluid, viscosity expresses how much force is required to keep them moving.
+If we imagine sliding two plates next to each other in a fluid, [viscosity](wiki:Viscosity) expresses how much force is required to keep them moving.
 Intuitively, if the fluid is honey, it requires more force than if the fluid is water.
 Keeping them moving in air requires even less force.
 Therefore, honey is more viscous than water, and air is less viscous than either water or honey.
 
-There is one slightly confusing aspect of viscosity, however: there are two ways in which visosity is commonly measured: dynamic viscosity and kinematic viscosity.
+There is one slightly confusing aspect of viscosity, however: there are two ways in which visosity is commonly tabulated: dynamic viscosity and kinematic viscosity.
 
 #### Dynamic viscosity
 The **dynamic viscosity** relates to forces, such as the *force* required to keep plates sliding past each other.
