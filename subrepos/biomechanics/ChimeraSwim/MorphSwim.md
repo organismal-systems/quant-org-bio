@@ -1,5 +1,5 @@
 # 🏞️  Morphological requirements for swimming
-As shown in [](comp-larvae), marine invertebrate larvae often have intricate and beautiful forms.
+As seen in [](comp-larvae), marine invertebrate larvae often have intricate and beautiful forms.
 Larval morphologies have functional consequences for many aspects of life history, including swimming, detecting and avoiding predators, feeding, finding suitable substrate, *etc*.
 It is usually unclear which selective forces underlie the observed morphologies, or which [phylogenetic constraints](wiki:Phylogenetic_inertia) limit possible alternative morphologies. 
 
@@ -11,7 +11,7 @@ Among other things, these features enable larvae to fulfill the basic requiremen
 2. **Stability and orientation** for directed motion, especially in vertical directions.[^vrt]
 
 The fascinating and important work on well-developed larval forms suggests a further, and frequently overlooked, question:
-> How do embryos and other early-stage larvae, accomplish similar swimming performance with almost no apparently specialized swimming morphological features?
+> How do embryos and other early-stage larvae, accomplish similar swimming performance with almost no specialized swimming morphological features?
 
 [](#comp-blastulae) shows the [blastula](wiki:Blastulation) stage in early larval development of three [echinoids](wiki:Sea_urchin)[^ech]. 
 ```{figure} images/misc_blastulae.jpg
@@ -23,10 +23,10 @@ The fascinating and important work on well-developed larval forms suggests a fur
 A composite image by Richard Emlet showing blastulae of three echinoids: the purple sea urchin, [](wiki:Strongylocentrotus_purpuratus) (upper left), the Japanese sand dollar, [](wiki:Peronella_rubra) (upper right) and the Pacific (or "excentric") sand dollar, [](wiki:Dendraster_excentricus) (lower right; lower left is an unhatched egg).
 ```
 
-As shown in these examples, newly-hatched embryos and other early-stage marine invertebrate larvae typically have simple roughly spheroidal external surfaces, some or all of which are usually covered with cilia that provide propulsion.
-The internal morphologies are also typically quite simple, with an internal volume containing (a usually unknown) fluid that is sometimes accompanied by other inclusions such as lipid globules or calcium carbonate particles.
+As shown in these examples, newly-hatched embryos and other early-stage marine invertebrate larvae typically have simple roughly spheroidal external surfaces, some or all of which are covered with cilia that provide propulsion.
+The internal morphologies are also typically quite simple, with an internal volume containing (a usually unknown) material that is sometimes accompanied by other inclusions such as lipid globules or calcium carbonate particles.
 
-Despite their simple morphologies, nearly all blastulae and other early-stage larvae are capable swimmers. 
+Despite their simple morphologies, nearly all blastulae and other early-stage larvae have a significant capacity to swim. 
 This means that, at least at some times and locations within some habitats, these simple morphologies successfully solve the problems of propulsion, orientation and stability.
 
 Their minimal but diverse morphologies, combined with their success as swimmers, raise interesting questions in biomechanics:

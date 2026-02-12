@@ -16,7 +16,7 @@ These changes were not subtle: the largest larvae measured had roughly $\frac{1}
 The resulting shift in the ratio of body to surface forces results in upwards swimming that barely &ndash; but consistently &ndash; meets the "standard" performance requirement, varying little across a wide range of early-stage larval sizes.
 
 ## Morphological aspects of excess density
-How can excess density vary to this extent, if material properties stay approximately constant (or, at least, vary by nowhere near a factor of 10)?
+How can excess density vary to this extent, if the material properties of larval tissue stay approximately constant (or, at least, vary by nowhere near a factor of 10)?
 The answer lies at least partly in the internal morphologies of early stage larvae.
 As illustrated in [](#comp-blastulae), early stage marine invertebrate larvae have internal structures such as [blastocoels](wiki:Blastulation).
 These structures enclose non-tissue materials, which may include fluid of unknown composition, lipids, calcium carbonate or other substances.
@@ -26,9 +26,10 @@ Those materials, which differ in excess density from ordinary embryonic tissue, 
 For example, if a larva contains a given amount of tissue, its average excess mass is reduced if that tissue encloses a volume of fluid or lipid of relatively low density.
 
 - Also, for isometric size increases, that decrease in excess mass is accompanied by an *increase in external surface area* to accommodate the increased internal volume.
-If this additional surface area is ciliated, then the total ciliary force increases in rough proportion.  
+If this additional surface area is ciliated, then the total ciliary propulsive force increases in rough proportion.  
 
-In other words, the hypothesis is that a "standard" level of swimming performance can maintained with increases in the size of early-stage embryos if, while their external shapes enlarge isometrically, their low-density internal structures change disproportionately faster.
+In other words, the hypothesis is that:
+> A "standard" level of swimming performance can maintained with increases in the size of early-stage embryos if, while their external shapes enlarge isometrically, their low-density internal structures change disproportionately faster.
 
 %Both of these changes mitigate the predicted loss of swimming ability due to isometric increases in size.
 

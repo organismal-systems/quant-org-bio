@@ -37,7 +37,7 @@ If this hypothesis has validity, a futher hypothesis follows that these morpholo
 For example, the requirements for stability in energetic surface waters, where turbulence and shear are often relatively intense, may be much more stringent than the corresponding requirements in the relatively quiescent deep sea.
 The different requirements might be reflected in different larval morphologies for taxa living in specific habitats.
 
-It's important to recognize that hypothetical swimming performance standards for speed and stability may impose very different or even contradictory constraints.
+It's important to recognize that hypothetical swimming performance standards for speed and for stability may impose very different or even contradictory constraints.
 It's to be expected that torques imposed by shear and turbulence will be larger on embryos with larger diameters and surface areas.
 If so, it may turn out that the decreases in average excess densities that enhance swimming speed by adding ciliated surface area have the side effect of decreasing effective stability.
 That is, there may be combinations of environmental turbulence and shear with larval size in which morphologies are highly constrained, or even in which *no morphological variant results in a viably swimming larva*.

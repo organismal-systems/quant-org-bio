@@ -117,11 +117,21 @@ $$
 \frac{\partial p}{\partial t} = - \frac{\partial }{\partial x} \left( - D \frac{\partial p}{\partial x} \right) - \frac{\partial}{\partial y} \left( - D \frac{\partial p}{\partial y} \right) ~.
 $$ (eqnDIFF)
 In Equation {eq}`eqnDIFF`, the fluxes in the $x$ and $y$ directions are $- D \frac{\partial p
-\o \partial x}$ and $- D \frac{\partial p}{\partial y}$, respectively, and the $- \frac{\partial }{\partial x}$
+}{\partial x}$ and $- D \frac{\partial p}{\partial y}$, respectively, and the $- \frac{\partial }{\partial x}$
 and $- \frac{\partial }{\partial y}$ in front of them represent minus the gradients of these fluxes.
 In this case, $D$ is a parameter specifying the rate at which the population spreads, analogous to a diffusion coefficient.
 The fluxes represent the action of the organisms' random movements (acting analogously to molecular diffusion and heat conduction) to transport $p$ down gradient from denser areas to less dense areas, at a rate proportional to $D$ times the gradient of population density.
 Note that in this case, the flux has a different form than Equation {eq}`eqnAGE`, because flux is proportional not to the the population density but its derivative.
+
+After cancelling the minus sign,  Equation {eq}`eqnDIFF` has the form in which it is most commonly seen,
+$$
+\frac{\partial p}{\partial t} = \frac{\partial }{\partial x} \left( D \frac{\partial p}{\partial x} \right) + \frac{\partial}{\partial y} \left(  D \frac{\partial p}{\partial y} \right) ~.
+$$
+If $D$ is a constant across space, a further simplification is possible,
+$$
+\frac{\partial p}{\partial t} = D \left( \frac{\partial^2 p}{\partial x^2}  + \frac{\partial^2 p}{\partial y^2} \right) ~.
+$$
+
 
 %Note also that because the movement behaviors can vary, the diffusion coefficient, $D$, does not need to be a constant. 
 

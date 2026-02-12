@@ -60,9 +60,12 @@ parts:
           - file: subrepos/biomechanics/ChimeraSwim/ExcessMass.md
           - file: subrepos/biomechanics/ChimeraSwim/Stability.md
           - file: subrepos/biomechanics/ChimeraSwim/ChimeraActivity.md
-          - file: subrepos/biomechanics/ChimeraSwim/ChimeraGeom.ipynb
-          - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
-          - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
+            sections:
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraTest.md
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraTest2.md
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraOrg.ipynb
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
   - caption: Demography
     numbered: true
     chapters:

@@ -11,6 +11,6 @@ The case studies and activities elucidate linkages between these organismal attr
 The units in the section currently are:
 - [Understanding and predicting the movement of particles in fluids](../../subrepos/biomechanics/ReSphere/README.md), with application to dispersal and diffusive mass exchange for relevant biotic particles (eggs, pollen, *etc.*) and abiotic particles (fecal pellets, iron-containing dust, *etc.*).
 
-- [A model of swimming and orientation of early-stage marine invertebrate larvae](../../subrepos/biomechanics/ChimeraSwim/ChimeraSwim.md) which simulates biomechanical consequences of embryo size and morphology.
+- [A model of swimming and orientation of early-stage marine invertebrate larvae](../../subrepos/biomechanics/ChimeraSwim/ChimeraSwim.md) which simulates biomechanical consequences of embryo size and morphology in the context of environmental disturbances.
 
 
