@@ -1,0 +1,49 @@
+# 📖️️ Stability and orientation in swimming larvae
+Another effect of "inclusions" like a blastocoel within early-stage larvae is to alter stability and re-orientation.
+
+
+An immersed object has two points which are key to establishing **passive stability**, which is the tendency to orient at a preferred angle relative to gravity:
+1. The [center of mass](wiki:Center_of_mass), $C_{mass}$, which is the point at which gravity is effectively acting; and
+2. The [center of buoyancy](wiki:Buoyancy), $C_{buoy}$, which is the point at which buoyancy is effectively acting.
+
+Intuitively, gravity pulls an organism downwards with a force that is proportional to its mass, and acts as though that mass were concentrated at the $C_{mass}$.
+Buoyancy, on the other hand, pulls an immersed organism upwards with a force that is proportional to the mass of the fluid it displaces, and acts as though that mass were concentrated at the $C_{buoy}$.
+
+When mass is non-uniformly distributed within an embryo, the center of mass $C_{mass}$ is usually in a different location on the embryo than the center of buoyancy $C_{buoy}$.
+
+A consequence is that when the $C_{mass}$ is offset horizontally from the $C_{buoy}$, the downwards gravity force and the upwards buoyancy force exert a [torque](wiki:Torque) that tends to rotate the embryo such that the $C_{buoy}$ rises relative to the $C_{mass}$.
+If the embryo is free to move, the only orientation in which this rotation stops is when the $C_{buoy}$ is exactly above the $C_{mass}$.
+The embryo is **stable** in this orientation, which is to say that if disturbed from this orientation it will tend to return.
+
+An exaggerated but intuitive analog is an imaginary sphere, in which one half is made of foam and the other half of lead.
+If the foam and lead halves are released in water in a side-by-side orientation, in a fluid, the sphere will quickly rotate such the lead side is downwards and the foam side is upwards.
+At a smaller scale and with much more subtle differences in excess density, an early-stage larva reorients in a similar way if it has a non-uniform internal structure.
+
+### Destabilization by turbulence and shear
+Most aquatic environments have, at most times, some level of small scale water movements known as [turbulence](wiki:Turbulence) and [shear](wiki:Simple_shear).
+These water movements exert forces on the surfaces of immersed objects that tend to overturn them.
+
+Most of the benefits of swimming are contingent on that swimming being **oriented**.
+That is, swimming is primarily helpful if it results in sustained movement in a particular direction, especially upwards.
+Early-stage larvae typically do not have sophisticated active responses to remain oriented in turbulence and shear.[^adv]
+Instead, they usually rely on passive stability &ndash; that is, on the tendency to reorient so that their $C_{buoy}$ is exactly above the $C_{mass}$.
+
+This suggests the hypothesis that, analogously to a "standard" for swimming performance in term of speed, marine invertebrate larvae may be subject to an additional swimming performance standard in terms of passive stability.
+Because passive stability is a direct consequence of the distribution of excess density within an embryo, its size and other morphological traits, this hypothesis suggests an additional set of morphological constraints on larval life histories:
+> Larval morphologies must provide passive stability in excess of the torques imposed on them by turbulence and shear.
+
+If this hypothesis has validity, a futher hypothesis follows that these morphological constraints vary across habitats with different levels of turbulence and shear.
+For example, the requirements for stability in energetic surface waters, where turbulence and shear are often relatively intense, may be much more stringent than the corresponding requirements in the relatively quiescent deep sea.
+The different requirements might be reflected in different larval morphologies for taxa living in specific habitats.
+
+It's important to recognize that hypothetical swimming performance standards for speed and stability may impose very different or even contradictory constraints.
+It's to be expected that torques imposed by shear and turbulence will be larger on embryos with larger diameters and surface areas.
+If so, it may turn out that the decreases in average excess densities that enhance swimming speed by adding ciliated surface area have the side effect of decreasing effective stability.
+That is, there may be combinations of environmental turbulence and shear with larval size in which morphologies are highly constrained, or even in which *no morphological variant results in a viably swimming larva*.
+
+The activities in this Unit use a simplified model of early larval swimming to quantitatively assess the consequences of hypothetical "standards" for speed and stability, focusing on possible morphological constraints and their possible implications for marine invertebrate life histories.
+
+[^adv]: This is not true of many more developed larval forms, which can have sensory and behavioral responses leading to active orientation. Some larval forms contiue to rely partially or entirely on passive stability throughout their development.
+
+
+
