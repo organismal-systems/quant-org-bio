@@ -63,6 +63,8 @@ parts:
             sections:
               - file: subrepos/biomechanics/ChimeraSwim/ChimeraTest.md
               - file: subrepos/biomechanics/ChimeraSwim/ChimeraTest2.md
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraDemo.md
+              - file: subrepos/biomechanics/ChimeraSwim/ChimeraTest3.md
               - file: subrepos/biomechanics/ChimeraSwim/ChimeraOrg.ipynb
               - file: subrepos/biomechanics/ChimeraSwim/ChimeraSwim.ipynb
               - file: subrepos/biomechanics/ChimeraSwim/ChimeraDesign.ipynb
