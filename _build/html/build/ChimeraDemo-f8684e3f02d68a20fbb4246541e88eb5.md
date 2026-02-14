@@ -1,0 +1,111 @@
+# 🛼 Demonstration: Modeling sand dollar larval swimming
+To gain familiarity with the [ChimeraSwim](./ChimeraSwim.ipynb) model, we will start by working through the entire process of creating a larval morphology using parameters inspired by observations early-stage larvae, and quantifying its swimming performance.
+The parameter values in this demonstration are illustrative, based loosely on data in two primary references[^ref1][^ref2].
+
+Many of these values are poorly constrained, having been measured infrequently or not at all.
+For example, while it is fairly straightforward to measure a larva's average excess density, it is difficult to separately measure the densities of its component tissue and inclusion.
+For poorly constrained parameters like these, we will make educated guesses at reasonable parameter choices for this demonstration.
+
+## Creating and saving a larval morphoplogy
+The larval morphology will be defined, and its characteristics calculated, in the Jupyter notebook [](./ChimeraOrg.ipynb).
+
+1. Open this notebook on [Binder](https://mybinder.org/) or on your own computer.
+2. Run all cells to initialize the textboxes and Python classes.
+3. Enter organism-based morphological parameters:  
+:::{table} Table of organism-based morphology parameter values for the [ChimeraSwim model](ChimeraSwim.ipynb) demonstration.
+:align: center
+:label: parsF
+| Parameter | Symbol | Relevant range |
+| --- | --- | --- |
+| Tissue volume | $V_t$ | $5.12 \times 10^{-13}$ |
+| Aspect ratio | $\alpha$ | $1$ |
+| Relative equator position | $\eta$ | $0.45$ |
+| Relative inclusion position | $\sigma$ | $0.99$ |
+| Tissue density | $\rho_{tissue}$ | $1130$  |
+| Inclusion density | $\rho_{inclusion}$ | $1030$ |
+| Average excess density | $\rho_{excess}$ | $40$ |
+:::
+4. Press the {kbd}`Visualize the shape` button to generate a 3-dimensional representation of this morphology.
+  - You can **enlarge** the plot by dragging the triangle at the bottom right.
+  - You can **reorient** the larva by dragging your mouse while holding the left button down.
+  - You can **restore** the original orientation by clicking on the house icon.
+
+5. If the morphology is correct, press the **Calculate flow** button to start calculations of body and fluid forces.  
+
+    The calculation takes a few seconds; it's complete when "Done calculating inverse." is printed in the textual output.
+6. Press the **Select** button to choose a filename under which to save this morphology.
+  
+    Enter an informative name, such as "demo_re40.pickle', then click **Select** to choose it.
+    This name is informative because:
+	- The first part of the name, "demo", labels an associated series of observations.
+	- The second part of the name, "re40", specifies a key parameter ($\rho_{excess}$) and its value in this morphology (40).
+	- The suffix, "pickle", identifies the file type as a Python pickle.
+
+> In the ideal case:  
+    - If you know an informative morphology file name, you can infer the series of observations it came from and the values of key parameters.  
+	- If you know the series of observations it came from and the values of key parameters, you can infer the data file name .
+7. Press the **Save file** button to save the morphology file.  
+
+    - If you are working on your own desktop, this file will now be saved for future use (by default, in the same directory as your Jupyter notebooks).
+	- If you are working on [Binder](https://mybinder.org/), this file will exist only within your current session.
+	  If you'd like to save it, select it in the "file browser" at the left of the Jupyter notebook window, and use the menu to download it to your own computer.
+8. Save the visualization of this morphology by clicking on the floppy disk icon at the bottom of the menu at the left side of the graphics window (visible when the mouse hovers over it).
+
+    Use an informative name, such as "demo_re40.svg", so that it is easy to recognize the morphology file with which it's associated.
+
+This completes the generation of a larval morphology, which is now ready to "swim" in the [ChimeraSwim model](ChimeraSwim.ipunb).
+
+## Assessing swimming performance of a larval morphoplogy in still water
+To simulate and assess swimming of the larval morphology you just created:
+1. Open [](ChimeraSwim.ipynb) on [Binder](https://mybinder.org/) or on your own computer.
+2. Run all cells to initialize the textboxes and Python classes.
+3. Press the **Select** button to choose a morphology filename to simulate (in this case, "demo_re40.pickle").
+
+    The full path of file to be loaded will be displayed so you can confirm you have the file you intended.
+4. Press the **Load** button to load this morphology file and prepare it for simulation.
+5. The next set of textboxes specifies simulation parameters:  
+    - Set the Euler angle $\theta$ to $1.571$ radians, which is $\frac{\pi}{2}$ so that the larva's initial orientation is $90^\circ$ from its stable upwards orientation.
+%	- Set the duration of the simulation to 20 seconds, $T_{max}=20$.
+	
+6. Click the **Reset** button at the upper left to initialize a simulation series, and enlarge the graphics window to a conveniently large format.
+7. Click the **Run** button at the upper right to start a simulation.  
+
+    You should run this simulation at least 3 times (probably several more!):
+	1. Get an **intuitive feel** for how the larva moves and reorients through the water, from its initial position and orientation.
+	2. **Record the upwards swimming velocity**, after the larva has reached its stable orientation.  
+	    This is the third component of velocity, in the textual output in the left plot.
+	3. **Record the reorientation time scale**, at which the larva has effectively reached its stable orientation.  
+	    This is open to interpretation because the larva approaches its stable orientation exponentially.
+		That is, its angle away from vertical (the Euler angle, $\theta$) approaches zero more and more closely, but never actually reaches 0.
+		
+		One simple way to characterize this time scale is to choose a small threshold angle, such as $\theta_{thresh}=0.45$.
+		In this orientation, approximately 90% of ciliary propulsion is in the upwards direction.
+		We can then define the reorientation time scale as the time taken for a larva to reorient from an initial horizontal orientation ($\theta=1.571$) to the threshold, $\theta_{thresh}$.
+	
+    - To record when a swimming larva reaches this threshold, use one of these approaches:
+	    - Track the angle during a simulation, and **take a screenshot of the notebook window** at the appropriate time; then you can read the time off of the screenshot.
+		- Work with a partner, so that one tracks the angle and signals to the other who can note the time.
+
+The two results you recorded, upwards swimming velocity and reorientation time scale, are the principal metrics for assessing swimming performance in this Activity.
+
+## Assessing swimming performance of a larval morphoplogy in moving water
+To gain an intuition for how moving water affects larval swimming, try rerunning the simulation with different shear settings:
+- Because some interactions between larval swimming and water flow occur over longer time scales, set $T_{max}=30$.  
+    You may have to increase this even further to see the full dynamics, depending on your parameter choices.
+-  To simulate swimming in a horizontal gradient of vertical flow, set $\frac{dU}{dz}=0, \frac{dV}{dz}=0, \frac{dW}{dx}=0.4$.
+-  To simulate swimming in a vertical gradient of horizontal flow, set $\frac{dU}{dz}=0.4, \frac{dV}{dz}=0, \frac{dW}{dx}=0$.
+-  To simulate swimming in a rotating flow, set $\frac{dU}{dz}=-0.4, \frac{dV}{dz}=0, \frac{dW}{dx}=0.4$.
+
+Each of the swimming trajectories is highly variable, depending on shear levels (and sometimes on initial orientation).
+Think about the interactions of fluid, body and surface forces to gain an intiution about the larva's swimming biomechanics.
+Then try some additional flows to see if your intuition is reflected in the results.
+
+## Assessing swimming performance across morphological variations
+Repeat all the above steps, but this time use $\rho_{excess}=95$ and $\rho_{excess}=$.
+
+What is different, and what is similar, about swimming performance with different-sized inclusions?
+
+Remember that pressing the **Reset** button opens a new graphics panel in [ChimeraSwim](ChimeraSwim.ipynb), if you want new simulations to appear separately from the old ones.
+
+[^ref1]: Reference 1: [](doi:10.1093/icb/icq090)
+[^ref2]: Reference 2 [](https://doi.org/10.1242/jeb.060541)
