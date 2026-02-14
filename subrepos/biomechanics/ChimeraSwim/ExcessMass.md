@@ -1,9 +1,9 @@
 # 📖️️  Size-dependent changes in excess density
 The amount by which the density of a material exceeds the density of the fluid in which it is immersed is called **excess density**, $\rho_{excess}$.
-The net body force on an object is equal to the volume of the object, $V = L^3$, multiplied by its excess density.
+The net body force on an object is equal to gravity times the volume of the object, $V = L^3$, multiplied by its excess density.
 
 $$
-F_{body} = \rho_{excess} L^3
+F_{body} = g~\rho_{excess} L^3
 $$ (fbod2)
 
 Because the excess density is an expression of the difference between gravity and buoyancy forces, Equation {eq}`fbod2` is a restatement of Equation {eq}`fbod` from the [previous page](./SizeSwim.md).
@@ -21,7 +21,7 @@ The answer lies at least partly in the internal morphologies of early stage larv
 As illustrated in [](#comp-blastulae), early stage marine invertebrate larvae have internal structures such as [blastocoels](wiki:Blastulation).
 These structures enclose non-tissue materials, which may include fluid of unknown composition, lipids, calcium carbonate or other substances.
 
-Those materials, which differ in excess density from ordinary embryonic tissue, have several distinct effects on swimming biomechanics.
+Those materials, which differ in excess density from ordinary embryonic tissue, have several distinct effects on swimming biomechanics:
 - They change the overall *average excess density* of a larva, which is the excess density that determines the overall body forces on an immersed object. 
 For example, if a larva contains a given amount of tissue, its average excess mass is reduced if that tissue encloses a volume of fluid or lipid of relatively low density.
 

@@ -6,12 +6,14 @@ A map of this type makes clear which sets of morphologies meet a hypothetical st
 Assessing performance using a model of this sort is challenging primarily because:
 - Numerous parameters are needed to specify the external and internal morphologies, material properties, initial conditions, *etc*.
 - Ambient flow conditions are highly variable, and it is not clear which conditions are most relevant to selection on larval forms.
-- It is not clear which metrics best reflect aspects of swimming performance most important to larval success, especially if testing is done in simplified flow conditions.
+- It is not clear which metrics best reflect the aspects of swimming performance most important to larval success, especially if testing is done in simplified flow conditions.
 
-Here, we mitigate these problems by using organism-based parameters, further constrained by assumptions that [minimize the number of variables](./ChimeraTest.md) while still giving scope to variability that summarizes key trends, and by removing flow parameters by devising swimming performance metrics that can be measured in still water.
+Here, we mitigate these problems by using organism-based parameters, further constrained by assumptions that [minimize the number of variables](./ChimeraTest.md) while still giving scope to variability that summarizes key trends, and removing flow parameters by devising swimming performance metrics that can be measured in still water.
  
 ## Rationale: Testing a hypothetical performance standard for upwards swimming
-A hypothetical performance standard for upwards swimming lends itself to a simple assessment of steady state velocity in simulations of larval swimming.
+A hypothetical performance standard for upwards swimming lends itself to a simple assessment of steady state velocity in simulations of larval swimming.[^helix]
+
+[^helix]: This neglects subtle eleborations of swimming behavior, such as helical trajectories displayed by some larvae ([Chan & Grunbaum, 2010](doi:10.3354/meps08744)).
 
 Specifically, starting from an arbitrary orientation, a freely swimming larva will over time assume its stable orientation after a transient re-orientation period.
 For the range of morphologies considered here, the stable orientation is associated with the maximum upwards swimming rate.
@@ -22,7 +24,7 @@ Simulated still-water upwards swimming velocity in the stable orientation is the
 ## Rationale: Testing a hypothetical performance standard for stability
 The rationale for assessing a hypothetical performance standard for stability with still-water simulations is a bit more nuanced.
 
-The starting point is the assumption that early-stage larvae must be capable of maintaining vertical orientation in the shear and turbulence characteristic of the habitats in which they undergo development.
+The starting point is the hypothesis that early-stage larvae must be capable of maintaining vertical orientation in the shear and turbulence characteristic of the habitats in which they undergo development.
 
 ### Disturbances to larval swimming due to turbulence
 The key factor in larval stability is the type and intensity of disturbances to orientation due to movement of the ambient water, especially due to [turbulence](wiki:Turbulence).
@@ -32,18 +34,20 @@ These instabilities are themselves unstable, so that distubances in the initial 
 This is referred to as the [energy cascade](wiki:Energy_cascade), and it causes some of the energy from large scale flows to be diverted to smaller and smaller eddies.
 
 At very small scales, that energy is absorbed by viscosity and converted to heat.
-At these scales, the flow at any one point is well approximated as being locally "linear" &ndash; that is, it is approximated by constant gradients in velocity expressed as shear in the form of(which, through viscosity, dissipates the energy as heat) and rotation.
-That local shear and rotation are the flows implemented in the  [](ChimeraSwim.ipynb) model.
+At these scales, the flow at any one point is well approximated as being locally "linear".
+That is, the "micro-scale" flow is approximated by constant gradients in velocity expressed as shear (which, through viscosity, dissipates the energy as heat) and rotation.
+That local micro-scale shear and rotation are the flows implemented in the [ChimeraSwim](ChimeraSwim.ipynb) model.
 
 How small are these "very small" scales, and what are the shears and rotations involved? 
-That depends on the how energetic the flow is: more energetic flows imply more energy flowing through the cascade that reaches smaller scales.
+That depends on the how energetic the flow is: More energetic flows imply more energy flowing through the cascade that reaches smaller scales with stronger shears before being dissipated by viscosity.
+
 The most famous and widely used estimates of the length, time and velocity scales of the smallest eddies in a turbulent flow are the [Kolmogorov microscales](wiki:Kolmogorov_microscales).
 These scales were defined using dimensional analysis by Kolmogorov as functions of the **turbulent energy dissipation rate**, $\epsilon$, and the **kinematic viscosity**, $\nu$:
-- length scale, $l_K=\left( \frac{\nu^3}{\epsilon} \right)^{\frac{1}{4}}$ 
-- time scale, $\tau_K=\left( \frac{\nu}{\epsilon} \right)^{\frac{1}{2}}$
-- velocity scale, $v_K=\left( \nu \epsilon \right)^{\frac{1}{4}}$
+- length scale: $l_K=\left( \frac{\nu^3}{\epsilon} \right)^{\frac{1}{4}}$ 
+- time scale: $\tau_K=\left( \frac{\nu}{\epsilon} \right)^{\frac{1}{2}}$
+- velocity scale: $v_K=\left( \nu \epsilon \right)^{\frac{1}{4}}$
 
-Illustrative values of these scaes are shown in [](#kol1).
+Illustrative values of these scales are shown in [](#kol1).
 The values of $\epsilon$ near the top of this table represent the more energetic oceanic conditions (*e.g.*, near-surface) and those near the bottom represent more quiescent conditions (*e.g.*, the deep sea).
 
 :::{table} Table of Kolmogorov microscales. Data are from [Yamazaki *et al*. (2002)](https://www.researchgate.net/publication/237600620_Chapter_3_COUPLING_SMALL-SCALE_PHYSICAL_PROCESSES_WITH_BIOLOGY)
@@ -61,15 +65,16 @@ The values of $\epsilon$ near the top of this table represent the more energetic
 :::
 
 Keep in mind that the Kolmogorov microscales are only rough indicators of the length, time and velocity scales that larvae experience in these environments.
-They are probably quantitatively accurate in most cases to an order of magnitude, if that.
+They are probably quantitatively accurate in most cases to within an order of magnitude, if that.
 Nonetheless, they provide a basis for relating habitats to *in situ* flows impacting larvae, particularly with respect to trends in these scales transitioning from quiescent to energetic environments.
 In particular, they suggest that:
 - Marine invertebrate larvae, particularly in their early stages, are typically smaller than the length scales of the smallest eddies.
 That is, they see essentially "linearized" flow as assumed in the model.
 - The estimated velocity scales of the smallest eddies are on the same order of magnitude as typical early-stage larval swimming speeds.
 Because transport by these eddies is intermittent and in random directions, steady upswimming by larvae would likely lead to significant upwards movement through eddies at these scales over time.
-- Because shear has units of $s^{-1}$, Kolmogorov's analysis suggests that the intensity of shear in the smallest eddies should scale approximately as the inverse of the time scale, $\frac{1}{\tau_K}$.
-That ranges from $10 s^{-1}$ at the highest dissipation rates in [](#kol1), to $0.01 s^{-1}$ at the lowest.
+- Because shear has units of $s^{-1}$, Kolmogorov's analysis suggests that the intensity of shear in the smallest eddies should scale approximately as the inverse of the time scale, $\frac{1}{\tau_K}$.  
+
+    The implied shears range from $10 s^{-1}$ at the highest dissipation rates in [](#kol1) to $0.01 s^{-1}$ at the lowest.
 
 
 ### The timescale of larval reorientation

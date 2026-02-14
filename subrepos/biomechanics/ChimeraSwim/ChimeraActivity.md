@@ -30,14 +30,16 @@ The [model](./ChimeraSwim.ipynb) adopts a number of simplifications to make comp
 - The model implements early-stage larvae with external shapes constructed as [chimeras](./ChimeraDesign.ipynb) of two semi-spheroids, joined at a common equator.
 - The model implements internal structure in the form of an inclusion, also constructed as a chimera of two semi-spheroids.
 - The model assumes that the embryonic tissue fills the volume inside the external surface but external to the inclusion; the inclusion contains a different material with a different excess density.
+- The model approximates ciiary propulsion using a so-called "envelope model", in which a ciliated surface is approximated by a smooth, continuous surface that moves tangentially at roughly the velocity of cilia tips during the power stroke.
 - The model approximates the localized effects of turbulence and other water motion with constant levels of shear or rotation.
-- The model is executed in two stages:
-  - **Specification of larval morphology**
+- The model is executed in two stages:  
+  - **Specification of larval morphology**  
+      There are two alternative methods to specify a larval morphology:
     
 	- The Jupyter notebook [](./ChimeraDesign.ipynb) provides an interface for approximating a general early-stage larval with a chimera of two semi-spheroids, specified with geometrical parameters such as diameter, length, *etc*.. 
 	- The Jupyter notebook [](./ChimeraOrg.ipynb) provides an interface for approximating a subset of early-stage larval morphologies, specified with organism-based parameters such as tissue volume, aspect ratio, excess density, *etc*.. 
 	
-	Body forces and fluid dynamical characteristics are calculated and saved in a "morphology" file, in [](./ChimeraDesign.ipynb)
+	Body forces and fluid dynamical characteristics are calculated and saved in a "morphology" file in these notebooks.
   - **Simulation of larval swimming**
     - Movement of the larva from an initial position and orientation is simulated within a specified ambient flow, in the Jupyter notebook [](ChimeraSwim.ipynb).
 

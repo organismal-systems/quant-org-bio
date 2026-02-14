@@ -42,13 +42,13 @@ The larval morphology will be defined, and its characteristics calculated, in th
 	- The suffix, "pickle", identifies the file type as a Python pickle.
 
 > In the ideal case:  
-    - If you know an informative morphology file name, you can infer the series of observations it came from and the value of key parameters.  
-	- If you know the series of observations it came from and the value of key parameters, you can infer the data file name .
+    - If you know an informative morphology file name, you can infer the series of observations it came from and the values of key parameters.  
+	- If you know the series of observations it came from and the values of key parameters, you can infer the data file name .
 7. Press the **Save file** button to save the morphology file.  
 
     - If you are working on your own desktop, this file will now be saved for future use (by default, in the same directory as your Jupyter notebooks).
 	- If you are working on [Binder](https://mybinder.org/), this file will exist only within your current session.
-	  If you'd like to save it, select it in the "file browser" at the left of the Jupyter notebook window, and use the menu to save it.
+	  If you'd like to save it, select it in the "file browser" at the left of the Jupyter notebook window, and use the menu to download it to your own computer.
 8. Save the visualization of this morphology by clicking on the floppy disk icon at the bottom of the menu at the left side of the graphics window (visible when the mouse hovers over it).
 
     Use an informative name, such as "demo_re40.svg", so that it is easy to recognize the morphology file with which it's associated.
@@ -57,7 +57,7 @@ This completes the generation of a larval morphology, which is now ready to "swi
 
 ## Assessing swimming performance of a larval morphoplogy in still water
 To simulate and assess swimming of the larval morphology you just created:
-1. Open this notebook on [Binder](https://mybinder.org/) or on your own computer.
+1. Open [](ChimeraSwim.ipynb) on [Binder](https://mybinder.org/) or on your own computer.
 2. Run all cells to initialize the textboxes and Python classes.
 3. Press the **Select** button to choose a morphology filename to simulate (in this case, "demo_re40.pickle").
 
@@ -78,24 +78,27 @@ To simulate and assess swimming of the larval morphology you just created:
 	    This is open to interpretation because the larva approaches its stable orientation exponentially.
 		That is, its angle away from vertical (the Euler angle, $\theta$) approaches zero more and more closely, but never actually reaches 0.
 		
-		One simple way to characterize this time scale is to choose a small threshold angle, such as $\theta_{thresh}=0.2$.
+		One simple way to characterize this time scale is to choose a small threshold angle, such as $\theta_{thresh}=0.45$.
+		In this orientation, approximately 90% of ciliary propulsion is in the upwards direction.
 		We can then define the reorientation time scale as the time taken for a larva to reorient from an initial horizontal orientation ($\theta=1.571$) to the threshold, $\theta_{thresh}$.
 	
     - To record when a swimming larva reaches this threshold, use one of these approaches:
 	    - Track the angle during a simulation, and **take a screenshot of the notebook window** at the appropriate time; then you can read the time off of the screenshot.
 		- Work with a partner, so that one tracks the angle and signals to the other who can note the time.
 
-The two results, you recorded, upwards swimming velocity and reorientation time scale, are the principal metrics for assessing swimming performance in this Activity.
+The two results you recorded, upwards swimming velocity and reorientation time scale, are the principal metrics for assessing swimming performance in this Activity.
 
 ## Assessing swimming performance of a larval morphoplogy in moving water
 To gain an intuition for how moving water affects larval swimming, try rerunning the simulation with different shear settings:
-- Because some interactions between larval swimming and water flow occur over longer time scales, set $T_{max}=30$.
+- Because some interactions between larval swimming and water flow occur over longer time scales, set $T_{max}=30$.  
+    You may have to increase this even further to see the full dynamics, depending on your parameter choices.
 -  To simulate swimming in a horizontal gradient of vertical flow, set $\frac{dU}{dz}=0, \frac{dV}{dz}=0, \frac{dW}{dx}=0.4$.
 -  To simulate swimming in a vertical gradient of horizontal flow, set $\frac{dU}{dz}=0.4, \frac{dV}{dz}=0, \frac{dW}{dx}=0$.
 -  To simulate swimming in a rotating flow, set $\frac{dU}{dz}=-0.4, \frac{dV}{dz}=0, \frac{dW}{dx}=0.4$.
 
 Each of the swimming trajectories is highly variable, depending on shear levels (and sometimes on initial orientation).
-Try some a
+Think about the interactions of fluid, body and surface forces to gain an intiution about the larva's swimming biomechanics.
+Then try some additional flows to see if your intuition is reflected in the results.
 
 ## Assessing swimming performance across morphological variations
 Repeat all the above steps, but this time use $\rho_{excess}=95$ and $\rho_{excess}=$.

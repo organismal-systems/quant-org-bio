@@ -10,7 +10,7 @@ Among other things, these features enable larvae to fulfill the basic requiremen
 1. **Propulsion** to move through the water; and,
 2. **Stability and orientation** for directed motion, especially in vertical directions.[^vrt]
 
-The fascinating and important work on well-developed larval forms suggests a further, and frequently overlooked, question:
+The fascinating and important work on well-developed larval forms suggests a further, frequently overlooked question:
 > How do embryos and other early-stage larvae, accomplish similar swimming performance with almost no specialized swimming morphological features?
 
 [](#comp-blastulae) shows the [blastula](wiki:Blastulation) stage in early larval development of three [echinoids](wiki:Sea_urchin)[^ech]. 

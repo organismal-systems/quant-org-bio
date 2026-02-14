@@ -2,7 +2,7 @@
 While there is good evidence that swimming is important in early-stage marine invertebrate larvae, there is much less clarity on exactly *why* it is important, *how* swimming confers benfits, and what are the *minimal requirements for swimming performance* to achieve those benefits.
 A study by [](doi:10.1093/icb/icq090) asked whether there is evidence, in the swimming of extant early-stage larvae, of a minimum threshold or *standard* for upward swimming performance.
 
-The hypothesized swimming performance standard is based on the idea that, across a diversity of taxa and their habitats, the benefits of swimming acrue only if it typically results in modulating environments, avoids predators or accomplishes other movement-related tasks to a meaningful extent within a meaningful time frame.
+The hypothesized swimming performance standard is based on the idea that, across a diversity of taxa and their habitats, the benefits of swimming acrue only if it typically modulates ambient conditions, avoids predators or accomplishes other movement-related tasks to a meaningful extent within a meaningful time frame.
 To the extent that this depends on shared environments, predators, *etc*., the minimal swimming characteristics necessary to attain these benefits may also be similar across diverse taxa.
 
 This idea is vague and difficult to assess in terms of swimming costs and benefits.
