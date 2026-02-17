@@ -99,6 +99,7 @@ parts:
           - file: subrepos/demography/DiatomSizeESS/content/Litchman_etal2009.md
       - file: subrepos/demography/Croaker/Croaker.md
         sections:
+          - file: subrepos/demography/Croaker/CroakerModel.md
           - file: subrepos/demography/Croaker/Croaker.ipynb
       - file: subrepos/demography/KoelleCholera/cholera_background.md
         sections:
