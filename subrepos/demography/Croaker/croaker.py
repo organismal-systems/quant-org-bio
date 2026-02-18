@@ -1,6 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from math import exp, log, sqrt
+global A
 
 def LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
@@ -27,6 +28,7 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     on Diamond et al.'s (2000) analysis of Atlantic Croaker bycatch
     mortality, with graphical output.
     """
+    global A
     #print('Fs = ',F1,F2,F3,F4,F5,F6,F7)
     # Calculate cumulative survival in larval stages & the Leslie matrix, A
     pars = LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
@@ -132,13 +134,16 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     Pax.set_xlabel('Year')
     Pax.set_ylabel('Total population')
     Pax.legend()
+    plt.pause(0.5) # pause to complete plotting before textual output
     #plt.savefig(plot_prefix+".png"'Pfig.png')
-    
+    print('Leslie matrix:')
+    print(np.array_str(A,precision=2))
           
 def getA(params):
     """A function to calculate the Leslie matrix A from the parameters
        in the dictionary params, to facilitate calculating elasticities.
     """
+    global A
     # Fecundity, age classes 1-7; EIF is the egg investment factor (i.e., the factor 
     # by which investment per egg increases over the natural condition in Diamond et
     # al. This implies the number of eggs decreases by 1/EIF. Also, the duration of the

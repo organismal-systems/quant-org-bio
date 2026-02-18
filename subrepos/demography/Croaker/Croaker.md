@@ -7,7 +7,7 @@ We humans are providing ourselves with lots of opportunities to learn about life
 This is particularly true with respect to mortality rates. 
 Mortality rates for pelagic species are usually very difficult to measure directly, and so their roles in life history evolution often remain somewhat speculative. 
 However,  due to direct fishing pressure, and to indirect pressures such as by-catch and habitat degradation, humans have imposed major, and often quantifiable, increases in mortality rates in many species. 
-It would be surprising if these species did not evolve to have different life histories under such dramatically changed conditions.
+It would be surprising if these species did not evolve to have altered life histories under such dramatically changed conditions.
 
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Micropogonias_undulatus_RR_072120_0655_%2850142583921%29.jpg/960px-Micropogonias_undulatus_RR_072120_0655_%2850142583921%29.jpg
@@ -23,16 +23,16 @@ Citation :*Micropogonias undulatus* RR 072120 0655 (50142583921).jpg, https://co
 ```
 
 [](doi:10.1139/cjfas-57-10-2010)  presented  population dynamics analysis for a fish called the [Atlantic croaker](wiki:Atlantic_croaker), *Micropogonias undulatus* ( [](#acroaker)) .
-Croakers are the target of a major U.S. fishery, and also experienced significant mortality as [by-catch](wiki:Bycatch) from shrimp trawling. 
+Croakers are the target of a major U.S. fishery, and also experience significant mortality as [by-catch](wiki:Bycatch) from shrimp trawling. 
 At the time of the study, both of its two major U.S. regional populations, in the Gulf of Mexico and the Mid-Atlantic bight, were declining.[^crk]
 [](doi:10.1139/cjfas-57-10-2010) sought to establish whether by-catch mortality was a significant factor in causing declining populations of Atlantic croakers.
 
 [^crk]: (I haven't followed up with the most recent catch data, but there are published suggestions ocean warming is contributing to increases in croaker stocks. 
 
-According to the analysis of demographic parameters in  [Diamond *et al*. (1999)](https://academic.oup.com/tafs/article/128/6/1085/7891472),  Atlantic croakers have a natural lifespan of approximately 7 years.
+According to the analysis of demographic parameters in  [Diamond *et al*. (1999)](https://academic.oup.com/tafs/article/128/6/1085/7891472),  Atlantic croakers have a natural lifespan of approximately 8 years.
 Over their lives, croakers grow and (as in most fish) increase their [fecundity](wiki:Fecundity) (production of eggs and sperm) as they get bigger. 
 Their [natural mortality rate](wiki:Mortality_rate)  is very high when they are [larvae](wiki:Ichthyoplankton) and **juveniles**.
-Once they become **adults**, however, mortality is much lower and roughly constant between ages 2 and 7 years. 
+Once they become **adults**, however, mortality is much lower and roughly constant between ages 2 and 8 years. 
 As noted, the juveniles and adults are also subject to human-induced mortality from bycatch and targeted fishing, but this fishing pressure is differs in the Gulf *vs*. the Atlantic in both intensity and the most-impacted age classes.
 
 Aside from changes in fecundity and mortality across year classes, the first year of a croaker's life is distinct because during this year it begins as an egg and develops through a sequence of stages into a juvenile and finally into an adult.
@@ -44,7 +44,7 @@ Hence, variations in the demography of successive developmental stages during th
 >  What are the demographic effects of increased mortality due to targeted and by-catch fishing?  
     How do those effects compare to and interact with natural mortality mechanisms?
 
-To these questions, we could add an additional set of questions concerning the evolution of modified life history characteristics in response to anthropogenic changes in selective pressures.
+To these, we could add an additional set of questions concerning the evolution of modified life history characteristics in response to anthropogenic changes in selective pressures.
 Should we expect  long-term evolutionary adjustments in croaker life history to mitigate, or perhaps to aggravate, the shorter-term demographic changes?
 
 ## Egg size evolution
