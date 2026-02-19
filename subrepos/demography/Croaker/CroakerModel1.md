@@ -36,7 +36,9 @@ That is because sperm are usually available in much greater numbers, most of whi
     In words, this equations says that: 
 	> The number of eggs in year $t+1$ equals the number of females in Year Class $i$ in year $t$ multiplied by the number of eggs produced per female ($F_i$), summed across all the Year Classes $i=1,2,\dots, 8$.
 
-## Parameters are constant
+## Further assumptions
+Two additional assumptions are worth emphasizing at this point:
+> 1. The demographic parameters ($S_i$, $F_i$, *etc*.) in [](doi:10.1139/cjfas-57-10-2010)'s model are constant across years; in reality, there would be inter-annual variations, which might be quite large and exert strong effects on population dynamics.  
+>  2. [](doi:10.1139/cjfas-57-10-2010)'s model does not include **density-dependence**, in which demographic rates are affected by the size of the population (for example, a very high population might be food-limited and therefore grow more slowly, die faster or have lower fecundity).
 
-## There is no density-dependence
-
+These assumptions are important context when interpreting the model results.

@@ -55,7 +55,7 @@ Likewise, the age-specific fecundity,
 > $F_i$ is the number of eggs produced by fish in the $i^{th}$ Year Class during year $t$ and developing during year $t+1$, normalized by the number of Year Class $i$ croakers at the end of year $t$. 
 
 In reality, croaker spawning occurs over about six months of each year, including times at which their population was not the same as it was at the end of year $t$ or as it will be at the end of year $t+1$.
-The fecundity, $F_i$, *implicitly* accounts for this variation by discounting the per-fish fecundity to factor in fish that died before they had a chance to reproduce.
+The fecundity, $F_i$, *implicitly* accounts for this variation by adjusting the per-fish fecundity to factor in fish that died before they had a chance to reproduce, the fish that reproduced but died before the end of the year, *etc*.
 
 
 

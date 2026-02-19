@@ -104,7 +104,9 @@ parts:
           - file: subrepos/demography/Croaker/CroakerModel2.md
           - file: subrepos/demography/Croaker/CroakerModel3.md
           - file: subrepos/demography/Croaker/CroakerModel4.md
+          - file: subrepos/demography/Croaker/CroakerActivity.md
           - file: subrepos/demography/Croaker/Croaker.ipynb
+          - file: subrepos/demography/Croaker/CroakerEIF.md
       - file: subrepos/demography/KoelleCholera/cholera_background.md
         sections:
           - file: subrepos/demography/KoelleCholera/cholera_rationale.md
