@@ -1,0 +1,100 @@
+# 🛼 Exploring demography and evolution in the Atlantic croaker
+
+Your tasks are to play with Diamond et al.'s stage-within-age model for awhile to familiarize yourself with how to change the simulation, demographic and evolutionary parameters, and gain intuition about how these affect larval survivorship, Year Class structure, and long-term population trends.
+
+Then, address some or all of the following questions.
+
+
+## Gaining insights into croaker population structure
+
+
+
+Explore the initial transients in the population structure by setting the number of years the simulation runs (\verb"Nyears") to a small number. 
+
+Explore how the parameters affect the trajectory of the population, the age structure across years, and the stage structure within the larval period.
+What relationships exist between the elasticities, the cumulative larval survival probabilities, and the age distribution?
+
+
+Using the exponential rate of increase as a proxy for fitness, in which directions would you expect egg size (and possibly other life history parameters) to evolve as a result of human-induced mortality? 
+Is this an appropriate proxy for fitness, or can you think of better ones? 
+Does your analysis apply to other marine organisms as well?
+
+
+## Anticipating evolutionary changes in life history
+To use this model to study life history evolution, I have added a new component: the possibility to change egg size.
+There are two parameters through which you can manipulate life history to examine consequences for population increase or decrease.
+
+The first is simple: The parameter \verb"egg_investment_factor" is just a multiplier by which each female will increase or decrease the reproductive resources expended on each egg (with the commensurate constraints on the number of eggs procuded given the limitation on reproductive resources).
+
+For example, \verb"egg_investment_factor" \verb"="  \verb"2" implies that females make eggs with twice the resources, and consequently make half as many of them.
+
+The second parameter is $\alpha$, which is the  exponential rate of growth during the larval phase. If egg size is larger, then presumably so is the larva. It then has a shorter development time, because it has less to grow, and the time by which development time is shorter is a function of $\alpha$. Large $\alpha$ implies fast growth, and small $\alpha$ implies slow growth.
+
+
+## Exploration of the stage-within-age model: Study Questions
+
+### Population structure
+In what ways is the stable age distribution informative or uninformative?
+Is the analytical steady state age structure a good approximation for the full model?
+For how many years do initial conditions have significant impacts on age structure?
+In the event of a catastrophe (e.g., an oil spill), how long do you expect age structure impacts to last?
+Consider more moderate but continual environmental variations (which are not considered explicitly in this model).
+What kinds of variations (e.g., annual, decadal, etc.) would you expect to change croaker age structure?
+
+***What are the key Year Classes?***
+
+Given the relative abundance of fish of different ages, which size classes would be most impacted by targeted fishing or by-catch? Factoring in the age-dependent fecundity parameters, which size classes contribute most to reproduction?
+
+### Population time series
+The stable age distribution corresponds to a total population that always changes geometrically in time (i.e., in a linear trajectory on a semi-log plot).
+The full model does not necessarily follow this type of trajectory.
+
+What do the time series for total population in the full model, and the time series for the stable age distribution (derived from eigenvalue analysis), say about long-term trends in the croaker population?
+Do these time series predict long-term increases or decreases?
+The two time series begin with the same total population; in what ways are the two time series similar or different?
+How do differences relate to your answers to 1)
+
+### Larval demography
+What do probabilities of larval survival across stages suggest about vunerability during early development?
+
+On average, how many eggs must a female lay to produce one offspring that survives its first year?
+
+What stages account for the most significant mortality? Which larval characteristics (e.g., size, sensory capabilities, swimming abilities, habitat, etc.) do you hypothesize might be most responsible for differences?
+
+In what ways would a survival probabilities differ in a fish species that gives live birth to a few, more-developed larvae? If you were sampling the plankton to assess croaker reproduction, how would estimates of larval survival inform your sampling design?
+
+### Elasticities
+What do elasticities for key parameters suggest about the croaker population's sensitivity to demographic parameters?
+
+Some parameters are inter-related. For example, in feeding larval stages, behaviors that enhance feeding rates often incur added risk of predation. Hence, a change in foraging behavior that increases feeding might both&nbsp;shorten duration of a larval stage ($T$) and increase mortality rates ($\mu$). 
+
+What determines whether this is a beneficial or harmful change?
+
+### Responses to climate change
+Consider one of the many factors predicted to change in future oceans (temperature, pH, mixed layer depth, nutrient levels, alien invasions, pollution, human exploitation, *etc*.).
+
+Speculate how this factor might affect parameters like larval duration and mortality rates. Use insights from the model to predict the impacts (or lack of impacts) on future croaker population dynamics.
+
+## Predicting evolutionary directions for the Atlantic croaker
+Exploring the potential effects of natural selection on croaker life history parameters requires understanding both the costs and benefits of prospective changes.
+This typically involves additional analysis to assess how these changes are reflected in elements of the Leslie matrix.
+Often, multiple elements will be affected, reflecting tradeoffs between effects that enhance and effects that degrade population growth.
+For example, more aggressive feeding behavior during a larval stage may enhance growth, thereby reducing the duration of that stage and potentially reducing mortality.
+However, more aggressive feeding likely increases risk of encountering predators, potentially increasing mortality.
+Qunatitative analysis is needed to determine the effects of such a behavior change on Leslie matrix elements, after which the model can provide insight into whether or not the benefits outweigh the costs of changing foraging behavior.
+
+### Evolution of egg size
+Keep in mind that the egg-size model implemented here is oversimplified in important ways.
+Nonetheless, it may suffice to suggest whether, under the fishing pressure and demographic regime modeled by Diamond et al., different egg sizes might evolve and, if so, whether eggs are likely to become bigger or smaller.
+
+What are the long-term consequences of changes in egg size?
+
+Consider what magnitude of change might be relatively "easy" -- that is, not require major reorganization of egg structure or larval development mechanisms (clearly a speculative threshold...).
+Within a spectrum of such changes, would you expect to see evolutionary changes in croaker egg size?
+
+
+
+
+
+<p style="margin-left: 30px;">The key parameters of the model are expressed in the Leslie matrix, <strong>B</strong>. Using results from linear algebra, is can be shown that populations with this form of matrix always approach a stable age distribution. That is, if you run them long enough, the population distribution will approach a steady state (blue). Note that this does not mean the total population is constant, only that the fraction of population in a given Year Class is constant. The steady state is a convenient benchmark for population analysis, because it is easy to calculate using mathematical tools from linear algebra, and it is a characteristic only of the Leslie matrix, not involving simulation-specific parameters like initial population structure and number of years simulated.</p>
+

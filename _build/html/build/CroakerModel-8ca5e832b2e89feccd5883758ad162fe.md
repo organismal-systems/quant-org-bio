@@ -1,0 +1,91 @@
+# 📖️ Modeling Croaker demography
+In many demographic models of aquatic populations, multiple species are "lumped"  into a single broad biomass category (e.g., phytoplankton, microzooplankton, *etc*.).
+In these models, taxonomic resolution is a major concern.
+That is, we need to consider whether a model that groups many different species together into one functional unit can decribe the aggregate population dynamics accurately enough to have useful predictive power. 
+
+In the case of the croaker, [Diamond *et al*. (1999)](https://academic.oup.com/tafs/article/128/6/1085/7891472)'s detailed statistical analysis led them to conclude that even one functional category for this species alone is insufficient.
+That was because the life history parameters &ndash; survival, mortality and fecundity &ndash; differ so dramatically between year classes, and between larval and juvenile stages within the first year class, that it was not possible to understand the impacts of natural and human factors in population declines without accounting for these categories separately.
+
+To understand the impacts of natural and human-influenced factors on croaker populatons, [](doi:10.1139/cjfas-57-10-2010) devised a type of **structured population model** called a **stage-within-age matrix model**.
+This type of model is based on a well-known method for formulating a structured  population model using a type of matrix called a [Leslie matrix](wiki:Leslie_matrix).
+An overview of how to work with matrices, and of Leslie matrices in particular, is presented in the [Math appendix](../../../content/appendix/MathSum/matrix.md).
+
+[](doi:10.1139/cjfas-57-10-2010)'s  model accounts for Atlantic croaker demography at two levels: Age and stage.
+1. **Age**  
+    In their model, the croaker population in any given year is represented by a population vector, in which each element represents the number of fish in a given Year Class.
+	In this level of the model, elements of a **transition matrix**  account for the survival from Year 1 to Year 2, Year 2 to Year 3, *etc*., and for the fecundity of the fish in each Year Class.
+	The total fecundity of all the year classes determines the number of eggs that are produced, to begin development in the following year.
+2. **Stage**  
+    The survival of croakers *within their first year* is determined by several distinct stages, each of which has a distinct mortality rate that is determined by conditions in several different aquatic habitats.
+	These mortality rates are so high, and affected by so many factors of interest in [](doi:10.1139/cjfas-57-10-2010)'s analysis, that trying to account for them using a single mortality rate for the entire first year is uninformative.
+	Therefore, the model accounts for mortality in the first year with a *submodel*, in which the survival of the first year cohort is resolved in detail across each stage using *daily* mortality rates.
+	The cumulative stage-specific survival across all the first-year stages constitutes the corresponding element in the year-class Leslie transition matrix.
+
+## Model structure
+The starting point of [](doi:10.1139/cjfas-57-10-2010)'s model to use a single variable to represent the number of croakers in each Year Class:  $p_1$, the number of croakers in Year Class 2 as $p_2$, *etc*.
+The population of all seven Year Classes in year $t$  can then be summarized by the vector 
+$$
+\mathbf{P}(t) = \begin{pmatrix}
+p_1 \\ p_2 \\ p_3 \\ \vdots \\ p_7
+\end{pmatrix}. \label{eq:eqnVEC}
+$$
+Like many population models, [](doi:10.1139/cjfas-57-10-2010)'s model is essentially a model of the female population.
+The underlying assumption is that there are always enough males to fertilize eggs, so the number of eggs is the limiting demographic factor.
+
+It's important to recognize that Leslie matrix models are **discrete time models**.
+That is, time is represented as a discrete variable that increments for each year, $t = 1, 2, 3, \dots$.
+This means that $p_i$ represents the number of croakers in the $i^{th}$ Year Class **at a specific time of year**.
+In this case, [](doi:10.1139/cjfas-57-10-2010) have assumed that
+> $p_i(t)$ represents the croaker population in the $i^{th}$ Year Class  **at the end** of year $t$.
+
+This choice has implications for how we interpret demographic parameters, and for how they are quantified from fisheries and other data (see [Diamond *et al*. (1999)](https://academic.oup.com/tafs/article/128/6/1085/7891472)). 
+
+For example, the age-specific survival rate, 
+> $S_i$ is the fraction of croakers in the $i^{th}$ Year Class at the end of year $t$ that survives an entire year to be counted in the $(i+1)^{st}$ Year Class at the end of year $t+1$. 
+
+In reality, fish mortality has been occuring throughout the year, continously but possibly at seasonally varying rates.
+The survival metric, $S_i$, "leapfrogs" over that continuous mortality to summarize the total mortality over the entire year.
+
+Likewise, the age-specific fecundity, 
+> $F_i$ is the number of eggs produced by fish in the $i^{th}$ Year Class during year $t$ and developing during year $t+1$, normalized by the number of Year Class $i$ croakers at the end of year $t$. 
+
+In reality, croaker spawning may occur at different times of year, including times at which their population was not the same as it was at the end of year $t$ or as it will be at the end of year $t+1$.
+The fecundity, $F_i$ *implicitly* accounts for this variation by discounting the per-fish fecundity to factor in fish that died before they had a chance to reproduce (and also discounting males, because the model is of females only).
+
+## Model formulation
+To have a population model, we need formulas that project the population $\mathbf{P}(t)$ forward to Year $t+1$.
+To understand how [](doi:10.1139/cjfas-57-10-2010) constructed their model, we will go carefully through the three things that happen to the croaker population in the transition between the end of year $t$ and the end of year $t+1$:
+1. **Individuals age by one year**  
+    That is, individuals who are in Year Class $i$ in year $t$ are, if they survive, moved to Year Class $i+1$ in Year $t+1$.
+	
+2. **Individuals die**  
+     [](doi:10.1139/cjfas-57-10-2010) assumed that the probability of an adult dying in a given year is a constant, $\mu_{adult}$, for all age classes older than larvae and juveniles ($i=3, 4, \dots$.
+	 
+	 Another way to express this is as a survival probability, $S_{adult}$. Because every adult will either die or survive, the probabilities $\mu_{adult}$ and $S_{adult}$ must add up to one, so that
+	 $$
+	 S_{adult} = 1 - \mu_{adult}.
+	 $$
+	 
+Combining aging and mortality, we can now say that the croaker population in Year Class $i+1$ in year $t+1$ is equal to the croaker population in Year Class $i$ in year $t$ times the survival rate during that year:
+$$
+p_{i+1}(t+1) = S_{adult} ~ p_i(t), i = 3, 4, \dots
+$$
+3. **Individuals reproduce**  
+In assessing reproduction of fish such as croakers, it's usually assumed that the main limitation is the number of eggs.
+That is because sperm are usually available in much greater numbers, most of which never encounter an egg and hence play no part in reproduction.
+To assess the number of eggs, we must focus on the population of female croakers.
+In some fish species the ratio of males to females is nearly equal (like it is in humans) and we could assume half the adults are female.
+However, in other fish species the sex ratio is strongly biased towards one gender (because of their basic biology, selective harvesting, etc.).
+In this case, it's clearest to model males and females separately, and since the number of males is almost always sufficient to fertilize all the females, we don't even have to worry about the males.
+
+So, we make the assumption now that we are modeling only females, and adjust populations, fecundity etc. accordingly (for example, if half the eggs are of each gender, the effective fecundity in the female-only model is 50% of the total observed fecundity).
+Let's assume that a female croaker of age $i$ produces $F_i$ female eggs.
+Accounting for all Year Classes, the population of female eggs ($p_{eggs}$) produced in the $i+1$st year is then 
+$$
+p_{eggs}(i+1) = F_1 p_1(i) + F_2 p_2(i) + F_3 p_3(i) + F_4 p_4(i) + F_5 p_5(i) + F_6 p_6(i) + F_7 p_7(i)
+$$
+
+## Parameters are constant
+
+## There is no density-dependence
+
