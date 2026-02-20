@@ -2,6 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from math import exp, log, sqrt
 global A
+#import pprint
 
 def LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
@@ -21,7 +22,7 @@ def LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
 def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                     mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
                     F1,F2,F3,F4,F5,F6,F7,
-                    p1,p2,p3,p4,p5,p6,p7,
+                    p_egg,p1,p2,p3,p4,p5,p6,p7,
                     N_years,alpha,EIF):
     """
     A simple implementation of a Leslie matrix population model based
@@ -37,7 +38,7 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                       alpha,EIF)
     #print('CPM: pars = ',pars)
     T_cum,S_cum,A = getA(pars)
-    P_init = np.asarray([p1,p2,p3,p4,p5,p6,p7])
+    P_init = np.asarray([p_egg,p1,p2,p3,p4,p5,p6,p7])
     # Normalize initial population
     P_init /= sum(P_init)
     #T_cum,S_cum,A = getA(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
@@ -67,8 +68,6 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     #print('*          Eigenvalue analysis            *')
     #print('*******************************************')
     #print('Elasticities: ')
-    #for k in elasticities.keys():
-          #print(k,elasticities[k])
     Eax=fig.add_subplot(222)
     Eax.bar(range(len(elasticities)),list(elasticities.values()),color='cyan',width=0.4)
     locs, labels = plt.xticks(range(len(elasticities)),list(elasticities.keys()))
@@ -83,13 +82,6 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     lambda_V1,V1 = StableAgeDistribution(A)
     P_predict = V1/sum(V1)
 
-    #print(' ')
-    #print('*******************************************')
-    #print('*          Age distributions            *')
-    #print('*******************************************')
-    #print('Initial age distribution, P_init = ',P_init)
-    #print('Stable age distribution, P_predict is: ',P_predict)
-    #print('Asymptotic growth rate is: ',lambda_V1)
     Vax=fig.add_subplot(223)
     Vax.plot(P_predict,marker='o',color='blue',label='Stable age dist.')
     Vax.plot(P_init,marker='o',color='green',label='Initial dist.')
@@ -99,12 +91,12 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     Vax.set_xlabel('Year class')
     Vax.set_ylabel('Fraction of population')
     LH_labels2=['  Year 0','  Year 1','  Year 2','  Year 3','  Year 4','  Year 5','  Year 6','  Year 7']
-    for i in range(7):
+    for i in range(8):
         Vax.text(i,P_predict[i],LH_labels2[i])
         Vax.text(i,P_init[i],LH_labels2[i])
     #plt.savefig(plot_prefix+".png"'AVfig.png')
 
-    P_data=np.zeros([N_years+1,7])
+    P_data=np.zeros([N_years+1,8])
     years=range(N_years+1)
     P_data[0,:]=P_init
     #P_data[:,0]=np.transpose(P_init)
@@ -136,9 +128,29 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     Pax.legend()
     plt.pause(0.5) # pause to complete plotting before textual output
     #plt.savefig(plot_prefix+".png"'Pfig.png')
-    print('Leslie matrix:')
+
+    # textual output
+    print(' ')
+    print('*******************************************')
+    print('*            Leslie matrix                *')
+    print('*******************************************')
     print(np.array_str(A,precision=2))
-          
+    print(' ')
+    print('*******************************************')
+    print('*          Age distributions            *')
+    print('*******************************************')
+    print('Initial age distribution, P_init = ',np.array_str(P_init,precision=2))
+    print('Stable age distribution, P_predict is: ',np.array_str(P_predict,precision=2))
+    print('Final age distribution, P_final = ',np.array_str(P_data[-1,:]/P_data[-1,:].sum(),precision=2))
+    print('Asymptotic growth rate is: ',lambda_V1)
+    print(' ')
+    print('*******************************************')
+    print('*            Elasticities                *')
+    print('*******************************************')
+    for k in elasticities.keys():
+        print(f'{k:<8} {elasticities[k]:.3g}')
+    #pprint.pprint(elasticities)
+    
 def getA(params):
     """A function to calculate the Leslie matrix A from the parameters
        in the dictionary params, to facilitate calculating elasticities.
@@ -148,7 +160,7 @@ def getA(params):
     # by which investment per egg increases over the natural condition in Diamond et
     # al. This implies the number of eggs decreases by 1/EIF. Also, the duration of the
     #  OL stage is decreased by the duration reduction factor, DRF. 
-    F = 1./params["EIF"]*np.asarray([params["F1"],params["F2"],params["F3"],params["F4"],params["F5"],params["F6"],params["F7"]])
+    F = 1./params["EIF"]*np.asarray([0.,params["F1"],params["F2"],params["F3"],params["F4"],params["F5"],params["F6"],params["F7"]])
     # Duration and survivorship of larval stages
     DF = max(1.-log(params["EIF"])/(params["alpha"]*params["T_ol"]),0.) # Duration factor from changed egg size
     #print('DF = ',DF)
@@ -169,10 +181,10 @@ def getA(params):
     # Adult survival
     S_adult = 1. - params["mu_adult"]
     # Define the Leslie matrix, A:
-    A = np.zeros([7,7])
+    A = np.zeros([8,8])
     A[0,:]=F
     A[1,0]=S_Y1
-    for i in range(5):
+    for i in range(6):
         A[i+2,i+1]= S_adult
     # Return results for plotting & population calculations
     return T_cum,S_cum,A
