@@ -126,6 +126,9 @@ parts:
         - file: subrepos/spatial-dynamics/MesaWolfSheep/WolfSheepPersist.md
           sections:
             - file: subrepos/spatial-dynamics/MesaWolfSheep/KISSest.md
+            - file: subrepos/spatial-dynamics/MesaWolfSheep/MesaModel.md
+            - file: subrepos/spatial-dynamics/MesaWolfSheep/MesaModel2.md
+            - file: subrepos/spatial-dynamics/MesaWolfSheep/MesaModel3.md
             - file: subrepos/spatial-dynamics/MesaWolfSheep/WolfSheepPersist.ipynb
             - file: subrepos/spatial-dynamics/MesaWolfSheep/KISSsoln.md
         - file: subrepos/spatial-dynamics/EstuaryLarva/EstLarvSwim.ipynb
