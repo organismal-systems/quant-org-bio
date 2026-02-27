@@ -51,4 +51,4 @@ $$
 L_{crit} = \frac{\sqrt{T_{demog}}}{2} 
 $$
  
-It remains, however, to estimate the demographic time scale that we proposed, $T_{demog}$, and to test whether simulation results support or contradict the hypothesis.
+It remains, however, to estimate the proposed demographic time scale, $T_{demog}$, and to test whether simulation results support or contradict the hypothesis that $L_{crit}$ approximates the critical habitat size.
