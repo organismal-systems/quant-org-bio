@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/MesaWolfSheep.git
 	branch = main
-	commit = 33b44c42b62d466be144398029c34e5da86e5189
-	parent = 57553b4b4ad5c82f9ce063a5796ef0fbab23c7c9
+	commit = 4ff87846878c1ff0cc113590f0d6a8ccca8547a5
+	parent = 886c4704210b8945242fc49ec38d9b72b968c853
 	method = merge
-	cmdver = 0.4.3
+	cmdver = 0.4.9
