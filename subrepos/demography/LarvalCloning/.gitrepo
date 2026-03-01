@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/LarvalCloning
 	branch = main
-	commit = 95a98ebf1dc4b001bf98b44e6a1a453b3b21268a
-	parent = d75aff4ded1334f013693b4beb1a280f93193ea5
+	commit = fd2e88939403b2aeeddd5c4323b5779b76145234
+	parent = 3219d1a7d29fdc28c8a33aa6d0eed87531357b1a
 	method = merge
-	cmdver = 0.4.3
+	cmdver = 0.4.9
