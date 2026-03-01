@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/ReSphere
 	branch = main
-	commit = 8c99677ffd209880020ced8b48b3600b39c4f8b7
-	parent = ef7c33219a8f3bb1c5b089ab4bd40e237de0f36e
+	commit = 6e7c247b8baa213c99d22f646e8d22e97a17eeeb
+	parent = 3fe579df64b48c273d8a49e7164185d724326c40
 	method = merge
-	cmdver = 0.4.3
+	cmdver = 0.4.9
