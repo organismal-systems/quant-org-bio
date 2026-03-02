@@ -142,6 +142,7 @@ parts:
   - caption: Appendix
     numbered: true
     chapters:
+    - file: content/appendix/BinderList.md
     - file: subrepos/overview/qob-notebooks/OSYMindex.ipynb
     - file: content/overview/localintro.md
       sections:
