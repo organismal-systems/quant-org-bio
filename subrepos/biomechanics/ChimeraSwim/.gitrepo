@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/ChimeraSwim.git
 	branch = main
-	commit = 0b79f3d912dd1c3cc6b3eeb8d5e08a7b403cf8fa
-	parent = b68d8dd66a3abebb5ce180e30406d32000ad3fa2
+	commit = 02c8193a39dc4b8de90497d69969484a63dfac19
+	parent = 11299ef64d54d90072c4deef088e3a3af1c276fe
 	method = merge
 	cmdver = 0.4.9
