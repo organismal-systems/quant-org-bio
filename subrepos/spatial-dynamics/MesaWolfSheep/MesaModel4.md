@@ -8,7 +8,7 @@ that is hypothesized to delineate persistence *vs*. extinction in the 3-level tr
 Then, you will run the model at a variety of habitat sizes to observe population dynamics, and assess whether the results do or do not provide support for the hypothesized critical habitat size.
 
 ## Part 1: Model usage
-The first step in this Activity is familiarize yourself with the model:
+The first step in this Activity is to familiarize yourself with the model:
 1. Launch the WolfSheepPersist model on Binder or your own computer.
 2. Run the model with the default parameters:
     - **Set up the model**: Click on the `>>` icon at the top of the notebook, to *restart the kernel and run all cells*.  

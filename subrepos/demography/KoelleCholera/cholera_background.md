@@ -8,7 +8,7 @@ Cholera is caused by a bacterium, *Vibrio cholerae*.
 Humans are the only known host of this bacterium.
 However, the bacteria can survive in a free-living form in freshwater, brackish or coastal seawater environments.
 This is important in facilitating cholera transmission, which can be through direct fecal contact or indirectly through consumption of contaminated food or water.
-Cholera outbreaks more prevalent where proper sanitation is absent or has broken down, *e.g*. due to flooding or other natural or human-caused disasters.
+Cholera outbreaks are more prevalent where proper sanitation is absent or has broken down, *e.g*. due to flooding or other natural or human-caused disasters.
 
 Cholera is a difficult disease to contain.
 Reasons for this include:
@@ -20,7 +20,7 @@ Reasons for this include:
 - People are exposed to cholera bacteria through multiple transmission pathways, including exposure to bacteria occurring naturally in estuaries and other natural environments and exposure to bacteria in human feces.
   Environmental variations that suppress one transmission mechanism might promote another, either immediately or after a delay.
 - Cholera is caused by several distinct bacterial strains ("biotypes") that differ in their biology (e.g., preferred natural habitats) and in their impacts on human hosts (e.g., severity of symptoms, immunity across strains, *etc*.).
-  Furthermore, a given strain has environment-dependent gene expression, that cause widely differing motility behavior, physiology and virulence effects within specific parts of the human body and in aquatic habitats.
+  Furthermore, a given strain has environment-dependent gene expression, that causes widely differing motility behavior, physiology and virulence effects within specific parts of the human body and in aquatic habitats.
   
 Because cholera is affected simultaneously by all these factors, it is difficult to establish the roles of any one of them. 
 Consequently, it's often unclear which of the many possible alternative strategies to reduce or mitigate cholera is the best use of resources.

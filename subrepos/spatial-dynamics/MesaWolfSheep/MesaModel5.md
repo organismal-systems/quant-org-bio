@@ -33,14 +33,15 @@ To begin this part of the Activity, it is useful to change some parameters to ma
 	- The icon sizes do not affect model outcomes, but can make the grid plot easier to interpret and more aesthetic.
    - In the example code block,
        - Changed parameters are expressed as multiples of the original parameters
-	   - The original parameters are preserved as comments
+	   - The original parameters are preserved as comments (that is, preceded by `#`)
 	   
     Both of these are optional; in some cases, it is easier to keep track of previous work if the parameter sets are recorded in these ways.
 
 3. Run the simulations multiple times, changing the random seed each time before resetting agents in the grid.
 
-    - It may be helpful to adjust the initial sheep and wolf populations in the simulations window.
-4. Write down your best estimate of the demographic time scale, $T_{demog}$, along with your rationale for choosing it.
-5. Calculate and record the critical habitat size implied by your estimate of $T_{demog}$.
+    - It may be helpful to adjust the initial sheep and wolf populations in the simulation window.
+4. Write down your best estimate of the demographic time scale, $T_{demog}$, along with your rationale for choosing it.  
+    It may be useful later to make a screenshot of a typical simulation that illustrates your time scale metric.
+5. Calculate and record the critical habitat size, $L_{crit}$, implied by your estimate of $T_{demog}$.
 	
 	

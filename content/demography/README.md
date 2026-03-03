@@ -1,4 +1,4 @@
-# Demography, epidemeology and other dyamics of populations
+# Demography, epidemiology and other dyamics of populations
 This section focuses on population-level perspectives on Organismal Biology.
 The units in this section address questions that can be broadly framed as:
 > - How are organismal traits reflected in the dynamics of populations and their consumers, predators, prey and pathogens?

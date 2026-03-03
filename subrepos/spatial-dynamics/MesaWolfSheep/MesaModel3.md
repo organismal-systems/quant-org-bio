@@ -5,9 +5,9 @@ Particularly in small habitats, these dynamics repeatedly bring populations down
 
 An important factor determining the likelihood of extinction is whether or not a population is **synchronized** across the entire habitat.
 In a very small habitat, movement ensures that the population cannot be high in one location while being low in another.
-That is, booms and busts are **synchronous** in very small habitats, so if extinction risk is high anywhere it's usuallyhigh everywhere.
+That is, booms and busts are **synchronous** in very small habitats, so if extinction risk is high *anywhere* it's usually high *everywhere*.
 
-The situation *may* be different in a very large habitat.
+The situation may be different in a very large habitat.
 In a large habitat, it may take so long to move from one part of the habitat to another that different locations can become **asynchronous**.
 If so, a bust in one location may coincide with a boom in another. 
 Then, it may be rare for extinction risk to be high *everywhere*, even if it is almost always high *somewhere*.
@@ -22,6 +22,8 @@ Specifically, we will conceive of a demography time scale, $T_{demog}$, and a mo
 From these time scales, we can hypothesize that the parameter space of the Wolf-Sheep model has two distinct regions:
 > - $\frac{T_{demog}}{T_{move}} \gg 1$, in which agents move across the domain quickly but demography happens slowly
 > - $\frac{T_{demog}}{T_{move}} \ll 1$, in which demography happens quickly but agents move across the domain slowly
+
+Th implication is a hypothesis that $\frac{T_{demog}}{T_{move}} \ll 1$ permits asynchrony and therefore possible persistence, while $\frac{T_{demog}}{T_{move}} \gg 1$ enforces synchrony and therefore makes extinction likely.
 
 ### Estimating the movement time scale
 Borrowing results from the KISS model analysis, we can use the knowledge that both time and space steps are 1 in the Wolf-Sheep model:[^mov]

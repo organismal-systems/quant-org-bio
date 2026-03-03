@@ -6,7 +6,7 @@ To collect data for the Activity exploring hypothesized early-stage larval swimm
 2. **Select a series of values for tissue volume $V_t$ and excess density $\rho_{excess}$** over which to quantify swimming metrics.  
     - These series should span the range that you think is most relevant, with enough resolution that you can discern key transitions.
     - Keep in mind, though, that you will be constructing morphologies and executing simulations for all or most combinations of $V_t$ and $\rho_{excess}$.
-    - The excess density, $\rho_{excess}$, is constrained because the average larval density, $\rho_{excess}+\rho_{seawater}$ to be less than the inclusion density $\rho_{inclusion}$ (its lightest constituent) or more than the tissue density $\rho_{tissue}$ (its heaviest constituent).  
+    - The excess density, $\rho_{excess}$, is constrained because the average larval density, $\rho_{excess}+\rho_{seawater}$ cannot be less than the inclusion density $\rho_{inclusion}$ (its lightest constituent) or greater than the tissue density $\rho_{tissue}$ (its heaviest constituent).  
   
 3. Prepare a spreadsheet with tables to record two metrics: upswimming velocity and reorientation time.  
   Your spreadsheet may look something like this:
@@ -17,13 +17,13 @@ To collect data for the Activity exploring hypothesized early-stage larval swimm
 :width: 400px
 :align: center
 
-Cells with tables in a sample spreadsheet for colecting swimming performance data.  
+Cells with tables in a sample spreadsheet for collecting swimming performance data.  
 
 In this example, it's assumed that the inclusion density $\rho_{inclusion} \le 25$ and that the tissue density $\rho_{tissue} \ge 240$.
-Outside these ranges, it is not possible to construct a larva with the specified $\rho_{excess}$ out of the specified materials.
+Outside these ranges, it is not possible to construct a larva with the specified $\rho_{excess}$ using the specified materials.
 ```
 4. For each combination of $V_t$ and $\rho_{excess}$ in your table:  
-    - Create a morphology in [](./ChimeraOrg.ipunb) and save it under an informative name.
+    - Create a morphology in [](./ChimeraOrg.ipynb) and save it under an informative name.
 	- Save an image of the morphology, with the same name but an "svg" suffix.
 	- Load it into [](./ChimeraSwim.ipynb) and run a simulation in still water to determine:  
 	  1. equilibrium upswimming velocity
@@ -38,12 +38,13 @@ Outside these ranges, it is not possible to construct a larva with the specified
 The goal of this Activity is to critically assess the hypothesis that the swimming performance observed in early-stage marine invertebrate larvae reflects swimming performance standards.
 An important part of this assessment is the ability to synthesize a series of results into conclusions, and to communicate those conclusions textually and verbally.
 
-1. Write a concise summary (1 page for text, 1 page for graphics) of the results of your swimming simulations:  
-> What ranges of shapes, sizes and material properties appear to satisfy hypothetical requirements?  
-    - What ranges fail to satisfy these requirements?
-	- Which morphological constraints are similar or different for upswimming velocity *vs.* stability performance requirements?
-	- How do these sets differ from quiescent to energetic environments?
-	- In what ways do model assumptions and limitations affect the generality and persuasiveness of your conclusions?
+1. Write a concise summary and synthesis ($\le$ 1 page for text, 1 page for graphics) of the results of your swimming simulations.
+Questions you may want to consider include:  
+    - What ranges of shapes, sizes and material properties appear to satisfy hypothetical requirements?
+    - What ranges fail to satisfy these requirements?  
+    - Which morphological constraints are similar or different for upswimming velocity *vs.* stability performance requirements?  
+	- How do these sets differ from quiescent to energetic environments?  
+	- In what ways do model assumptions and limitations affect the generality and persuasiveness of your conclusions?  
 	- What might be feasible empirical tests of the conclusions of your model study?
 	
 2. Construct a short presentation (8 minutes, 3 slides max.) highlighting the most important of your results and conclusions.

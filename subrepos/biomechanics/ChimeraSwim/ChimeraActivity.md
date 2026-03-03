@@ -30,7 +30,7 @@ The [model](./ChimeraSwim.ipynb) adopts a number of simplifications to make comp
 - The model implements early-stage larvae with external shapes constructed as [chimeras](./ChimeraDesign.ipynb) of two semi-spheroids, joined at a common equator.
 - The model implements internal structure in the form of an inclusion, also constructed as a chimera of two semi-spheroids.
 - The model assumes that the embryonic tissue fills the volume inside the external surface but external to the inclusion; the inclusion contains a different material with a different excess density.
-- The model approximates ciiary propulsion using a so-called "envelope model", in which a ciliated surface is approximated by a smooth, continuous surface that moves tangentially at roughly the velocity of cilia tips during the power stroke.
+- The model approximates ciliary propulsion using a so-called "envelope model", in which a ciliated surface is approximated by a smooth, continuous surface that moves tangentially at roughly the velocity of cilia tips during the power stroke.
 - The model approximates the localized effects of turbulence and other water motion with constant levels of shear or rotation.
 - The model is executed in two stages:  
   - **Specification of larval morphology**  

@@ -30,12 +30,13 @@ Transitions between $S \rightarrow I \rightarrow R \rightarrow S$ form a cycle, 
 
 Characteristics of this general model must be adapted for application to any given disease.
 For example, some diseases are invariably fatal, or do not result in acquired immunity, so there may be no recovered class.
+In some diseases, humans acquire life-long immunity so that there is no reversion from $R$ to $S$.
 Some diseases have distinctive effects on demographic rates, while others do not.
 
 When the population *N* is known, *SIR* models simplify to two independent population classes, $S$ and $I$, where $R = N - S - I$ implicitly specifies the recovered class.
 
 ## Koelle *et al*.'s SIR model
-Koelle *et al*.'s model quantifies several characteristics of cholera infections that are poorly understood. 
+Koelle *et al*.'s model quantified several characteristics of cholera infections that are poorly understood. 
 
 ### Immune period
 Koelle *et al*. estimated the period over which an individual who has recovered from a cholera infection is resistant to being re-infected.
@@ -52,11 +53,11 @@ A plot of $\kappa_i$, the immune function from Koelle *et al*.'s cholera model, 
 ```
 The graph of immunity level, $\kappa_i$, in [](#imm) reflects two parameters emerging from Koelle *et al.*'s fitting analysis:
 1. The **immune period**, $t_{immunity}$, which is the timescale over which immunity decreases from its initial full protection to entirely absent.
-2. The **asymptomatic ratio**, $A$, which is the number of cholera infections that are asymptomatic or otherwise not reported in the data from local clinics.
+2. The **asymptomatic ratio**, $A$, which is the number of cholera infections, including those that are asymptomatic or otherwise not reported in the data from local clinics.
   $A$, is the intercept of the $\kappa_i$ curve at 0 months.
 
 It's important to understand that 
-> The $\kappa_i$ curve represents the **actual** number of individual with acquired immunity for each **reported** cholera infection. 
+> The $\kappa_i$ curve represents the **actual** number of individuals with acquired immunity for each **reported** cholera infection. 
 
 The ratio of actual to reported infections ($A$) is unknown, and must be estimated as part of the analysis. 
 This distinction between actual and reported cases explains the apparent paradox that each infection results in 25 individuals with acquired immunity.

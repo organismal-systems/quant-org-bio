@@ -3,9 +3,10 @@ The third step in this Activity is to test whether simulation results support or
 
 Specifically,
 > - Does one or more components of the Wolf-Sheep-Grass community typically go extinct in habitats smaller than the critical size, $L_{crit}$?
-> - Do all components of the Wolf-Sheep-Grass community typically go persist in habitats smaller than the critical size, $L_{crit}$?
+> - Do all components of the Wolf-Sheep-Grass community typically persist in habitats smaller than the critical size, $L_{crit}$?
+> - Do simulations support the incidence and consequences of synchrony *vs*. asynchrony across the grid?
 
-To assess this:
+To get insight into this set of questions:
 1. Design a mini-study using a series of simulations to observe the frequency of extinctions.
 
 	Among the design criteria you should consider and note are:

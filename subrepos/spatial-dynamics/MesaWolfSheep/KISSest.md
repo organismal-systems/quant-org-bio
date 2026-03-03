@@ -8,7 +8,7 @@ However, any individuals that encounter the edge of the habitat and drift into n
 The KISS model is usually implemented as a 1-dimensional spatial distribution of a population. 
 This is because, while 2- and 3-dimensional versions can be implemented, their mathematical solution is more involved and the conclusions are substantially the same.
 
-If a habitat is tiny ($L$ is very small) then a randomly-moving individual quickly encounters the boundary of non-habitat and dies.
+If a habitat is tiny (its size, $L$ is very small) then a randomly-moving individual quickly encounters the boundary of non-habitat and dies.
 If this typically happens before the individual reproduces, then deaths exceed births and the population will go extinct.
 
 On the other hand, if the habitat is huge ($L$ is very large) then an individual will typically move randomly for a long time before encountering non-habitat. 
@@ -65,7 +65,7 @@ We can summarize the outcomes of the KISS model as stemming from two characteris
 2. $T_D$, the time scale of movement
 
 Both of these time scales are conceived as order of magnitude estimates.
-In some case, exact values are available.
+In some cases, exact values are available.
 However, a rough approximation is usually all that is required, and that can often be obtained with a very simple analysis.
 
 $T_\alpha$ is how long it takes for "significant" reproduction to occur.
@@ -90,7 +90,7 @@ D \approx \frac{L^2}{T_D}
 $$
 where we neglect a constant of order of magnitude 1 (related to but not necessarily equal to $c$).
 This property is implied by the units of $D$:
-There is no other way to construct a diffusion coefficient from the parameters $L$ and $T_D$.
+There is no other way to define a diffusion coefficient using the parameters $D$, $L$ and $T_D$.
 
 Rearranging, we therefore take
 $$
@@ -142,7 +142,7 @@ For context, the [exact solution to the KISS model](./KISSsoln.md) gives
 $$
 L_{crit} = \pi \left(\frac{D}{\alpha} \right)^{\frac{1}{2}}
 $$
-showing that the scaling analysis gives the correct order of magnitude.
+showing that the scaling analysis correctly shows the variation with parameters and estimates the order of magnitude of the critical habitat size.
 
 
 [^kiss]: This model is due to Kierstead, Slobodkin and Skellam:  

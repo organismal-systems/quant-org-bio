@@ -5,22 +5,23 @@ Both these models are intentionally simplistic, and, even aside from lacking spe
 
 Nonetheless, these models illustrate important aspects of population dynamics involving three trophic levels.
 In particular, they highlight the importance of stochasticity &ndash; random occurences &ndash; that are "assumed out" of most PDE models.
-In this respect, even more detailed PDE models can give results that are more misleading and difficult to interpret than even simplistic agent-based models.
+In this respect, even relatively detailed PDE models can give results that are more misleading and difficult to interpret than simplistic agent-based models.
 
 ## Key attributes of the agent-based model
 The most important attributes of the Wolf-Sheep model for the purpose of this Activity are:
 1. The agents inhabit a so-called  "torus", where if they move off the right boundary of the grid they reappear on the left boundary, and *vice versa*.
     Likewise, if they move off the upper boundary they reappear on the bottom boundary, and *vice versa*.
 2. All events happen at discrete time steps, normalized to 1 time unit.
-3. The model has three types of agents, that follow these rules:
+3. The model has three types of agents &ndash; grass, sheep and wolves &ndash; that follow these rules:
     - Grass, which grows by itself at a rate set by the user and is consumed by a sheep if it is on the grass patch.
-	- Sheep, which gain energy from eating grass, consume energy while moving in random directions, and are eaten if encountered by wolves.
+	- Both sheep and wolves move one patch in a random direction at each time step.
+	- Sheep, gain energy from eating grass if they land on it, consume energy every time step, and are eaten if encountered by wolves.
 	Sheep reproduce with a constant user-set probability each time step.
-	- Wolves, which gain energy from eating sheep, consume energy while moving in random directions, and reproduce with a constant user-set probability each time step.
+	- Wolves, gain energy from eating sheep if they land on one, consume energy every time step, and reproduce with a constant user-set probability each time step.
 	- Both sheep and wolves die if they run out of energy.
 4. Results are presented in two ways:
     - A visualization of the grid, with grown grass as green, eaten grass as brown, sheep as white and wolves as black.
 	- A plot of grass, sheep and wolf populations over time.
-5. The behavior of sheep and wolves has been simplified here, to speed execution of the simulation. 
+5. In this imlementation, the behavior of sheep and wolves has been simplified, to speed execution of the simulation. 
     In the original, sheep avoid moving into patches with wolves, and wolves preferentially move into patches with sheep. 
 	In this implementation, both sheep and wolves move randomly into any one of the neighboring patches, without requiring computation time to check for occupancy.

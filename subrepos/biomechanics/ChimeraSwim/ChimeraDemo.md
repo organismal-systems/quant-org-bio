@@ -101,7 +101,7 @@ Think about the interactions of fluid, body and surface forces to gain an intiut
 Then try some additional flows to see if your intuition is reflected in the results.
 
 ## Assessing swimming performance across morphological variations
-Repeat all the above steps, but this time use $\rho_{excess}=95$ and $\rho_{excess}=$.
+Repeat all the above steps, but this time use larger and smaller excess densities, such as $\rho_{excess}=95$ and $\rho_{excess}=25$.
 
 What is different, and what is similar, about swimming performance with different-sized inclusions?
 
