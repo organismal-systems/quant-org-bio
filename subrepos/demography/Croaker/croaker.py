@@ -2,18 +2,17 @@ import numpy as np
 from matplotlib import pyplot as plt
 from math import exp, log, sqrt
 global A
-#import pprint
 
 def LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
-               F1,F2,F3,F4,F5,F6,F7,
+               F1,F2,F3,F4,F5,F6,F7,F8,
                alpha,EIF):
     """
     A simple class to streamline work with the many parameters of the
     Leslie matrix model, by packaging them in a dictionary.
     """
     pars = {'T_egg':T_egg,'T_ysl':T_ysl,'T_ol':T_ol,'T_el':T_el,'T_ej':T_ej,'T_lj':T_lj,
-            'F1':F1,'F2':F2,'F3':F3,'F4':F4,'F5':F5,'F6':F6,'F7':F7,
+            'F1':F1,'F2':F2,'F3':F3,'F4':F4,'F5':F5,'F6':F6,'F7':F7,'F8':F8,
             'mu_egg':mu_egg,'mu_ysl':mu_ysl,'mu_ol':mu_ol,'mu_el':mu_el,'mu_ej':mu_ej,'mu_lj':mu_lj,
             'mu_adult':mu_adult,'alpha':alpha,'EIF':EIF}
     #print('LesliePars: pars = ',pars)
@@ -21,7 +20,7 @@ def LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
 
 def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                     mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
-                    F1,F2,F3,F4,F5,F6,F7,
+                    F1,F2,F3,F4,F5,F6,F7,F8,
                     p_egg,p1,p2,p3,p4,p5,p6,p7,
                     N_years,alpha,EIF):
     """
@@ -30,20 +29,15 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     mortality, with graphical output.
     """
     global A
-    #print('Fs = ',F1,F2,F3,F4,F5,F6,F7)
     # Calculate cumulative survival in larval stages & the Leslie matrix, A
     pars = LesliePars(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
                       mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
-                      F1,F2,F3,F4,F5,F6,F7,
+                      F1,F2,F3,F4,F5,F6,F7,F8,
                       alpha,EIF)
-    #print('CPM: pars = ',pars)
     T_cum,S_cum,A = getA(pars)
     P_init = np.asarray([p_egg,p1,p2,p3,p4,p5,p6,p7])
     # Normalize initial population
     P_init /= sum(P_init)
-    #T_cum,S_cum,A = getA(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
-    #                     mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
-    #                     alpha,EIF)
     # Create a graphics window
     #w, h = plt.figaspect(0.4)
     #fig=plt.figure(figsize=(w,h))
@@ -61,8 +55,7 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     for i in range(6):
         STax.text(T_cum[i+1],S_cum[i+1],LH_labels[i])
     #plt.savefig(plot_prefix+'STfig.png')
-    #print("A = ",A)
-
+    # Compute eigenvalues and elasticities
     elasticities=Elasticity(pars)
     #print('*******************************************')
     #print('*          Eigenvalue analysis            *')
@@ -99,7 +92,6 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     P_data=np.zeros([N_years+1,8])
     years=range(N_years+1)
     P_data[0,:]=P_init
-    #P_data[:,0]=np.transpose(P_init)
     for j in range(N_years):
         P_data[j+1,:]=A @ P_data[j,:]
     P_series=[pp for pp in P_data.sum(axis=1)]
@@ -139,17 +131,16 @@ def CroakerPopModel(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
     print('*******************************************')
     print('*          Age distributions            *')
     print('*******************************************')
-    print('Initial age distribution, P_init = ',np.array_str(P_init,precision=2))
-    print('Stable age distribution, P_predict is: ',np.array_str(P_predict,precision=2))
-    print('Final age distribution, P_final = ',np.array_str(P_data[-1,:]/P_data[-1,:].sum(),precision=2))
-    print('Asymptotic growth rate is: ',lambda_V1)
+    print('Initial age distribution, P_init = \n',np.array_str(P_init,precision=2))
+    print('Stable age distribution, P_predict is: \n',np.array_str(P_predict,precision=2))
+    print('Final age distribution, P_final = \n',np.array_str(P_data[-1,:]/P_data[-1,:].sum(),precision=2))
+    print('Asymptotic geometric growth rate is: ',lambda_V1)
     print(' ')
     print('*******************************************')
     print('*            Elasticities                *')
     print('*******************************************')
     for k in elasticities.keys():
         print(f'{k:<8} {elasticities[k]:.3g}')
-    #pprint.pprint(elasticities)
     
 def getA(params):
     """A function to calculate the Leslie matrix A from the parameters
@@ -160,7 +151,7 @@ def getA(params):
     # by which investment per egg increases over the natural condition in Diamond et
     # al. This implies the number of eggs decreases by 1/EIF. Also, the duration of the
     #  OL stage is decreased by the duration reduction factor, DRF. 
-    F = 1./params["EIF"]*np.asarray([0.,params["F1"],params["F2"],params["F3"],params["F4"],params["F5"],params["F6"],params["F7"]])
+    F = 1./params["EIF"]*np.asarray([params["F1"],params["F2"],params["F3"],params["F4"],params["F5"],params["F6"],params["F7"],params["F8"]])
     # Duration and survivorship of larval stages
     DF = max(1.-log(params["EIF"])/(params["alpha"]*params["T_ol"]),0.) # Duration factor from changed egg size
     #print('DF = ',DF)
@@ -169,7 +160,7 @@ def getA(params):
     S_vec= np.exp(-mu_vec*T_vec)          
     # Cumulative survival over larval stages
     T_cum=np.cumsum(T_vec)
-    S_cum=np.cumprod(S_vec);
+    S_cum=np.cumprod(S_vec)
     # Survival to the end of Year 1, the transition to adulthood
     S_Y1 = S_cum[-1]
     #print('mu_vec = ',mu_vec)
@@ -178,11 +169,13 @@ def getA(params):
     #print('S_vec = ',S_vec)
     #print('S_cum = ',S_cum)
     #print('S_Y1 = ',S_Y1)
-    # Adult survival
-    S_adult = 1. - params["mu_adult"]
+    # Adult survival (defined by yearly mortality rate, mu_adult)
+    S_adult = exp(-params["mu_adult"])
     # Define the Leslie matrix, A:
     A = np.zeros([8,8])
-    A[0,:]=F
+    # Fecundity applies to fish that survived to the end of the year
+    A[0,:]=S_adult*F
+    A[0,0]=S_Y1*F[0]
     A[1,0]=S_Y1
     for i in range(6):
         A[i+2,i+1]= S_adult
@@ -207,9 +200,6 @@ def StableAgeDistribution(M):
     V=eVects[:,-1].real/sqrt(eVects[:,-1].real.dot(eVects[:,-1].real))
     return lambda_V,V
     
-#def Elasticity(T_egg,T_ysl,T_ol,T_el,T_ej,T_lj,
-#             mu_egg,mu_ysl,mu_ol,mu_el,mu_ej,mu_lj,mu_adult,
-#             alpha,EIF,tiny=1.e-9):
 def Elasticity(prs,tiny=1.e-3):
     """This function calculates the elasticity of the life history matrix A with respect
     to the parameters dictionary prs. Because the Leslie matrix is too large to 
