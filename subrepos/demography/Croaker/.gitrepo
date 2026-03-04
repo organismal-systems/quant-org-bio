@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/organismal-systems/CroakerASM.git
 	branch = main
-	commit = 9c5e85eb950ffce297035c1d1257d90096665550
-	parent = 097bff02c77df5fd2ed0b974114b0988c73e36e9
+	commit = d33bcf9b02cf092b685d2633ed72d6950741592a
+	parent = 99c9819dc18f4489f5a5fa9e7da1568be479c530
 	method = merge
 	cmdver = 0.4.9
