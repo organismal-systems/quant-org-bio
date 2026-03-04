@@ -32,27 +32,26 @@ $$
 In this vector:
 - $p_1$ is the number of eggs
 - $p_2$ is the number of juveniles
-- $p_i,~i=3,4,\dots$ is the number of adults in Year Class $i-1$.
+- $p_i,~i=3,4,\dots$ is the number of adults in Year Class $i$.
 %Like many population models, [](doi:10.1139/cjfas-57-10-2010)'s model is essentially a model of the female population.
-%The underlying assumption is that there are always enough males to fertilize eggs, so the number of eggs is the limiting demographic factor.
 
 It's important to recognize that Leslie matrix models are **discrete time models**.
 That is, time is represented as a discrete variable that increments for each year, $t = 1, 2, 3, \dots$.
-This means that $p_i$ represents the number of croakers in the $(i+1)^{st}$ Year Class **at a specific time of year**.
+This means that $p_i$ represents the number of croakers in the $i^{th}$ Year Class **at a specific time of year**.
 
 In this case, [](doi:10.1139/cjfas-57-10-2010) have assumed that
-> $p_i(t)$ represents the croaker population in the $(i+1)^{th}$ Year Class  **at the end** of year $t$.
+> $p_i(t)$ represents the croaker population in the $i^{th}$ Year Class  **at the end** of year $t$.
 
 This choice has implications for how we interpret demographic parameters, and for how they are quantified from fisheries and other data (see [Diamond *et al*. (1999)](https://academic.oup.com/tafs/article/128/6/1085/7891472)). 
 
 For example, the age-specific survival rate, 
-> $S_i$ is the fraction of croakers in the $(i+1)^{st}$ Year Class at the end of year $t$ that survives an entire year to be counted in the $(i+2)^{nd}$ Year Class at the end of year $t+1$. 
+> $S_i$ is the fraction of croakers in the $i^{th}$ Year Class at the end of year $t$ that survives an entire year to be counted in the $(i+1)^{st}$ Year Class at the end of year $t+1$. 
 
 In reality, fish mortality has been occuring throughout the year, continously but possibly at seasonally varying rates.
 The survival metric, $S_i$, "leapfrogs" over that continuous mortality to summarize the total mortality over the entire year.
 
 Likewise, the age-specific fecundity, 
-> $F_i$ is the number of eggs produced by fish in the $(i+1)^{st}$ Year Class during year $t$ and developing during year $t+1$, normalized by the number of Year Class $i$ croakers at the end of year $t$. 
+> $F_i$ is the number of eggs produced by fish in the $i^{th}$ Year Class during year $t$ and developing during year $t+1$, normalized by the number of Year Class $i$ croakers at the end of year $t$. 
 
 In reality, croaker spawning occurs over about six months of each year, including times at which their population was not the same as it was at the end of year $t$ or as it will be at the end of year $t+1$.
 The fecundity, $F_i$, *implicitly* accounts for this variation by adjusting the per-fish fecundity to factor in fish that died before they had a chance to reproduce, the fish that reproduced but died before the end of the year, *etc*.

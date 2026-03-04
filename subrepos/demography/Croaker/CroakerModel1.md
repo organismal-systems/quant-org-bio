@@ -7,11 +7,12 @@ To understand how [](doi:10.1139/cjfas-57-10-2010) formulated their model, we wi
 2. **Individuals die**  
      [](doi:10.1139/cjfas-57-10-2010) assumed that the probability of an adult dying in a given year is a constant, $\mu_{adult}$, for all age classes older than larvae and juveniles ($i=3, 4, \dots$, 8).
 	 
-	 Another way to express this is as a survival probability, $S_{adult}$. Because every adult will either die or survive, the probabilities $\mu_{adult}$ and $S_{adult}$ must add up to one, so that
+	 Another way to express this is as a survival probability, $S_{adult}$,
 	 $$
-	 S_{adult} = 1 - \mu_{adult}.
+	 S_{adult} = - e^{-\mu_{adult} \times 1}.
 	 $$
-	 
+	Here, the "$\times 1$" is just a reminder that the exponential term contains a time interval, which is in this case $1~year$.
+	
     Combining aging and mortality, we can now say that the croaker population in Year Class $i+1$ in year $t+1$ is equal to the croaker population in Year Class $i$ in year $t$ times the survival rate during that year:
     $$
     p_{i+1}(t+1) = S_{adult} ~ p_i(t), 
@@ -29,13 +30,13 @@ That is because sperm are usually available in much greater numbers, most of whi
     In this case, it's clearest to model males and females separately, and since the number of males is almost always sufficient to fertilize all the females, we don't even have to worry about the males.
     So, we now make the assumption that we are modeling only females, and adjust populations, fecundity *etc*. accordingly.
     
-	Let's assume that a female croaker of age $i$ produces $F_i$ female eggs.
-    Accounting for all Year Classes, the population of female eggs ($p_1$) produced at the end of year $t$ to develop during year $t+1$ is then  
+	Let's assume that a female croaker in Year Class $i$ produces $F_i$ female eggs.
+    Accounting for all Year Classes, the population of female eggs ($p_1$) produced by surviving females at the end of year $t$ to develop during year $t+1$ is then  
     $$
-    p_1(t+1) = \sum_{i=1}^8 F_i p_i(t)
+    p_1(t+1) = \sum_{i=1}^8 S_i F_i p_i(t)
     $$
     In words, this equations says that: 
-	> The number of eggs in year $t+1$ equals the number of females in Year Class $i$ in year $t$ multiplied by the number of eggs produced per female ($F_i$), summed across all the Year Classes $i=1,2,\dots, 8$.
+	> The number of eggs in year $t+1$ equals the number of females in Year Class $i$ in year $t$ multiplied by the number of eggs produced per surviving female ($S_i F_i$), summed across all the Year Classes $i=1,2,\dots, 8$.
 
 ## Further assumptions
 Two additional assumptions are worth emphasizing at this point:

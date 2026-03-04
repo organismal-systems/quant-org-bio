@@ -11,7 +11,7 @@ To begin:
 2. Change one or more parameters, making sure to press `<cr>` to visualize the population dynamics using the updated demography.
 3. Experiment with the model to familiarize yourself with how to change the simulation, demographic and evolutionary parameters, and how to interpret the output.
 
-Once you have some intuition about how various parameters affect larval survivorship, Year Class structure and long-term population trends, use the notebook to address the questions in some or all of the following topic areas.
+Once you have some intuition about how various parameters affect larval survivorship, Year Class structure and long-term population trends, use the notebook to address the questions in one or more of the following topic areas.
 
 ## Gaining insights into croaker population structure
 Diamond *et al*. (1999, 2000) undertook extensive analysis of fisheries data to estimate parameters for their age-structured Leslie matrix model.
@@ -37,7 +37,7 @@ The stable age distribution corresponds to a total population that always change
 The full model does not necessarily follow this type of trajectory.
 The two time series always begin with the same normalized total population; however, that population is initially allocated very differently among Year Classes.
 
-> - What are the similarities and differences between the time series for total population in the full model and the time series for the stable age distribution (derived from eigenvalue analysis)?
+> - What are the similarities and differences between the time series for total population in the full model and the time series for the stable age distribution?
 > - How are the two time series informative (or uninformative) about short-term *vs*. long-term trends in the croaker population?
 
 ### 3. Larval demography
@@ -55,10 +55,10 @@ Diamond *et al*. present [elasticities](../../../content/appendix/MathSum/matrix
 A given demographic mechanism can often be framed in different ways that result in different elasticities.
 For example, Diamond *et al*. (2000) found that "*first-year survival is more important than survival during any individual adult year. However, the summed adult survival is more important for population growth than first-year survival*".
 
-This reflects diametrically opposite conclusions depending on whether the elasticity analysis is based on elements of the Leslie matrix, or on a parameter ($\mu_{adult}$, in this case) that impacts multiple matrix elements.
+This reflects drastically different conclusions depending on whether the elasticity analysis is based on elements of the Leslie matrix, or on a parameter ($\mu_{adult}$, in this case) that impacts multiple matrix elements.
 
 > - In your interpretation, what do elasticities for key parameters suggest about the croaker population's sensitivity to demographic parameters?
-> - What guidelines would you suggest to decide which parameters are the most meaningful choices for elasticity analysis?
+> - What guidelines would you suggest to decide which parameters are the most meaningful choices for elasticity analysis in the context of fisheries management, in the context of life history evolution, *etc*?
 
 ### 5. Responses to climate change
 Aside from fishing pressure, many factors predicted to change in future oceans (temperature, pH, mixed layer depth, nutrient levels, alien invasions, pollution, *etc*.).
@@ -70,6 +70,12 @@ Aside from fishing pressure, many factors predicted to change in future oceans (
 Exploring the potential effects of natural selection on croaker life history parameters requires understanding both the positive and negative effects of prospective changes on fitness.
 This typically involves additional analysis to assess how these changes are reflected in elements of the Leslie matrix.
 Often, multiple elements will be affected, reflecting tradeoffs between effects that enhance and effects that degrade population growth.
+
+An important caveat must be noted in applying Diamond *et al*.'s model in an evolutionary context:
+> - The Leslie matrix croaker model has no density-dependent dynamics.
+
+In an evolutionary scenario, density-dependence might be reflected, for example, in effects of intra-specific competition on fitness.
+Using a Leslie matrix modeling approach, we implicitly assume that the demography of any variant is unaffected by the presence or absence of other variants.
 
 ### 6. Demographic rates of increase *vs*. evolutionary fitness
 As an example, more aggressive feeding behavior during a larval stage may enhance growth, thereby reducing the duration of that stage and potentially reducing mortality.

@@ -11,7 +11,7 @@ The matrix $\mathbf{A}$ contains the terms of the age-structured model that spec
 
 $$
 \mathbf{A} = \begin{pmatrix}
-\frac{F_1}{EIF} & \frac{F_2}{EIF} & \frac{F_3}{EIF} & \frac{F_4}{EIF} & \frac{F_5}{EIF} & \frac{F_6}{EIF} & \frac{F_7}{EIF} & \frac{F_8}{EIF} \\
+\frac{S_1 F_1}{EIF} & \frac{S_{adult} F_2}{EIF} & \frac{S_{adult} F_3}{EIF} & \frac{S_{adult} F_4}{EIF} & \frac{S_{adult} F_5}{EIF} & \frac{S_{adult} F_6}{EIF} & \frac{S_{adult} F_7}{EIF} & \frac{S_{adult} F_8}{EIF} \\
 S_{1} & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
 0 & S_{adult} & 0 & 0 & 0 & 0 & 0 & 0 \\
 0 & 0 & S_{adult} & 0 & 0 & 0 & 0 & 0 \\
@@ -27,12 +27,13 @@ This matrix is in a common form in population modeling, called a [Leslie matrix]
 [^sbd]: The *subdiagonal* of a matrix is the set of terms stretching diagonally downwards and to the right, starting from the first entry in the second row.
 
 The interpretations of the non-zero terms are:  
-- In the top row, each entry is the **age-specific fecundity**, which is the contribution of a female croaker in a given year class to the number of female eggs in the following year.  
-    For example, $\frac{F_2}{EIF}$ is the fecundity of a female croaker in Year Class 2, $\frac{F_3}{EIF}$ is the fecundity of a female croaker in Year Class 3, *etc*.
-    
 - The subdiagonal terms, $S_{1}$ and $S_{adult}$, are the survival probabilities for each age class.  
     Specifically, $S_{1}$ is the probability an egg will survive its first year to become an adult in Year Class 2. 
 	$S_{adult}$ is the probability a fish in Year Class 2 will survive to enter Year Class 3, *etc*.
+
+- In the top row, each entry is the **age-specific fecundity**, which is the contribution of a female croaker in a given year class to the number of female eggs in the following year.  
+    For example, $\frac{F_2}{EIF}$ is the fecundity of a female croaker in Year Class 2, $\frac{F_3}{EIF}$ is the fecundity of a female croaker in Year Class 3, *etc*.	The factors $S_{1}$ and $S_{adult}$ in the fecundity term reflects the females' chances of survival to reproduce at the end of the year.
+    
     
 With substitution into $\mathbf{A}$ of the larval life history parameters determining first-year survival, 
 $$
@@ -78,7 +79,7 @@ Specifically,
 ## Elasticities
 Because the intrinsic rate of growth, $\lambda$, is such a useful summary of the long-term trajectory of a croaker population in their model, [](doi:10.1139/cjfas-57-10-2010) investigated how changes in various natural and human-influenced factors affected this rate.
 
-Specifically, they calculated a metric called the **elasticity** to quantify the sensitivity of $\lambda$ to various parameters.
+Specifically, they used a metric called the **elasticity** to quantify the sensitivity of $\lambda$ to various parameters.
 Again summarizing from the [overview of matrix methods used in population modeling](../../../content/appendix/MathSum/matrix.md),
 the elasticity for a given parameter $m$ is defined as
 $$

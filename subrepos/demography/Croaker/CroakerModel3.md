@@ -31,7 +31,7 @@ In this lab, we consider a scenario in which (over evolutionary time) females ca
 If each egg consumes a factor of $EIF$ more resources, constraints on total maternal investment mean that the number of eggs must decrease by a factor of $\frac{1}{EIF}$. 
 Then, the population of female eggs in the $t+1$st year will be
 $$
-p_1(t+1) = \frac{1}{EIF} \sum_{i=1}^8 F_i~p_i(t)
+p_1(t+1) = \frac{1}{EIF} \sum_{i=1}^8 S_i F_i~p_i(t)
 $$
 ### Effects on survival
 The other side of the egg-size tradeoff is the effect on larval duration, and hence on survival probability.
