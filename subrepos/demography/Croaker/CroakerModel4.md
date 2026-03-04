@@ -50,24 +50,27 @@ To understand how [](doi:10.1139/cjfas-57-10-2010) utilized these facts, we need
 - $\mathbf{\hat{P}}$ is the stable age distribution approached by the croaker population.
     - If the population is proportional to $\mathbf{\hat{P}}$ in year $t$, it is also proportional to $\mathbf{\hat{P}}$ in year $t+1$.
 	- From any starting age distribution, the croaker population will converge to having an age distribution increasingly similar to $\mathbf{\hat{P}}$ over each year-to-year transition.
-	- $\mathbf{\hat{P}}$ is typically normalized, to have a unit population size or "vector length".
+	- $\mathbf{\hat{P}}$ is often normalized, to have a unit population size or "vector length".[^norm]
 - $\lambda$ is the rate of geometric increase or decrease of the population, which is the discrete-time equivalent of [](wiki:Exponential_growth).
     - If $\lambda>1$, the population has a positive intrinsic rate of growth (*i.e.*, it is growing).
     - If $\lambda<1$, the population has a negative intrinsic rate of growth (*i.e.*, it is declining).
     - If $\lambda=1$, the population has a zero intrinsic rate of growth (*i.e.*, it is constant).
 
+[^norm]: This is not always the case, and furthermore in other linear algebra applications other ways of normalizing such vectors are more common. However, in our application to a stable age distribution, this normalization is the most convenient.
+
 Putting these facts together, we can say that, in the long run (after initial transients have passed), the croaker age distribution in [](doi:10.1139/cjfas-57-10-2010)'s model will always converge to $\mathbf{\hat{P}}$.
 Specifically, 
-> - After the initial transients, the population in year $t$ is related to the population in year $t+1$ by
+> - After the initial transients have subsided, the population in year $t$ is related to the population in year $t+1$ by
     $$
 	\mathbf{P}(t)  = c \mathbf{\hat{P}} \\
 	\mathbf{P}(t+1) =  c \lambda \mathbf{\hat{P}}
 	$$
 	where $c$ is a constant of proportionality specifying the population at time $t$.  
-	- Following the same logic for years  $t+1$, $t+2$, *etc*.,
+	- Following the same logic for years  $t+2, t+3, \dots$,
     $$
 	\mathbf{P}(t+2) & = & \lambda \mathbf{P}(t+1) & = & c \lambda^2 \mathbf{\hat{P}} \\
 	\mathbf{P}(t+3) & = & \lambda \mathbf{P}(t+2) & = & c \lambda^3 \mathbf{\hat{P}} \\
+	\vdots &  & \vdots &  & \vdots \\
 	\mathbf{P}(t+n) & = & \lambda \mathbf{P}(t+n-1) & = & c \lambda^n \mathbf{\hat{P}}
 	$$
 	where $n$ is the general case of *any* number of years after $t$.

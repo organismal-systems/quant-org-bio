@@ -22,9 +22,9 @@ For additional information on this species see this [Texas Parks and Wildlife pa
 Citation :*Micropogonias undulatus* RR 072120 0655 (50142583921).jpg, https://commons.wikimedia.org/w/index.php?title=File:Micropogonias_undulatus_RR_072120_0655_(50142583921).jpg&oldid=950950469 (last visited February 17, 2026). 
 ```
 
-[](doi:10.1139/cjfas-57-10-2010)  presented  population dynamics analysis for a fish called the [Atlantic croaker](wiki:Atlantic_croaker), *Micropogonias undulatus* ( [](#acroaker)) .
+[](doi:10.1139/cjfas-57-10-2010)  presented  an analysis of population dynamics for a fish called the [Atlantic croaker](wiki:Atlantic_croaker), *Micropogonias undulatus* ( [](#acroaker)) .
 Croakers are the target of a major U.S. fishery, and also experience significant mortality as [by-catch](wiki:Bycatch) from shrimp trawling. 
-At the time of the study, both of its two major U.S. regional populations, in the Gulf of Mexico and the Mid-Atlantic bight, were declining.[^crk]
+At the time of the study, both of its two major U.S. regional populations &ndash; in the Gulf of Mexico and the Mid-Atlantic bight &ndash; were declining.[^crk]
 [](doi:10.1139/cjfas-57-10-2010) sought to establish whether by-catch mortality was a significant factor in causing declining populations of Atlantic croakers.
 
 [^crk]: (I haven't followed up with the most recent catch data, but there are published suggestions ocean warming is contributing to increases in croaker stocks. 
@@ -33,10 +33,10 @@ According to the analysis of demographic parameters in  [Diamond *et al*. (1999)
 Over their lives, croakers grow and (as in most fish) increase their [fecundity](wiki:Fecundity) (production of eggs and sperm) as they get bigger. 
 Their [natural mortality rate](wiki:Mortality_rate)  is very high when they are [larvae](wiki:Ichthyoplankton) and **juveniles**.
 Once they become **adults**, however, mortality is much lower and roughly constant between ages 2 and 8 years. 
-As noted, the juveniles and adults are also subject to human-induced mortality from bycatch and targeted fishing, but this fishing pressure is differs in the Gulf *vs*. the Atlantic in both intensity and the most-impacted age classes.
+As noted, the juveniles and adults are also subject to human-induced mortality from bycatch and targeted fishing, but this fishing pressure differs in the Gulf *vs*. the Atlantic in both intensity and the most-impacted age classes.
 
 Aside from changes in fecundity and mortality across year classes, the first year of a croaker's life is distinct because during this year it begins as an egg and develops through a sequence of stages into a juvenile and finally into an adult.
-During this interval, croakers grow and develop rapidly,  but also suffer very high mortality rates.
+During this interval, croakers grow and develop rapidly while moving repeatedly between habitats, but also suffer very high mortality rates.
 Small changes in mortality rates during larval and juvenile stages can have big impacts on how many croakers survive to become long-lived, reproducing adults.
 Hence, variations in the demography of successive developmental stages during the first year can alter the fate of the entire population.
 
@@ -45,7 +45,7 @@ Hence, variations in the demography of successive developmental stages during th
     How do those effects compare to and interact with natural mortality mechanisms?
 
 To these, we could add an additional set of questions concerning the evolution of modified life history characteristics in response to anthropogenic changes in selective pressures.
-Should we expect  long-term evolutionary adjustments in croaker life history to mitigate, or perhaps to aggravate, the shorter-term demographic changes?
+> Should we expect  long-term evolutionary adjustments in croaker life history to mitigate, or perhaps to aggravate, the shorter-term demographic changes?
 
 ## Egg size evolution
 Mortality during the croaker's planktonic phase does not appear to be under direct human control.
@@ -60,5 +60,5 @@ This raises a number of questions about croaker life history, and by extension t
 >  For a given scenario of mortality and larval duration, what  egg size maximizes the intrinsic rate of increase of a population?  
     What changes in biotic and abiotic environmental characteristics have the strongest effect on ``optimal'' egg sizes and other life history parameters?
 
-In this Activity, we will use [](doi:10.1139/cjfas-57-10-2010) model  to assess the key natural and anthropogenic factors determining the increase or decline of Atlantic croaker populations, and to speculate about possible evolutionary changes in egg sizes.
+In this Activity, we will use [](doi:10.1139/cjfas-57-10-2010)'s model  to assess the key natural and anthropogenic factors determining the increase or decline of Atlantic croaker populations, and to speculate about possible evolutionary changes in egg sizes.
 

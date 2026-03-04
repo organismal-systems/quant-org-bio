@@ -4,13 +4,13 @@ However, as noted by [](doi:10.1139/cjfas-57-10-2010), the first year of a croak
 These stages (and their durations) are:
 - Egg (EGG): spawning through hatching
 - Yolk-Sac Larva (YSL): hatching through yolk-sac absorption
-- Ocean Larva (OL): yolk-sac adsorption through entrance in an estuary
+- Ocean Larva (OL): yolk-sac absorption through entrance in an estuary
 - Estuary Larva (EL): entrance in an estuary through arrival at the primary nursury
-- Early Juvenile (EJ): arrival at the primary nursury through movement to secondary nursery
-- Late Juvenile (LJ): arrival at secondary nursery through depart estuary  
+- Early Juvenile (EJ): arrival at the primary nursury through movement to the secondary nursery
+- Late Juvenile (LJ): arrival at the secondary nursery through departing the estuary  
 
-Croakers at these stages differ in size, physiology, behavior and environment.
-Mortality rates are high in all these stages, and but the stages also differ very substantially in the mechanisms causing that mortality and in duration.
+Croakers at these stages differ in size, physiology, behavior and habitat.
+Mortality rates are high in all these stages, but the stages also differ very substantially in the mechanisms causing that mortality and in duration.
 
 To improve their predictions of survival in the critical first year, [](doi:10.1139/cjfas-57-10-2010) decided they needed a more detailed submodel of larval and juvenile demography within their age-structured model.
 Their solution is a **stage-within-age model**, in which details of larval life are used to calculate **survival through the first year**, $S_1$.

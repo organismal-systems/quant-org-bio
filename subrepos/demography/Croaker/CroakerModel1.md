@@ -24,7 +24,8 @@ That is because sperm are usually available in much greater numbers, most of whi
 
     To assess the number of eggs, we must focus on the population of female croakers.
     In some fish species the ratio of males to females is nearly equal (like it is in humans) and we could assume half the adults are female.
-    However, in other fish species the sex ratio is strongly biased towards one gender (because of their basic biology, selective harvesting, etc.).
+    However, in other fish species the sex ratio is strongly biased towards one gender (because of their basic biology, selective harvesting, *etc*.).
+	
     In this case, it's clearest to model males and females separately, and since the number of males is almost always sufficient to fertilize all the females, we don't even have to worry about the males.
     So, we now make the assumption that we are modeling only females, and adjust populations, fecundity *etc*. accordingly.
     
