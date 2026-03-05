@@ -1,0 +1,26 @@
+# 📖 Habitat size and persistance: Insights from scaling analysis
+
+
+
+This Unit develops insights into spatial population dynamics using scaling analysis &ndash; in mathematical jargon, dimensional analysis.
+The basic ideas underlying scaling analysis were described in sections of the Introduction discussing [allometry](../../content/overview/allometry.md) and [non-dimensional numbers](../../content/overview/nondim-numbers.md).
+Applications to understanding movement of organsims in fluids were presented in the [Biomechanics section](../../content/biomechanics/README.md).
+Here, we use similar analytical approaches to get a "big picture" understanding of how the demography of a population is affected by the size of its habitat.
+
+Specifically, we address the question:
+> - How do movement behavior and reproductive characteristics of a population interact with habitat structure to determine whether it will persist or go extinct?
+
+The goal of the analysis is to obtain order of magnitude estimates of thresholds for persistence.
+We will look at two very different models: 
+- a Partial Differential Equation (PDE) model that is deterministic and continuous in time, space and population
+- an agent-based model that is stochastic and discrete in time, space and popultion
+
+Both of these models are highly simplified compared to real-world populations.
+Nonetheless, they illustrate how population dynamics are affected by scaling rules that are common not only to these very different models but also to organisms in nature.
+
+The first part of this Unit uses scaling analysis to derive a "back-of-the-envelope" estimate for the minimum habitat size that can support a viable population.
+Because this model can be solved analytically, the exact solution is presented for comparison to the predictions from scaling analysis.
+For those interested in understanding how models of this type are solved, a brief derivation of the solution is shown [here](./KISSsoln.md).
+
+
+%The strategies for executing scaling analyses differ between the two models.

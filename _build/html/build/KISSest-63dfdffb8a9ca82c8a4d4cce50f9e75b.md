@@ -1,0 +1,35 @@
+# 📖 Minimum habitat size in the KISS model: Back-of-the-envelope estimates
+
+The premise of the KISS[^kiss] model is that an isolated patch of good habitat lies surrounded by an infinite expanse of hostile non-habitat.
+The habitat patch supports survival and reproduction for a resident population.
+Individuals in this population move randomly, which is reflected at the population level as a diffusion (analgous to how randomly moving molucules are reflected in mass diffusion, heat conduction, *etc*.).
+However, any individuals that encounter the edge of the habitat and drift into non-habitat die immediately and are lost to the population.
+
+The KISS model is usually implemented as a 1-dimensional spatial distribution of a population. 
+This is because, while 2- and 3-dimensional versions can be implemented, their mathematical solution is more involved and the conclusions are substantially the same.
+
+If a habitat is tiny ($L$ is very small) then a randomly-moving individual quickly encounters the boundary of non-habitat and die.
+If this typically happens before the individual reproduces, then deaths exceed births and the population will go extinct.
+
+On the other hand, if the habitat is huge ($L$ is very large) then an individual will typically move randomly for a long time before encountering non-habitat. 
+This gives it plenty of time to reproduce, so the population can grow.
+
+Between these extremes is a critical threshold for habitat size, above which a population grows and below which it goes extinct.
+The purpose of the KISS model is to quantify that critical habitat size, and to understand how it is affected by organism-level characteristics.
+
+## Scaling analysis of the KISS model
+There are three parameters in the KISS model:
+1. The intrinsic rate of growth within the habitat, $\alpha$
+2. The population-level diffusion rate, $D$
+3. The size of the habitat, $L$
+
+
+
+
+
+
+
+[^kiss]: This model is due to Kierstead, Slobodkin and Skellam:  
+Kierstead, H.; Slobodkin, L.B. The Size of Water Masses Containing Plankton Bloom. J. Mar. Res. 1953, 12, 141–147.  
+Skellam, J.G. Random Dispersal in theoretical biology. Bull. Math. Biol. 1991, 53, 135–165; Reprinted from Biometrika 1951, 38,
+196–218.

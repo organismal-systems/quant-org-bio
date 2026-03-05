@@ -236,6 +236,36 @@
     <loc>http://localhost:3001/readme-3</loc>
   </url>
   <url>
+    <loc>http://localhost:3001/wolfsheeppersist</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/kissest</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel3</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel4</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel5</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/mesamodel6</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/wolfsheeppersist-1</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/kisssoln</loc>
+  </url>
+  <url>
     <loc>http://localhost:3001/estlarvswim</loc>
   </url>
   <url>
@@ -245,7 +275,7 @@
     <loc>http://localhost:3001/fsl2d</loc>
   </url>
   <url>
-    <loc>http://localhost:3001/wolfsheeppersist</loc>
+    <loc>http://localhost:3001/binderlist</loc>
   </url>
   <url>
     <loc>http://localhost:3001/osymindex</loc>
