@@ -248,7 +248,7 @@ One key result about eigenvalue problems is that, for an $N \times N$ matrix, th
 $$
 \mathbf{M}  \mathbf{V}_n =  \lambda_n \mathbf{V}_n~,~n = 1,2,\dots, N.
 $$
-This is an extraordinary result tt means that
+This is an extraordinary result &ndash; it means that
 > If the model has 20 age classes, there are 20 different age distributions that are stable.
 
 That is, if the population starts with any one of these distributions, the age distribution will remain fixed (even if the number of individuals in that population changes).
