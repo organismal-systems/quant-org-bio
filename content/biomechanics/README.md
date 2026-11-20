@@ -3,7 +3,7 @@ This section focuses on perspectives on Organismal Biology relating to biomechan
 
 The units in this section address questions that can be broadly framed as:
 > - How are  biomechanical consequences of organisms' morphology, movement, habitat selection and other traits reflected in their performance of key functions?
-> - How are do functional requirements impose biomechanical constraints on organisms?
+> - How do functional requirements impose biomechanical constraints on organisms?
 
 The traits of interest span the diverse attributes of organisms: physiological, behavioral, sensory, and many other characteristics.
 The case studies and activities elucidate linkages between these organismal attributes and their impacts on both higher and lower levels of organisation, as mediated by biomechanics.

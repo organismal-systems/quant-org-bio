@@ -13,7 +13,7 @@ We will consider two types of forces, drawn from the previous pages:
 
 - *Forces due to viscosity*
 
-    Viscous forces on an organism moving in a fluid stem from the fluid's viscosity, $\mu$, acting on the organism's surface in proportion to the gradient in flow velocity from the organism's surface ([where fluid moves with the organism](wiki:No-slip_condition) to the "free stream" far from the organism, where fluid is undisturbed.
+    Viscous forces on an organism moving in a fluid stem from the fluid's viscosity, $\mu$, acting on the organism's surface in proportion to the gradient in flow velocity from the organism's surface ([where fluid moves with the organism](wiki:No-slip_condition)) to the "free stream" far from the organism, where fluid is undisturbed.
 
 The key question we will address is, "*How do we expect forces due to viscosity and wake momentum to increase with organism size and speed?*"
 	
@@ -25,7 +25,7 @@ The key question we will address is, "*How do we expect forces due to viscosity 
 :align: center
 :alt: An idealized wake behind a sinking sphere.
 
-Idealized wake behind a sinking particle. The orange lines indicate the wake. For our estimate, we assume the cross section of the wake is equal to $A$, the projected area of the particle. We also assume water within the wake has velocity $U$, and that water outside the wake has negligible velocity. These assumptions are simplifications, but represent the likely generic effects of the respective parameters.
+Idealized wake behind a sinking particle. The orange lines indicate the wake. For our estimate, we assume the cross section of the wake is equal to $A$, the projected area of the particle. We also assume water within the wake has velocity $U$, and that water outside the wake has negligible velocity. These assumptions are simplifications, but represent the approximate generic effects of the respective parameters.
 
 ```
 Our estimate of forces on an organism due to wake momentum is based on:

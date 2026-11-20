@@ -63,7 +63,7 @@ It turns out that this simplification results in fluid flow equations that are m
 
 These simplified equations are called the Stokes equations, and the flow they describe with $\mathcal{Re} \ll 1$ is called [Stokes flow](wiki:Stokes_flow).
 Almost all fluid dynamical analysis of microorganisms is done using the Stokes equations.
-The model of swimming larvae later in this unit is an example.
+The model of swimming larvae later in this book is an example.
 
 As a reminder, the conclusion that flows around small, slow organisms is dominated by viscous forces arose from a very general consideration of the inherent effects of size and velocity.
 They are not changed by specific morphological or behavioral adaptations.

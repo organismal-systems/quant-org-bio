@@ -72,6 +72,6 @@ Added mass and wake momentum are continually acting on our own bodies, because w
 Because our bodies are so much denser than air, we usually don't feel these effects, but under some circumstances (bicycling, swimming, windy days, *etc.*) they become much more noticeable.
 
 
-[^1]: Some references refer to [inertia](wiki:inertia) as a synonym for momentum. Inertia is defined slightly differently, but is a closely related concept. Some references refer to momentum effects as an [inertial force](wiki:Fictitious_force). These effects are is not really a force, but it has units of force, and some references find it convenient to use this shorthand (while keeping in mind its actual interpretation). 
+[^1]: Some references refer to [inertia](wiki:inertia) as a synonym for momentum. Inertia is defined slightly differently, but is a closely related concept. Some references refer to momentum effects as an [inertial force](wiki:Fictitious_force). These effects are not really a force, but they have units of force, and some references find it convenient to use this shorthand (while keeping in mind its actual interpretation). 
 [^2]:In some cases, though, changes in mass during acceleration are important. Examples include the swimming biomechanics of "jet-propelled" animals like squid and jellyfish, in which water that initially is enclosed and moves with the organism is left behind during a muscular contraction to produce thrust.
  

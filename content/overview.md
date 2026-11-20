@@ -1,6 +1,6 @@
 # Preface
 
-This is an [executable book](https://executablebooks.org/en/latest/) presenting applications of quantitative reasoning to important questions in Organismal Biology research.
+This is an [executable book](https://executablebooks.org/en/latest/) presenting applications of quantitative reasoning to important questions in Organismal Biology.
 The book's purpose is to help students and professional scientists gain quantitative skills and perspectives enhancing their practice of Organismal Biology as a holistic, integrative field.
 
 Organismal Biology, by its nature, operates at all the scales that organsism do. 

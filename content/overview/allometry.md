@@ -6,14 +6,16 @@ Allometric relationships have been found or hypothesized for many traits, includ
 
 A well-known example of an allometric relationshop is [Kleiber's law](wiki:Kleiber's_law), which posits that the basal metabolic rate of animals varies approximately as the animal's mass raised to the $\frac{3}{4}$ power:
 
-```{figure} https://upload.wikimedia.org/wikipedia/commons/6/60/Kleiber1947.svg
+```{figure} ./Kleiber1947.svg
 :label: Kleiber
 :alt: Kleiber's law graphic from Wikipedia
 :width: 500px
 :align: center
 
-A plot of Kleiber's law, relating the metabolic rates of organisms to their sizes across a large range of sizes. See the Wikipedia article on [Kleiber's law](wiki:Kleiber's_law) for details. The vertical axis is Basal Metabolic Rate (in $watts$); the horizontal axis is body mass (in $kg$).
+A plot of Kleiber's law, relating the metabolic rates of organisms to their sizes across a large range of sizes. See the Wikipedia article on [Kleiber's law](wiki:Kleiber's_law) for details. The vertical axis is Basal Metabolic Rate (in $watts$); the horizontal axis is body mass (in $kg$). Image is due to Jeromi Mikhael. [^1]
 ```
+
+[^1]: By Vectorization: Jeromi Mikhael - Kleiber M. (1947). Body size and metabolic rate. Physiological Reviews 27: 511-541., CC BY-SA 4.0, https://commons.wikimedia.org/wiki/Special:Redirect/page/79516983
 
 Allometric relationships within taxonomic groups are usually determined by statistical analysis of observations across a range of organism sizes within the group.
 These observations are most commonly plotted on log-log plots, and statistically analyzed to detect trends.

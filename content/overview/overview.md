@@ -38,7 +38,7 @@ Writing down a quantitative model, even if results are never calculated, exposes
 This means that interdisciplinary collaborations, which are necessary and productive in Organismal Biology, are frequently derailed by misunderstandings between two experts who have firm, well-founded (but different) interpretations of the subject at hand.
 The example mentioned previously is "memory". 
 To a mathematician or statistician, a ["memoryless system"](wiki:Markov_chain) is one in which the current state determines the probabilities of future events, without regard to how the current state was brought about. 
-Thus, a mathematician could happily formulate a ["memoryless" model of the human brain](https://doi.org/10.1038/s42003-022-03967-9)
+Thus, a mathematician could happily formulate a ["memoryless" model of the human brain](https://doi.org/10.1038/s42003-022-03967-9).
 Clearly, this would not be a biologist's interpretation.
 Confounding vocabulary and other vagueness in terminology are usually clarified when the relevant biological mechanisms are expressed in mathematical form. 
 
@@ -60,7 +60,7 @@ From cohort data, *combined with a modeling framework that provides quantitative
 
 Another way in which observations are constrained is in considering the consequences of hypothetical alternatives to observed characteristics such as morphology or life history.
 Organisms that do not exist cannot be observed, but models that correctly reflect the key underlying mechanisms can give quantitative assessments of how hypothetical variations of extant organisms might function.
-These models could give insight into *why* these variant don't exist, in the context of implied changes in performance or distribution, or evolutionary costs and benefits.
+These models could give insight into *why* these variants don't exist, in the context of implied changes in performance or distribution, or evolutionary costs and benefits.
 
 ***Models are tools for communicating biological knowledge across organizational levels.***
 

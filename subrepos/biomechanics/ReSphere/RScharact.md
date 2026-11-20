@@ -28,7 +28,7 @@ A cartoon of a sinking organism. The organism has a linear dimension (diameter) 
 
 ```
 In generic terms, we can describe this organism using **characteristic values** (also see the discussion on [scale models](../../overview/qob-notebooks/scale-models.ipynb) and [nondimensional numbers](../../../content/overview/nondim-numbers.md) in the Overview). 
-For example, we can consider a **characteristic length**, ***L***, as a linear metric that expresses an object size.
+For example, we can consider a **characteristic length**, ***L***, as a linear metric that expresses an object's size.
 If the organism is spherical, then an obvious choice for *L* is the diameter.
 If the organism is oblong, then there is some ambiguity, but if we choose for *L* some consistent standard such as maximum dimension, the average of the dimensions or the cube root of the volume, then the analysis will still reflect the differences between larger and smaller (but similarly shaped) particles.
 

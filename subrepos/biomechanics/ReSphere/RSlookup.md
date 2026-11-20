@@ -6,7 +6,7 @@ If we observe or compute one example of drag forces on an organism moving in flu
 
 As an example, let's consider the general problem of drag forces on spherical organisms moving through a variety of fluids (air, water of different salinities, blood, mucus, etc.).
 As with many biomechanics models, assuming an organism is spherical applies to a few organisms exactly, but to a great many organsims approximately. 
-Our goal is to create a [lookup table](wiki:Lookup_table) that tabulates the drag forces on these organisms, to understandhow fast they rise or sink, as biomechanical consequences of size, habitat *etc*. 
+Our goal is to create a [lookup table](wiki:Lookup_table) that tabulates the drag forces on these organisms, to understandhow fast they rise or sink, as biomechanical consequences of size, habitat, *etc*. 
 
 To cover relevant biological applications, we have at least four parameters to vary:
 - organism *size*, $L$
@@ -26,11 +26,25 @@ We can then measure drag forces across a range of velocity, $U$, giving us the c
 This gives us a lookup table that covers the whole range of organisms by measuring only 20 different values of $\mathcal{Re}$!
 
 To use this concise approach, we need a formula for converting the drag forces on one organism to another organism that is dynamically similar.
-That formula has been provided by engineers and fluid mechanicists, and is called the [Coefficient of Drag](wiki:Drag_coefficient)[^cd], $C_d$ (also called the ***Drag Coefficient***).
+That formula has been provided by engineers and fluid mechanicists, and is called the [Coefficient of Drag](wiki:Drag_coefficient), $C_d$ (also called the ***Drag Coefficient***).
 The formula for $C_d$ is
-$$
+```{math}
+:label: eqnCd1
 C_d  = \frac{F}{\frac{1}{2} \rho L^2 U^2}
-$$
+```
 The Coefficient of Drag has been measured or calculated for many shapes, as for example for [spheres](CdSphere.ipynb).
 
-[^cd]: Also called the *Drag Coefficient*.
+## The Coefficient of Drag is a Non-dimensional number
+Part of what makes $C_d$ such a useful metric is the fact that, like $\mathcal{Re}$, it is a **non-dimensional number**. 
+
+This is because the factors $L^2$, $U^2$ and $\rho$ of the denominator in Equation [](#eqnCd1) are, respectively, $m^2$, $\frac{m^2}{s^2}$ and $\frac{kg}{m^3}$. 
+Noting that the units of kilograms can be written [^1] as $kg = \frac{N~s^2}{m}$, we can simplify the units of the denominator as
+```{math}
+:label: eqnCd2
+\frac{kg}{m^3} ~ m^2 ~ \frac{m^2}{s^2} = \frac{N~s^2}{m^4} ~ m^2 ~ \frac{m^2}{s^2}
+```
+In [](#eqnCd2) we can see that the factors of $m$ and $s$ both cancel, so that in [](#eqnCd1) both the numerator and denominator have units of force, $N$.
+
+[^1]: An easy way to remember this is using Newton's Second Law, rearranged as $ \frac{F}{a} = m$, with units $\frac{N}{\frac{m}{s^2}} = kg$.
+
+Like the Reynolds number $\mathcal{Re}$, the Coefficient of Drag $C_d$ subsumes many different combinations of size, speed and fluid density into one non-dimensional index. 

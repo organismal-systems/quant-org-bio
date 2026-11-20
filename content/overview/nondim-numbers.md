@@ -9,7 +9,7 @@ Many non-dimensional numbers have been devised in diverse fields of science.
 Some of these are listed, together with their physical interpretations, in [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_dimensionless_quantities).
 
 Non-dimensional numbers are useful in quantitative sciences for two reasons:
-1. Many phenomena are governed by non-dimensional combinations of parameters, which is made explicit in the form of non-dimensional numbers. 
+1. Many phenomena are governed by non-dimensional combinations of parameters, which are made explicit in the form of non-dimensional numbers. 
 By using non-dimensional numbers as "meta" parameters, these phenomena can be understood and predicted using far fewer variables than in the original dimensional form.
 2. Non-dimensional numbers in which the denominator and the numerator reflect different mechanisms can be indicators of the relative importance of those mechanisms, across variation in important parameters such as size, speed, duration, etc.
 
@@ -48,7 +48,7 @@ Anticipating more complicated and realistic applications in Organismal Biology, 
 In that case, we would expect to conduct a series of observations in which we **measure** the surface area and volume of a series of spheres of various sizes.
 We could then use interpolation or curve-fitting to estimate the surface area and volume of spheres within the range of our measurements.
 
-Instead, lt's consider using nondimensional ratios to express the formulas for $A$ and $V$, in a more general form with fewer parameters.
+Instead, let's consider using nondimensional ratios to express the formulas for $A$ and $V$, in a more general form with fewer parameters.
 We'll start by choosing a characteristic length, $L$.
 The geometry of the egg suggests that the most useful choice of characteristic value is the length scale corresponding to the diameter, 
 - $L = d$.
